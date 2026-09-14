@@ -30,7 +30,7 @@ const config = ({ env }: Core.Config.Shared.ConfigParams): Core.Config.Database 
       connection: env('DATABASE_URL')
         ? {
             connectionString: env('DATABASE_URL'),
-            ssl: env.bool('DATABASE_SSL', false)
+            ssl: env.bool('DATABASE_SSL', true)
               ? {
                   rejectUnauthorized: env.bool('DATABASE_SSL_REJECT_UNAUTHORIZED', false),
                 }
