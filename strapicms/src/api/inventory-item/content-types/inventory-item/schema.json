@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inventory_items",
+  "info": {
+    "singularName": "inventory-item",
+    "pluralName": "inventory-items",
+    "displayName": "Inventory Item"
+  },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "itemCode": { "type": "string", "required": true, "unique": true },
+    "name": { "type": "string", "required": true },
+    "description": { "type": "text" },
+    "category": {
+      "type": "enumeration",
+      "enum": ["Stationery & Books", "Lab Consumables", "IT Hardware", "Cleaning Supplies", "Maintenance Parts", "Uniforms", "Sports Equipment", "Medical Supplies", "Kitchen & Catering", "Other"]
+    },
+    "unitOfMeasure": {
+      "type": "enumeration",
+      "enum": ["pcs", "boxes", "kg", "liters", "sets", "reams", "pairs", "meters", "units"]
+    },
+    "quantityOnHand": { "type": "decimal", "default": 0 },
+    "minimumReorderLevel": { "type": "decimal", "default": 0 },
+    "unitCost": { "type": "decimal", "default": 0 },
+    "totalValue": { "type": "decimal", "default": 0 },
+    "valuationMethod": {
+      "type": "enumeration",
+      "enum": ["FIFO", "Weighted Average"],
+      "default": "FIFO"
+    },
+    "barcode": { "type": "string" },
+    "status": {
+      "type": "enumeration",
+      "enum": ["in_stock", "low_stock", "out_of_stock"],
+      "default": "in_stock"
+    },
+    "warehouse": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::inventory-warehouse.inventory-warehouse"
+    }
+  }
+}

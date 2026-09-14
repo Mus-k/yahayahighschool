@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "language_achievements",
+  "info": {
+    "singularName": "language-achievement",
+    "pluralName": "language-achievements",
+    "displayName": "Language Achievement",
+    "description": "Schema for Language Achievement"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "dateEarned": {
+      "type": "date",
+      "required": true
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    }
+  }
+}

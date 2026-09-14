@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wallet_transactions",
+  "info": {
+    "singularName": "wallet-transaction",
+    "pluralName": "wallet-transactions",
+    "displayName": "Wallet Transaction",
+    "description": "Records all operations on the student advance payment wallet"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student",
+      "inversedBy": "walletTransactions"
+    },
+    "transactionType": {
+      "type": "enumeration",
+      "enum": [
+        "opening_balance",
+        "advance_deposit",
+        "wallet_used",
+        "wallet_refund",
+        "wallet_adjustment",
+        "transfer",
+        "manual_credit",
+        "manual_debit"
+      ]
+    },
+    "amount": {
+      "type": "decimal"
+    },
+    "runningBalance": {
+      "type": "decimal"
+    },
+    "referenceNumber": {
+      "type": "string"
+    },
+    "user": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "transactionDate": {
+      "type": "datetime"
+    },
+    "currencyCode": {
+      "type": "string",
+      "default": "USD"
+    },
+    "originalAmount": {
+      "type": "decimal"
+    },
+    "exchangeRate": {
+      "type": "decimal",
+      "default": 1
+    },
+    "journalRef": {
+      "type": "string"
+    },
+    "ledgerRef": {
+      "type": "string"
+    },
+    "auditRef": {
+      "type": "string"
+    }
+  }
+}

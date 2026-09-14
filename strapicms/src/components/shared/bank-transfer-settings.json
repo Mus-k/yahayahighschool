@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_bank_transfer_settings",
+  "info": {
+    "displayName": "Bank Transfer Settings",
+    "icon": "bank"
+  },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string", "default": "Prefer a bank transfer?" },
+    "image": { "type": "media", "multiple": false, "required": false, "allowedTypes": ["images"] },
+    "bankAccounts": { "type": "component", "repeatable": true, "component": "shared.bank-account" }
+  }
+}

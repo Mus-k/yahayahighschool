@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_sections_about_intros",
+  "info": {
+    "displayName": "About Intro Section",
+    "icon": "book-open",
+    "description": "About page intro with badge, two-line heading, description, and hero campus image"
+  },
+  "options": {},
+  "attributes": {
+    "badge": {
+      "type": "string",
+      "default": "EST. 2020"
+    },
+    "title1": {
+      "type": "string",
+      "required": true,
+      "default": "Education, Practice"
+    },
+    "title2": {
+      "type": "string",
+      "required": true,
+      "default": "and Advocacy"
+    },
+    "description": {
+      "type": "text",
+      "default": "Founded on principles of holistic human development, Yahaya International blends rigorous British academic standards with grounded Islamic values. We prepare young minds to excel in higher education, lead with moral clarity, and contribute meaningfully to a global society."
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": "/images/figma-home/03-programs.jpeg"
+    }
+  }
+}

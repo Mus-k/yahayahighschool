@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hostel_attendances",
+  "info": {
+    "singularName": "hostel-attendance",
+    "pluralName": "hostel-attendances",
+    "displayName": "Hostel Attendance",
+    "description": "Schema for Hostel Attendance"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    },
+    "allocation": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hostel-allocation.hostel-allocation"
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "attendanceStatus": {
+      "type": "enumeration",
+      "enum": [
+        "present",
+        "absent",
+        "late",
+        "excused"
+      ],
+      "required": true
+    },
+    "checkInTime": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "text"
+    }
+  }
+}

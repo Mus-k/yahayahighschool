@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "finance_budgets",
+  "info": {
+    "singularName": "finance-budget",
+    "pluralName": "finance-budgets",
+    "displayName": "Finance Budget",
+    "description": "Institutional and Academic Section departmental budget cost centers"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "departmentName": {
+      "type": "string",
+      "required": true
+    },
+    "budgetTitle": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "headOfDepartment": {
+      "type": "string"
+    },
+    "allocatedAmount": {
+      "type": "decimal",
+      "default": 0
+    },
+    "spentAmount": {
+      "type": "decimal",
+      "default": 0
+    },
+    "committedAmount": {
+      "type": "decimal",
+      "default": 0
+    },
+    "remainingAmount": {
+      "type": "decimal",
+      "default": 0
+    },
+    "varianceAmount": {
+      "type": "decimal",
+      "default": 0
+    },
+    "utilizationPercentage": {
+      "type": "decimal",
+      "default": 0
+    },
+    "academicYearCode": {
+      "type": "string",
+      "default": "2026-2027"
+    },
+    "currency": {
+      "type": "string",
+      "default": "USD"
+    },
+    "status": {
+      "type": "string",
+      "default": "on_track"
+    },
+    "categories": {
+      "type": "json"
+    },
+    "notes": {
+      "type": "text"
+    }
+  }
+}

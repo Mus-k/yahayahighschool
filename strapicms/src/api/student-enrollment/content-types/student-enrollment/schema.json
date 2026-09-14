@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student_enrollments",
+  "info": {
+    "singularName": "student-enrollment",
+    "pluralName": "student-enrollments",
+    "displayName": "Student Enrollment",
+    "description": "Enrollment mapping a student to a Course Offering"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student",
+      "inversedBy": "enrollments"
+    },
+    "courseOffering": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course-offering.course-offering",
+      "inversedBy": "studentEnrollments"
+    },
+    "enrollmentDate": {
+      "type": "date"
+    },
+    "enrollmentStatus": {
+      "type": "enumeration",
+      "enum": [
+        "active",
+        "dropped",
+        "completed"
+      ],
+      "default": "active"
+    },
+    "gradeStatus": {
+      "type": "enumeration",
+      "enum": [
+        "graded",
+        "pending"
+      ],
+      "default": "pending"
+    }
+  }
+}

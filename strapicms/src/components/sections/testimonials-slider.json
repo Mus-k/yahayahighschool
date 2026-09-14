@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_testimonials_sliders",
+  "info": {
+    "displayName": "Testimonials Slider",
+    "icon": "quote",
+    "description": "Carousel or grid of parent, student, and alumni testimonials"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "What Parents & Students Say"
+    },
+    "subtitle": {
+      "type": "string",
+      "default": "Testimonials from the YAHAYASCOOL community"
+    },
+    "limit": {
+      "type": "integer",
+      "default": 6
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "academic_regulations",
+  "info": {
+    "singularName": "academic-regulation",
+    "pluralName": "academic-regulations",
+    "displayName": "Academic Regulation",
+    "description": "Enterprise academic regulations and threshold rules"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "minimumGPA": {
+      "type": "decimal",
+      "default": 2
+    },
+    "maxFailedCredits": {
+      "type": "integer",
+      "default": 12
+    },
+    "probationRules": {
+      "type": "text"
+    },
+    "dismissalRules": {
+      "type": "text"
+    },
+    "maxRepeats": {
+      "type": "integer",
+      "default": 2
+    },
+    "graduationRequirements": {
+      "type": "json"
+    }
+  }
+}

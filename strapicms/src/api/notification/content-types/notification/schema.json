@@ -1,0 +1,88 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notifications",
+  "info": {
+    "singularName": "notification",
+    "pluralName": "notifications",
+    "displayName": "Notification",
+    "description": "Notification queue supporting multiple delivery channels"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "comment": ""
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "body": {
+      "type": "text",
+      "required": true
+    },
+    "channel": {
+      "type": "enumeration",
+      "enum": [
+        "dashboard",
+        "email",
+        "sms",
+        "whatsapp",
+        "push"
+      ],
+      "default": "dashboard",
+      "required": true
+    },
+    "recordStatus": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "sent",
+        "failed",
+        "read"
+      ],
+      "default": "pending"
+    },
+    "priority": {
+      "type": "enumeration",
+      "enum": [
+        "low",
+        "normal",
+        "high",
+        "urgent"
+      ],
+      "default": "normal"
+    },
+    "metadata": {
+      "type": "json"
+    },
+    "scheduledAt": {
+      "type": "datetime"
+    },
+    "sentAt": {
+      "type": "datetime"
+    },
+    "readAt": {
+      "type": "datetime"
+    },
+    "recipient": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "sender": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "relatedEntity": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "relatedEntityId": {
+      "type": "string",
+      "maxLength": 100
+    }
+  }
+}

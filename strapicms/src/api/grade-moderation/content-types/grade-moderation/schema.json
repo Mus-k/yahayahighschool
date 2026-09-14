@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "grade_moderations",
+  "info": {
+    "singularName": "grade-moderation",
+    "pluralName": "grade-moderations",
+    "displayName": "Grade Moderation",
+    "description": "Schema for Grade Moderation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "workflowStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Submitted",
+        "DepartmentReview",
+        "Approved",
+        "Rejected"
+      ],
+      "default": "Submitted"
+    },
+    "comments": {
+      "type": "text"
+    },
+    "examination": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::examination.examination"
+    },
+    "submittedBy": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::teacher.teacher"
+    },
+    "approvedBy": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::teacher.teacher"
+    }
+  }
+}

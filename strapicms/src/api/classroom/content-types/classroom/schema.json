@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "classrooms",
+  "info": {
+    "singularName": "classroom",
+    "pluralName": "classrooms",
+    "displayName": "Classroom"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "capacity": {
+      "type": "integer"
+    },
+    "building": {
+      "type": "string"
+    },
+    "floor": {
+      "type": "string"
+    },
+    "roomType": {
+      "type": "enumeration",
+      "enum": [
+        "Lecture Room",
+        "Laboratory",
+        "Library",
+        "Auditorium",
+        "Mosque",
+        "Gym",
+        "Other"
+      ],
+      "default": "Lecture Room"
+    },
+    "resources": {
+      "type": "json"
+    },
+    "recordStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Active",
+        "Maintenance",
+        "Inactive"
+      ],
+      "default": "Active"
+    },
+    "campus": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::campus.campus"
+    }
+  }
+}

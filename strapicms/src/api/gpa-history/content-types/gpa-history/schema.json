@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gpa_histories",
+  "info": {
+    "singularName": "gpa-history",
+    "pluralName": "gpa-histories",
+    "displayName": "GPA History",
+    "description": "Student historical GPA and academic standing records"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "semesterGPA": {
+      "type": "decimal"
+    },
+    "cgpa": {
+      "type": "decimal"
+    },
+    "creditsEarned": {
+      "type": "decimal"
+    },
+    "creditsAttempted": {
+      "type": "decimal"
+    },
+    "academicStanding": {
+      "type": "string"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    },
+    "academic_year": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-year.academic-year"
+    },
+    "academic_term": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-term.academic-term"
+    }
+  }
+}

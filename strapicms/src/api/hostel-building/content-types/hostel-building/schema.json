@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hostel_buildings",
+  "info": {
+    "singularName": "hostel-building",
+    "pluralName": "hostel-buildings",
+    "displayName": "Hostel Building",
+    "description": "Schema for Hostel Building"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "campus": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "boys",
+        "girls",
+        "mixed"
+      ],
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "active",
+        "inactive",
+        "maintenance"
+      ],
+      "default": "active"
+    },
+    "capacity": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "text"
+    },
+    "floors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::hostel-floor.hostel-floor",
+      "mappedBy": "building"
+    },
+    "rooms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::hostel-room.hostel-room",
+      "mappedBy": "building"
+    },
+    "wardens": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::hostel-warden.hostel-warden",
+      "mappedBy": "assignedBuilding"
+    }
+  }
+}

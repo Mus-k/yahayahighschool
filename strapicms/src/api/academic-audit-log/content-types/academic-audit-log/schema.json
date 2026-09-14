@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "academic_audit_logs",
+  "info": {
+    "singularName": "academic-audit-log",
+    "pluralName": "academic-audit-logs",
+    "displayName": "Academic Audit Log",
+    "description": "Enterprise grade logs, approvals, and system audit trail"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "actor": {
+      "type": "string"
+    },
+    "action": {
+      "type": "string"
+    },
+    "entityType": {
+      "type": "string"
+    },
+    "entityId": {
+      "type": "integer"
+    },
+    "oldValue": {
+      "type": "json"
+    },
+    "newValue": {
+      "type": "json"
+    },
+    "ipAddress": {
+      "type": "string"
+    },
+    "browser": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "text"
+    },
+    "timestamp": {
+      "type": "datetime"
+    }
+  }
+}

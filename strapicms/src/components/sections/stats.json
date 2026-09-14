@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sections_stats",
+  "info": {
+    "displayName": "Quick Statistics Section",
+    "icon": "bullet-list",
+    "description": "Grid of statistical highlights (e.g., 100% Pass Rate, 1200+ Students)"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "statsList": {
+      "type": "json"
+    }
+  }
+}

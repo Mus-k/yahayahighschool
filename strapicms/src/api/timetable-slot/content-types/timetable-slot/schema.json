@@ -1,0 +1,87 @@
+{
+  "kind": "collectionType",
+  "collectionName": "timetable_slots",
+  "info": {
+    "singularName": "timetable-slot",
+    "pluralName": "timetable-slots",
+    "displayName": "Timetable Slot"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "dayOfWeek": {
+      "type": "enumeration",
+      "enum": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "required": true
+    },
+    "startTime": {
+      "type": "time",
+      "required": true
+    },
+    "endTime": {
+      "type": "time",
+      "required": true
+    },
+    "durationMinutes": {
+      "type": "integer"
+    },
+    "recordStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Active",
+        "Cancelled",
+        "Rescheduled"
+      ],
+      "default": "Active"
+    },
+    "academicYear": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-year.academic-year"
+    },
+    "academicTerm": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-term.academic-term"
+    },
+    "section": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::section.section"
+    },
+    "teacher": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::teacher.teacher"
+    },
+    "subject": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::subject.subject"
+    },
+    "classroom": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::classroom.classroom"
+    },
+    "campus": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::campus.campus"
+    },
+    "courseOffering": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course-offering.course-offering"
+    }
+  }
+}

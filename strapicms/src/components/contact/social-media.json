@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_contact_social_medias",
+  "info": {
+    "displayName": "Social Media Link",
+    "icon": "twitter",
+    "description": "A single social media link"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

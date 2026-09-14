@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_shared_patrons",
+  "info": {
+    "displayName": "Patron",
+    "description": "A patron for the Wall of Gratitude"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "quote": {
+      "type": "text",
+      "required": true,
+      "pluginOptions": { "i18n": { "localized": true } }
+    }
+  }
+}

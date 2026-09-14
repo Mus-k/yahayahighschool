@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "academic_clearances",
+  "info": {
+    "singularName": "academic-clearance",
+    "pluralName": "academic-clearances",
+    "displayName": "Academic Clearance"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Eligible",
+        "Blocked"
+      ],
+      "default": "Eligible"
+    },
+    "reasons": {
+      "type": "json"
+    },
+    "attendanceRate": {
+      "type": "decimal"
+    },
+    "creditsEarned": {
+      "type": "integer"
+    },
+    "failedCoursesCount": {
+      "type": "integer"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    }
+  }
+}

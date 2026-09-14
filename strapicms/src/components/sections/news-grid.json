@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_news_grids",
+  "info": {
+    "displayName": "Latest News Grid",
+    "icon": "paper-plane",
+    "description": "Grid or carousel of latest school news articles"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Latest News & Updates"
+    },
+    "subtitle": {
+      "type": "string",
+      "default": "Stay informed on what is happening at YAHAYASCOOL"
+    },
+    "limit": {
+      "type": "integer",
+      "default": 3
+    },
+    "categoryFilter": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_sections_heroes",
+  "info": {
+    "displayName": "Hero Section",
+    "icon": "layout",
+    "description": "Primary banner section with badge, title, subtitle, CTA buttons, and background image/video"
+  },
+  "options": {},
+  "attributes": {
+    "badge": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "backgroundMedia": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "videos"]
+    },
+    "primaryCtaText": {
+      "type": "string",
+      "default": "Apply Now"
+    },
+    "primaryCtaUrl": {
+      "type": "string",
+      "default": "/admissions"
+    },
+    "secondaryCtaText": {
+      "type": "string",
+      "default": "Explore Programs"
+    },
+    "secondaryCtaUrl": {
+      "type": "string",
+      "default": "/programs"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inventory_warehouses",
+  "info": {
+    "singularName": "inventory-warehouse",
+    "pluralName": "inventory-warehouses",
+    "displayName": "Inventory Warehouse"
+  },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "code": { "type": "string", "required": true, "unique": true },
+    "name": { "type": "string", "required": true },
+    "location": { "type": "string" },
+    "managerName": { "type": "string" },
+    "notes": { "type": "text" }
+  }
+}

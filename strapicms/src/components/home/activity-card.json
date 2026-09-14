@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_home_activity_cards",
+  "info": {
+    "displayName": "Activity Card",
+    "description": "Activity card for student life section on homepage"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

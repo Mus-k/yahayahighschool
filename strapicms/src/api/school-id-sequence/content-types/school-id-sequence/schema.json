@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "school_id_sequences",
+  "info": {
+    "singularName": "school-id-sequence",
+    "pluralName": "school-id-sequences",
+    "displayName": "School ID Sequence",
+    "description": "Sequential counter for School ID generation — one record per initials prefix"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "comment": ""
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "initials": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 10
+    },
+    "lastSequence": {
+      "type": "integer",
+      "required": true,
+      "default": 0,
+      "min": 0
+    }
+  }
+}

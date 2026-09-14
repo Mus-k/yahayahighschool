@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_sections_about_mission_visions",
+  "info": {
+    "displayName": "About Mission & Vision",
+    "icon": "compass",
+    "description": "Interactive Mission and Vision panel with crest mask, tab labels, copy, and images"
+  },
+  "options": {},
+  "attributes": {
+    "missionLabel": {
+      "type": "string",
+      "required": true,
+      "default": "Our Mission"
+    },
+    "missionBody": {
+      "type": "text",
+      "required": true,
+      "default": "To provide an exemplary dual-curriculum education that cultivates intellectual curiosity, Islamic character, and global leadership skills in every learner."
+    },
+    "missionImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "missionImageUrl": {
+      "type": "string",
+      "default": "/images/vission.png"
+    },
+    "visionLabel": {
+      "type": "string",
+      "required": true,
+      "default": "Our Vision"
+    },
+    "visionBody": {
+      "type": "text",
+      "required": true,
+      "default": "To be recognized globally as the benchmark institution for modern Islamic excellence, where academic brilliance and spiritual depth converge."
+    },
+    "visionImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "visionImageUrl": {
+      "type": "string",
+      "default": "/images/figma-home/02-about.jpeg"
+    }
+  }
+}

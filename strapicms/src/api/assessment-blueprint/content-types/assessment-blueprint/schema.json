@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "assessment_blueprints",
+  "info": {
+    "singularName": "assessment-blueprint",
+    "pluralName": "assessment-blueprints",
+    "displayName": "Assessment Blueprint"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "componentName": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "Homework",
+        "Quiz",
+        "Quiz2",
+        "Project",
+        "Participation",
+        "Attendance",
+        "Exam",
+        "Oral",
+        "Practical"
+      ]
+    },
+    "label": {
+      "type": "string"
+    },
+    "weightPercentage": {
+      "type": "decimal",
+      "required": true
+    },
+    "subject": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::subject.subject"
+    }
+  }
+}

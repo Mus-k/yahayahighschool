@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exam_rooms",
+  "info": {
+    "singularName": "exam-room",
+    "pluralName": "exam-rooms",
+    "displayName": "Exam Room",
+    "description": "Schema for Exam Room"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "capacity": {
+      "type": "integer"
+    },
+    "building": {
+      "type": "string"
+    },
+    "floor": {
+      "type": "string"
+    }
+  }
+}

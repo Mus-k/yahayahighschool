@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teaching_progresses",
+  "info": {
+    "singularName": "teaching-progress",
+    "pluralName": "teaching-progresses",
+    "displayName": "Teaching Progress"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "weekNumber": {
+      "type": "integer",
+      "required": true
+    },
+    "lessonDelivered": {
+      "type": "boolean",
+      "default": false
+    },
+    "attendanceSubmitted": {
+      "type": "boolean",
+      "default": false
+    },
+    "homeworkGiven": {
+      "type": "boolean",
+      "default": false
+    },
+    "outcomeCompleted": {
+      "type": "boolean",
+      "default": false
+    },
+    "materialsUploaded": {
+      "type": "boolean",
+      "default": false
+    },
+    "notes": {
+      "type": "text"
+    },
+    "courseOffering": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course-offering.course-offering"
+    }
+  }
+}

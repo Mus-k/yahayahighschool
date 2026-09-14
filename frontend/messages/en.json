@@ -1,0 +1,1378 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "create": "Create",
+    "update": "Update",
+    "search": "Search",
+    "filter": "Filter",
+    "export": "Export",
+    "import": "Import",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "reset": "Reset",
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No",
+    "actions": "Actions",
+    "status": "Status",
+    "date": "Date",
+    "time": "Time",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "description": "Description",
+    "noData": "No data found",
+    "noResults": "No results for your search",
+    "error": "Something went wrong. Please try again.",
+    "success": "Operation completed successfully.",
+    "required": "This field is required",
+    "invalidEmail": "Please enter a valid email address",
+    "rowsPerPage": "Rows per page",
+    "showing": "Showing {from} to {to} of {total} results"
+  },
+  "auth": {
+    "login": "Sign In",
+    "logout": "Sign Out",
+    "forgotPassword": "Forgot Password?",
+    "resetPassword": "Reset Password",
+    "verifyEmail": "Verify Email",
+    "email": "Email Address",
+    "password": "Password",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm Password",
+    "rememberMe": "Remember me",
+    "signInTitle": "Welcome Back",
+    "signInSubtitle": "Sign in to your YAHAYASCOOL account",
+    "forgotTitle": "Forgot Password",
+    "forgotSubtitle": "Enter your email and we'll send you a reset link",
+    "resetTitle": "Reset Password",
+    "resetSubtitle": "Enter your new password",
+    "sendResetLink": "Send Reset Link",
+    "backToLogin": "Back to Sign In",
+    "invalidCredentials": "Invalid email or password",
+    "accountDisabled": "Your account has been disabled. Contact the administrator.",
+    "emailSent": "Reset link sent! Check your email inbox.",
+    "passwordReset": "Password reset successfully. You can now sign in.",
+    "emailVerified": "Email verified successfully!",
+    "schoolId": "School ID",
+    "role": "Role"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "users": "Users",
+    "students": "Students",
+    "teachers": "Teachers",
+    "parents": "Parents",
+    "workers": "Staff",
+    "finance": "Finance",
+    "hostel": "Hostel",
+    "exams": "Exams",
+    "attendance": "Attendance",
+    "timetable": "Timetable",
+    "events": "Events",
+    "quran": "Qur'an",
+    "messages": "Messages",
+    "notifications": "Notifications",
+    "auditLogs": "Audit Logs",
+    "settings": "Settings",
+    "schoolProfile": "School Profile",
+    "roles": "Roles & Permissions",
+    "reports": "Reports",
+    "overview": "Overview",
+    "administration": "Administration",
+    "academics": "Academics",
+    "system": "System"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back, {name}",
+    "totalStudents": "Total Students",
+    "totalTeachers": "Total Teachers",
+    "totalStaff": "Total Staff",
+    "totalParents": "Total Parents",
+    "activeUsers": "Active Users",
+    "recentActivity": "Recent Activity",
+    "quickActions": "Quick Actions",
+    "announcements": "Announcements",
+    "upcomingEvents": "Upcoming Events",
+    "attendanceToday": "Today's Attendance",
+    "pendingApprovals": "Pending Approvals"
+  },
+  "users": {
+    "title": "User Management",
+    "createUser": "Create User",
+    "editUser": "Edit User",
+    "viewUser": "View User",
+    "deleteUser": "Delete User",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "displayName": "Display Name",
+    "username": "Username",
+    "email": "Email",
+    "phone": "Phone Number",
+    "role": "Role",
+    "status": "Status",
+    "schoolId": "School ID",
+    "gender": "Gender",
+    "male": "Male",
+    "female": "Female",
+    "dateOfBirth": "Date of Birth",
+    "nationality": "Nationality",
+    "address": "Address",
+    "preferredLanguage": "Preferred Language",
+    "isActive": "Active",
+    "lastLogin": "Last Login",
+    "createdAt": "Created At",
+    "confirmDelete": "Are you sure you want to delete this user? This action cannot be undone.",
+    "emailTaken": "This email address is already registered.",
+    "emailAvailable": "Email is available",
+    "checkingEmail": "Checking availability...",
+    "userCreated": "User created successfully. School ID: {schoolId}",
+    "userUpdated": "User updated successfully.",
+    "userDeleted": "User deleted successfully.",
+    "filterByRole": "Filter by Role",
+    "filterByStatus": "Filter by Status",
+    "searchPlaceholder": "Search by name, email, or School ID..."
+  },
+  "roles": {
+    "super-administrator": "Super Administrator",
+    "director": "Director",
+    "teacher": "Teacher",
+    "student": "Student",
+    "parent": "Parent",
+    "worker": "Worker",
+    "accountant": "Accountant",
+    "account-lead": "Account Lead",
+    "driver": "Driver",
+    "authenticated": "Authenticated",
+    "public": "Public"
+  },
+  "auditLogs": {
+    "title": "Audit Logs",
+    "action": "Action",
+    "entity": "Entity",
+    "performedBy": "Performed By",
+    "severity": "Severity",
+    "timestamp": "Timestamp",
+    "metadata": "Details",
+    "ipAddress": "IP Address",
+    "filterBySeverity": "Filter by Severity",
+    "filterByAction": "Filter by Action",
+    "info": "Info",
+    "warning": "Warning",
+    "error": "Error",
+    "critical": "Critical"
+  },
+  "settings": {
+    "title": "Settings",
+    "schoolProfile": "School Profile",
+    "security": "Security",
+    "notifications": "Notifications",
+    "languages": "Languages",
+    "schoolName": "School Name",
+    "motto": "School Motto",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "website": "Website",
+    "logo": "School Logo",
+    "academicYear": "Academic Year",
+    "timezone": "Timezone",
+    "defaultLanguage": "Default Language",
+    "profileSaved": "School profile saved successfully."
+  },
+  "notifications": {
+    "title": "Notifications",
+    "markAllRead": "Mark all as read",
+    "noNotifications": "No new notifications",
+    "viewAll": "View all notifications"
+  },
+  "theme": {
+    "light": "Light Mode",
+    "dark": "Dark Mode",
+    "system": "System Default"
+  },
+  "language": {
+    "en": "English",
+    "ar": "العربية",
+    "fr": "Français",
+    "tr": "Türkçe"
+  },
+  "publicNav": {
+    "home": "Home",
+    "academicPrograms": "Academic programs",
+    "onlineLearning": "Online learning",
+    "newsAndEvents": "News and events",
+    "about": "About",
+    "aboutUs": "About Us",
+    "staffs": "Staffs",
+    "career": "Career",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "donations": "Donations",
+    "ourCommunity": "Our Community",
+    "ourTeam": "Our Team",
+    "joinUs": "Join Us",
+    "loginPortal": "Login / Student Portal"
+  },
+  "hero": {
+    "startApplication": "Start Application",
+    "slide1Title1": "Education, Practice",
+    "slide1Title2": "and Advocacy.",
+    "slide1Desc": "Yahaya International Islamic & English School blends the depth of traditional Islamic values with the rigorous standards of modern international education, fostering a nurturing environment for holistic student growth.",
+    "slide2Title1": "Nurturing Minds,",
+    "slide2Title2": "Building Futures.",
+    "slide2Desc": "Our comprehensive curriculum is designed to challenge students intellectually while supporting their emotional and spiritual well-being.",
+    "slide3Title1": "Excellence in",
+    "slide3Title2": "Every Step.",
+    "slide3Desc": "Join a community dedicated to academic excellence, moral integrity, and lifelong learning in a supportive environment.",
+    "established": "EST. 2020"
+  },
+  "homeAbout": {
+    "eyebrow": "About Our Legacy",
+    "headingLine1": "Fostering Excellence",
+    "headingLine2": "Through",
+    "headingHighlight": "Faith and Science",
+    "body": "Yahaya International Islamic & English High School is more than just an educational institution; it is a community dedicated to shaping the holistic development of every child. We bridge the gap between traditional Islamic ethics and modern Western education.",
+    "caption": "Yahaya International Islamic & English High School is more than just an educational institution",
+    "students": "Students",
+    "employees": "Employees",
+    "years": "Years"
+  },
+  "programsSection": {
+    "eyebrow": "Our Programs",
+    "heading": "Explore Our Programs",
+    "description": "Contribute to modern facilities and learning environments equipped with the latest educational technology. Contribute to modern facilities and learning environments equipped with the latest educational technology.",
+    "learnMore": "Learn More",
+    "programs": {
+      "arabic": {
+        "title": "Arabic Programs",
+        "desc": "Contribute to modern facilities and learning environments equipped with the latest educational technology. Contribute to modern facilities and learning environments equipped with the latest educational technology."
+      },
+      "english": {
+        "title": "English Programs",
+        "desc": "Immerse in an environment where language skills flourish. Our English programs are designed to build confidence, fluency, and a deep understanding of global literature and communication."
+      },
+      "dawah": {
+        "title": "D'awah Programs",
+        "desc": "Develop a strong foundation in Islamic theology and the principles of inviting others to the beautiful teachings of Islam through wisdom and excellent preaching."
+      },
+      "online": {
+        "title": "Online learning Programs",
+        "desc": "Access our world-class curriculum from anywhere. Flexible, engaging, and interactive online modules tailored for modern students seeking excellence from home."
+      }
+    }
+  },
+  "homeAnimation": {
+    "attribution": "— Sahih al-Bukhari and Sahih Muslim",
+    "quote": "Actions are judged by intentions, and every person will have only what they intended.",
+    "bookAr": "إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ",
+    "bookTranslation": "and every man shall have only that which he intended"
+  },
+  "homeActivities": {
+    "mosqueActivities": "Mosque Activities",
+    "publicSpeaking": "Public Speaking",
+    "artsCreativity": "Arts & Creativity",
+    "heading": "Seeking knowledge is a path to goodness.",
+    "subtitle": "Every action tells a story—see what's been happening.",
+    "joinUs": "Join us"
+  },
+  "testimonialsSection": {
+    "heading": "Kind Words From Our Community",
+    "subtitle": "Hear from the parents, alumni and community leaders who have shaped — and been shaped by — life at Yahaya International.",
+    "verifiedReview": "Verified Review",
+    "items": {
+      "t1": {
+        "name": "Mia Thompson",
+        "role": "PARENT",
+        "title": "A transformative experience for our child.",
+        "quote": "\"Since enrolling our daughter at Yahaya International, we have seen remarkable growth not just in her academic performance but in her character. The seamless integration of Islamic values with rigorous modern education is exactly what we were looking for.\""
+      },
+      "t2": {
+        "name": "James Miller",
+        "role": "ALUMNUS",
+        "title": "It highlights academic satisfaction, testimonials.",
+        "quote": "\"My years at Yahaya International completely transformed my worldview. The attention to detail in the curriculum and the ease of access to mentors allowed me to maintain my faith identity while delivering world-class academic performance. It's not just a school; it's a competitive advantage.\""
+      },
+      "t3": {
+        "name": "Olivia Carter",
+        "role": "COMMUNITY LEADER",
+        "title": "An institution built on true excellence.",
+        "quote": "\"The leadership at Yahaya International demonstrates a profound commitment to educational excellence. I have witnessed firsthand how they nurture students into well-rounded individuals ready to tackle global challenges with moral integrity.\""
+      },
+      "t4": {
+        "name": "Matthew Bennett",
+        "role": "PARENT",
+        "title": "The best decision we made.",
+        "quote": "\"We evaluated many schools before choosing Yahaya International. The facilities are modern, the teachers are highly qualified, and the emphasis on both D'awah and STEM makes it a unique and invaluable environment for our children.\""
+      }
+    }
+  },
+  "newsSection": {
+    "eyebrow": "News & Events",
+    "heading": "Latest News & Updates",
+    "description": "Contribute to modern facilities and learning environments equipped with the latest educational technology. Contribute to modern facilities and learning environments equipped with the latest educational technology.",
+    "readMore": "Read More",
+    "items": {
+      "n1": {
+        "title": "Expanding Our Horizons: New Office Opening",
+        "excerpt": "We are thrilled to announce the opening of our newest innovation hub, designed to foster...",
+        "category": "CORPORATE"
+      },
+      "n2": {
+        "title": "Innovation Through Collaboration: Our Annual Tech Summit",
+        "excerpt": "This year's summit brought together the brightest minds in the industry to discuss the...",
+        "category": "EVENTS"
+      },
+      "n3": {
+        "title": "TrustVibe 2.0: Reimagining Security for the Modern Web",
+        "excerpt": "Discover the next generation of our platform, featuring advanced threat detection and an...",
+        "category": "EVENTS"
+      },
+      "n4": {
+        "title": "Global Educational Standards and Modern Pedagogies",
+        "excerpt": "Exploring how integrating worldwide educational standards empowers our students to compete globally...",
+        "category": "CORPORATE"
+      },
+      "n5": {
+        "title": "The Importance of Bilingual Education in Today's World",
+        "excerpt": "Our bilingual programs offer unparalleled cognitive and social advantages. Read more about the benefits...",
+        "category": "EVENTS"
+      }
+    }
+  },
+  "footer": {
+    "contact": {
+      "socials": "Follow us on Social Media",
+      "email": "Email",
+      "phone": "Phone"
+    },
+    "brand": {
+      "name": "Yahaya International Islamic and English High School",
+      "tagline1": "Knowledge Faith &",
+      "tagline2": "Excellence",
+      "description": "Building a brighter future through Islamic values, quality education and character development"
+    },
+    "pills": {
+      "islamicEducation": "Islamic Education",
+      "modernLearning": "Modern Learning",
+      "brightFuture": "Bright Future"
+    },
+    "links": {
+      "quickLinks": {
+        "title": "Quick Links",
+        "aboutUs": "About Us",
+        "academicPrograms": "Academic Programs",
+        "newsEvents": "News & Events",
+        "gallery": "Gallery",
+        "careers": "Careers",
+        "contact": "Contact"
+      },
+      "academics": {
+        "title": "Academics",
+        "quranDepartment": "Quran Department",
+        "arabicLanguage": "Arabic Language",
+        "englishDepartment": "English Department",
+        "onlineLearning": "Online Learning",
+        "studentLife": "Student Life"
+      },
+      "support": {
+        "title": "Support",
+        "faqs": "FAQS",
+        "helpCenter": "Help Center"
+      }
+    },
+    "bottom": {
+      "copyright": "© {year} Yahaya International Islamic and English School. All rights reserved.",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy"
+    }
+  },
+  "pageHeaders": {
+    "about": {
+      "title": "About Us",
+      "description": "We're here to answer your questions and guide your child's educational journey towards Modern Islamic Excellence."
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "crumb": "Contact",
+      "description": "We're here to answer your questions and guide your child's educational journey towards Modern Islamic Excellence."
+    },
+    "staffs": {
+      "title": "Staffs",
+      "description": "At Yahaya International, we blend the prestige of global academic rigor with deep-rooted spiritual leadership. Our faculty members are more than educators; they are mentors, researchers, and stewards of wisdom dedicated to shaping the leaders of tomorrow."
+    }
+  },
+  "contactPage": {
+    "form": {
+      "firstName": "First Name",
+      "firstNamePlaceholder": "Musa",
+      "lastName": "Last Name",
+      "lastNamePlaceholder": "Kamara",
+      "email": "Email Address",
+      "emailPlaceholder": "musakamara@gmail.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+1 (555) 000-0000",
+      "subject": "Subject Area",
+      "message": "Your Message",
+      "messagePlaceholder": "How can we assist you today?",
+      "terms1": "Read the legal terms and service,",
+      "terms2": "I have accept it",
+      "send": "Send Message",
+      "success": "Thank you — we'll be in touch shortly."
+    },
+    "subjects": {
+      "admissions": "Admissions Inquiry",
+      "academic": "Academic Programs",
+      "fees": "Fees and Payments",
+      "careers": "Careers",
+      "general": "General Enquiry"
+    },
+    "campus": {
+      "title": "Campus Information",
+      "mainCampus": "Main Campus",
+      "address1": "123 Wisdom Avenue",
+      "address2": "Educational District, ED 45678",
+      "address3": "Monrovia, Liberia",
+      "administration": "Administration",
+      "whatsapp": "WhatsApps Us",
+      "admissionsDesk": "Admissions Desk",
+      "officeHours": "Office Hours",
+      "hours1": "Monday - Friday: 8:00 AM - 4:00 PM",
+      "hours2": "Friday Prayer Break: 12:00 PM - 2:00 PM"
+    }
+  },
+  "galleryPage": {
+    "categories": {
+      "All": "All",
+      "Academic Excellence": "Academic Excellence",
+      "Spiritual Life": "Spiritual Life",
+      "Sports & Arts": "Sports & Arts",
+      "Campus Facilities": "Campus Facilities"
+    },
+    "photoGrid": {
+      "title": "Life at Yahaya",
+      "playVideos": "Play Videos",
+      "empty": "Nothing in this category yet.",
+      "loadMore": "Load More"
+    },
+    "videoHighlights": {
+      "title": "Video Highlights",
+      "blurb": "Experience the vibrant energy and spirit of Yahaya International through our curated video collection.",
+      "clips": {
+        "testimonials": "Student Testimonials",
+        "library": "Inside the Library",
+        "reading": "Reading Together",
+        "campus": "Campus Life",
+        "assembly": "Assembly Day"
+      }
+    },
+    "visitCta": {
+      "title": "Experience Yahaya International in Person",
+      "description": "Visit our campus, meet our students and faculty, and see how we nurture excellence in both faith and knowledge.",
+      "contactUs": "Contact Us"
+    }
+  },
+  "aboutPage": {
+    "intro": {
+      "badge": "EST. {year}",
+      "title1": "Education, Practice",
+      "title2": "and Advocacy.",
+      "description": "Yahaya International Islamic & English School blends the depth of traditional Islamic values with the rigorous standards of modern international education, fostering a nurturing environment for holistic student growth."
+    },
+    "missionVision": {
+      "mission": {
+        "label": "Our Mission",
+        "body": "To provide a comprehensive, balanced education that equips students with both academic excellence and profound moral character grounded in Islamic principles."
+      },
+      "vision": {
+        "label": "Our Vision",
+        "body": "To be a leading institution recognised for nurturing confident, principled graduates who carry Islamic values into every field they enter and serve their communities with distinction."
+      }
+    },
+    "coreValues": {
+      "title": "Core Values",
+      "description": "The pillars that uphold our educational philosophy.",
+      "values": {
+        "knowledge": "Knowledge (Ilm)",
+        "action": "Action (Amal)",
+        "advocacy": "Advocacy (Da'wah)",
+        "empathy": "Empathy"
+      }
+    },
+    "director": {
+      "name": "Dr. Ahmad Kromah",
+      "role": "Founding Director",
+      "quoteTitle": "Nurturing the intellect and the soul.",
+      "quoteP1": "Welcome to Yahaya International. When we established this institution in 2020, our goal was simple yet profound: to create an environment where academic rigour meets spiritual depth.",
+      "quoteP2": "We recognised a growing need for an educational model that does not force families to choose between modern excellence and faith-based values. Here, they are seamlessly integrated. Our students are challenged intellectually while being supported emotionally and spiritually.",
+      "quoteP3": "As you explore our community, you will find a dedicated faculty, state-of-the-art facilities, and most importantly, a vibrant student body eager to learn, practise and advocate for a better world.",
+      "signature": "Ahmad Kromah"
+    },
+    "timeline": {
+      "title": "Our Timeline",
+      "entries": {
+        "2020": {
+          "title": "Foundation & First Intake",
+          "body": "Yahaya International opened its doors with a founding cohort and a simple conviction: that rigorous academics and Islamic character formation belong in the same classroom, not in competition with one another."
+        },
+        "2021": {
+          "title": "Curriculum & Faculty Growth",
+          "body": "We doubled our teaching faculty and completed the integration of the international curriculum with our Qur'anic and Arabic programmes, establishing the dual-track model the school is known for today."
+        },
+        "2022": {
+          "title": "Global Accreditation & Leadership Expansion",
+          "body": "A pivotal year marked by our recognition as a leading global institution. We converged knowledge and faith, cultivating future leaders who advocate for justice, embody empathy, and drive positive change in their communities worldwide."
+        },
+        "2023": {
+          "title": "Campus & Facilities Investment",
+          "body": "New science laboratories, an expanded library and dedicated sports facilities came online, alongside the launch of our online learning platform for students studying beyond the campus."
+        },
+        "2024": {
+          "title": "Community & Alumni Network",
+          "body": "Our first graduating classes moved into universities at home and abroad, and the alumni network was formally established to mentor current students and extend the school's reach into the wider community."
+        },
+        "2025": {
+          "title": "Campus & Facilities Investment",
+          "body": "New science laboratories, an expanded library and dedicated sports facilities came online, alongside the launch of our online learning platform for students studying beyond the campus."
+        },
+        "2026": {
+          "title": "Community & Alumni Network",
+          "body": "Our first graduating classes moved into universities at home and abroad, and the alumni network was formally established to mentor current students and extend the school's reach into the wider community."
+        }
+      }
+    },
+    "whyChoose": {
+      "title": "Why Choose Yahaya International?",
+      "description": "A unique educational environment designed to foster excellence in every dimension of student life.",
+      "reasons": {
+        "faith": {
+          "title": "Faith-Centered",
+          "body": "Islamic values are woven into daily life and curriculum."
+        },
+        "academic": {
+          "title": "Academic Excellence",
+          "body": "Rigorous international standards preparing students for top universities."
+        },
+        "facilities": {
+          "title": "Modern Facilities",
+          "body": "State-of-the-art classrooms, labs, and sports complexes."
+        },
+        "community": {
+          "title": "Strong Community",
+          "body": "A supportive network of educators, parents, and alumni."
+        }
+      }
+    },
+    "pursuitCta": {
+      "title": "In Pursuit of Exceptional Education",
+      "description": "Our faculty recruitment follows a rigorous selection process, ensuring every teacher embodies our values of excellence, integrity, and lifelong learning.",
+      "join": "Join Our School",
+      "events": "View Our Events"
+    }
+  },
+  "staffsPage": {
+    "loadMore": "Load More",
+    "members": [
+      {
+        "name": "Dr. Amina Al-Hassan",
+        "role": "Head of Islamic Sciences",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/01-hero.jpeg"
+      },
+      {
+        "name": "Prof. Julian Sterling",
+        "role": "Dean of British Curriculum",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/20-news.jpeg"
+      },
+      {
+        "name": "Dr. Farah Ibrahim",
+        "role": "Lead, Science & Tech",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/04-programs.jpeg"
+      },
+      {
+        "name": "Mr. Marcus Chen",
+        "role": "Director of Arts",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/08-activity.jpeg"
+      },
+      {
+        "name": "Ms. Layla Haruna",
+        "role": "Head of Arabic Language",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/01-hero.jpeg"
+      },
+      {
+        "name": "Mr. David Okoro",
+        "role": "Head of Mathematics",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/08-activity.jpeg"
+      },
+      {
+        "name": "Dr. Zainab Bello",
+        "role": "Student Welfare Lead",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/04-programs.jpeg"
+      },
+      {
+        "name": "Prof. Samuel Adeyemi",
+        "role": "Dean of Admissions",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/20-news.jpeg"
+      },
+      {
+        "name": "Mrs. Hauwa Sanni",
+        "role": "Head of Early Years",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/01-hero.jpeg"
+      },
+      {
+        "name": "Mr. Ibrahim Toure",
+        "role": "Head of Qur’anic Studies",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/08-activity.jpeg"
+      },
+      {
+        "name": "Ms. Grace Mensah",
+        "role": "Head of Humanities",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/04-programs.jpeg"
+      },
+      {
+        "name": "Mr. Yusuf Danladi",
+        "role": "Head of Physical Education",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/20-news.jpeg"
+      }
+    ]
+  },
+  "newsPage": {
+    "categories": [
+      "All",
+      "News",
+      "Events",
+      "D'awah"
+    ],
+    "loadMore": "Load More",
+    "featured": [
+      {
+        "eyebrow": "School Stories",
+        "headline": [
+          "News, Events &",
+          "Community"
+        ],
+        "lede": "Discover the latest happenings at Yahaya International. From academic achievements to spiritual milestones, our stories reflect our commitment to faith, learning and character.",
+        "month": "JUL",
+        "day": "15",
+        "category": "CEREMONY",
+        "title": "Graduation Ceremony",
+        "time": "10:00 AM - 1:00 PM",
+        "place": "Main Auditorium",
+        "blurb": "Join us as we celebrate the achievements of our graduating class."
+      },
+      {
+        "eyebrow": "Campus Life",
+        "headline": [
+          "A New Home",
+          "for Hifz"
+        ],
+        "lede": "Our dedicated memorization centre opens its doors, giving students a purpose-built space for recitation, review and quiet study.",
+        "month": "SEP",
+        "day": "12",
+        "category": "OPENING",
+        "title": "Memorization Hub",
+        "time": "9:00 AM - 11:00 AM",
+        "place": "Hifz Centre",
+        "blurb": "The doors open on our dedicated Hifz learning centre."
+      },
+      {
+        "eyebrow": "D'awah",
+        "headline": [
+          "Service Beyond",
+          "the Gates"
+        ],
+        "lede": "Senior students carried our values into three neighbourhoods this month, leading an outreach programme built on listening as much as teaching.",
+        "month": "JUN",
+        "day": "18",
+        "category": "D'AWAH",
+        "title": "Community Outreach",
+        "time": "2:00 PM - 5:00 PM",
+        "place": "City Centre",
+        "blurb": "Senior students lead an outreach programme across three neighbourhoods."
+      },
+      {
+        "eyebrow": "Achievement",
+        "headline": [
+          "Character, and",
+          "Scholarship"
+        ],
+        "lede": "The Excellence Awards recognise the students whose work and conduct set the tone for everyone around them.",
+        "month": "MAY",
+        "day": "10",
+        "category": "AWARDS",
+        "title": "Excellence Awards",
+        "time": "11:00 AM - 1:00 PM",
+        "place": "Main Hall",
+        "blurb": "Recognising outstanding academic and character achievement."
+      },
+      {
+        "eyebrow": "Events",
+        "headline": [
+          "Ideas Worth",
+          "Gathering For"
+        ],
+        "lede": "A full day of talks and demonstrations, bringing together some of the brightest minds working in the field today.",
+        "month": "AUG",
+        "day": "05",
+        "category": "EVENTS",
+        "title": "Innovation Summit",
+        "time": "10:00 AM - 4:00 PM",
+        "place": "Library Annex",
+        "blurb": "A day of talks bringing together the brightest minds in the field."
+      }
+    ],
+    "articles": [
+      {
+        "title": "Annual Science & Tech Fair 2024",
+        "date": "Oct 24, 2024",
+        "desc": "Students showcased ingenuity during the 15th Annual Science & Technology Fair.",
+        "category": "Events"
+      },
+      {
+        "title": "New Memorization Hub Opening",
+        "date": "Sep 12, 2024",
+        "desc": "We are thrilled to announce the opening of our new dedicated Hifz learning center.",
+        "category": "News"
+      },
+      {
+        "title": "Innovation Through Collaboration",
+        "date": "Aug 05, 2024",
+        "desc": "This year's summit brought together the brightest minds in the industry.",
+        "category": "Events"
+      },
+      {
+        "title": "Reimagining Digital Security",
+        "date": "Jul 20, 2024",
+        "desc": "Discover the next generation of our platform featuring advanced cyber protocols.",
+        "category": "News"
+      },
+      {
+        "title": "Community Dawah Initiative",
+        "date": "Jun 18, 2024",
+        "desc": "Our senior students led a community outreach program spanning three neighborhoods.",
+        "category": "D'awah"
+      },
+      {
+        "title": "Excellence Awards 2024",
+        "date": "May 10, 2024",
+        "desc": "Recognizing outstanding academic and character achievements among our students.",
+        "category": "Events"
+      }
+    ],
+    "readMore": "Read More",
+    "emptyState": "Nothing filed under {category} yet.",
+    "breadcrumbHome": "Home",
+    "breadcrumbNews": "News"
+  },
+  "newsDetailPage": {
+    "breadcrumbNews": "News",
+    "breadcrumbDetails": "News-details",
+    "nextEvent": "Next Event",
+    "applyNow": "Apply Now",
+    "sidebarTitle": "In Pursuit of<br/>Exceptional Education",
+    "sidebarDesc": "Our faculty recruitment follows a rigorous selection process, ensuring every teacher embodies our values of excellence, integrity, and lifelong learning.",
+    "joinSchool": "Join Our School",
+    "returnNews": "Return to the News",
+    "newsletter": {
+      "title": "Stay Updated",
+      "desc": "Get the latest school news and event reminders straight to your inbox.",
+      "placeholder": "Email Address",
+      "subscribe": "Subscribe",
+      "subscribed": "Subscribed!",
+      "success": "Thanks — we'll be in touch at {email}.",
+      "error": "Something went wrong. Please try again."
+    },
+    "breadcrumbHome": "Home",
+    "body": {
+      "p1": "The atmosphere at Yahaya International was electric this past week as students from all grades showcased their ingenuity during the 15th Annual Science & Technology Fair.",
+      "p2": "This year's theme, \"Sustainability Through Innovation,\" challenged our young minds to create solutions for real-world environmental issues.",
+      "h2_1": "Bridging Tradition with Modernity",
+      "p3": "From solar-powered water filtration systems to AI-driven waste sorting algorithms, the projects displayed a deep understanding of complex scientific principles. \"Our goal is not just to teach science, but to cultivate a mindset of ethical problem-solving,\" noted Principal Ahmed during his opening address.",
+      "quote": "\"Science without conscience is but the ruin of the soul. At Yahaya, we ensure our students understand that every technological advancement must serve humanity and preserve our planet.\"",
+      "h2_2": "Key Highlights of the Fair",
+      "list": [
+        {
+          "strong": "The Smart Irrigation Project:",
+          "text": "Grade 11 students developed a sensor-based system that reduces campus water usage by 40%."
+        },
+        {
+          "strong": "Renewable Energy Models:",
+          "text": "A competitive category featuring experimental designs for vertical-axis wind turbines."
+        },
+        {
+          "strong": "Inter-School Robotics Challenge:",
+          "text": "Yahaya students secured the first position against six regional competitors."
+        }
+      ],
+      "p4": "As we look forward to the next semester, the school plans to integrate the winning water filtration project into our standard facilities, providing a tangible legacy for this year's participants. We congratulate all students for their hard work and dedication to excellence.",
+      "tags": [
+        "#ScienceFair2024",
+        "#StudentExcellence",
+        "#Innovation",
+        "#YahayaInternational"
+      ]
+    }
+  },
+  "careerPage": {
+    "hero": {
+      "breadcrumb": {
+        "home": "Home",
+        "about": "About",
+        "career": "Career"
+      },
+      "titleLine1": "Empowering Minds,",
+      "titleLine2": "Enriching Souls",
+      "desc": "At Yahaya International, we blend centuries of Islamic wisdom with modern academic rigor. We seek visionary educators and staff who are committed to nurturing the next generation of global leaders.",
+      "applyNow": "APPLY NOW"
+    },
+    "board": {
+      "title": "Available Positions",
+      "desc": "Join our mission of nurturing global leadership.",
+      "viewDetails": "View Details",
+      "applyNow": "Apply Now",
+      "requirements": "Requirements",
+      "responsibilities": "Responsibilities",
+      "noPositions": "There are currently no job positions available. Please check back later.",
+      "positions": [
+        {
+          "title": "Arabic Language Instructor",
+          "type": "Full-time",
+          "location": "Main Campus",
+          "requirements": [
+            "Bachelor's degree in Arabic Language or Education.",
+            "3+ years of proven teaching experience in international schools.",
+            "Full fluency in Arabic and English (Written & Spoken)."
+          ],
+          "responsibilities": [
+            "Curriculum development for modern Arabic learning.",
+            "Dynamic classroom management for diverse student needs.",
+            "Continuous student assessment and reporting."
+          ]
+        },
+        {
+          "title": "Administrative Officer",
+          "type": "Full-time",
+          "location": "Main Campus",
+          "requirements": [
+            "Degree in Business Administration or a related field.",
+            "2+ years in a school or institutional admin role.",
+            "Strong written and spoken English."
+          ],
+          "responsibilities": [
+            "Day-to-day coordination of campus operations.",
+            "Maintaining student and staff records accurately.",
+            "Supporting admissions and parent communications."
+          ]
+        },
+        {
+          "title": "Mathematics Specialist (IB)",
+          "type": "Full-time",
+          "location": "Main Campus",
+          "requirements": [
+            "Degree in Mathematics or Mathematics Education.",
+            "Demonstrated experience teaching the IB curriculum.",
+            "Familiarity with inquiry-based classroom practice."
+          ],
+          "responsibilities": [
+            "Delivering IB mathematics across year groups.",
+            "Preparing students for external assessment.",
+            "Contributing to curriculum review and planning."
+          ]
+        }
+      ]
+    },
+    "form": {
+      "title": "Application Form",
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone",
+      "position": "Position",
+      "upload": "Click to upload or drag and drop",
+      "uploadDesc": "PDF, DOC (Maximum 5Mb)",
+      "acceptTerms": "I read and accept the ",
+      "legalTerms": "legal terms and service",
+      "sendMessage": "Send Message",
+      "success": "Thank you — your application has been received."
+    }
+  },
+  "donationsPage": {
+    "hero": {
+      "breadcrumbHome": "Home",
+      "breadcrumbDonation": "Donation",
+      "headline_1": "Invest in the ",
+      "headline_2": "Leaders of Tomorrow",
+      "lede": "Your contribution nurtures faith, knowledge, and character. Together, we can provide a world-class Islamic and modern education for every child.",
+      "bullet_1": "Secure & Transparent",
+      "bullet_2": "100% Impact Focused"
+    },
+    "give": {
+      "title": "Make a Contribution",
+      "subtitle": "Support our mission through a secure direct transfer.",
+      "oneTime": "One-time",
+      "oneTimeLabel": "One-time",
+      "monthly": "Monthly",
+      "monthlyLabel": "Monthly",
+      "amountLabel": "Select Amount",
+      "frequencyLabel": "Frequency",
+      "currencyLabel": "Currency",
+      "designationLabel": "Designation",
+      "donateButton": "Pledge Donation",
+      "bankDetails": "Bank Details",
+      "copyBtn": "Copy",
+      "copiedBtn": "Copied!",
+      "amounts": [
+        "$25",
+        "$50",
+        "$100",
+        "$250",
+        "$500",
+        "Other"
+      ],
+      "currencies": [
+        "USD - US Dollar",
+        "EUR - Euro",
+        "GBP - British Pound",
+        "LRD - Liberian Dollar"
+      ],
+      "designations": [
+        "General Fund (Where it's needed most)",
+        "Scholarships & Sponsorship",
+        "Buildings & Facilities",
+        "Boarding & Student Welfare",
+        "Mosque & Spiritual Life"
+      ],
+      "freqTitle": "Frequency",
+      "preferBank": "Prefer a bank transfer?",
+      "donorInfo": "Donor Information",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "e.g. John Doe",
+      "email": "Email Address",
+      "emailPlaceholder": "e.g. john@example.com",
+      "phone": "Phone Number",
+      "secureInfo": "Your donation is processed securely.",
+      "bankAccounts": [
+        {
+          "label": "International Transfer (USD/EUR)",
+          "bankName": "Ecobank of Liberia",
+          "accountName": "Yahaya International Islamic & English High School"
+        },
+        {
+          "label": "Local Account (Liberia)",
+          "bankName": "Ecobank of Liberia",
+          "accountName": "Yahaya International Islamic & English High School"
+        }
+      ],
+      "bankKeys": {
+        "bankName": "Bank Name",
+        "accountName": "Account Name",
+        "iban": "Account Number (IBAN)",
+        "swift": "Swift / BIC Code",
+        "accountNum": "Account Number"
+      }
+    },
+    "targeted": {
+      "title_1": "Where Your ",
+      "title_2": "Gift Goes",
+      "subtitle": "Choose a specific area to support, and see exactly how your contribution builds the future.",
+      "causes": [
+        {
+          "tag": "Scholarship",
+          "title": "Sponsor Hifz",
+          "cta": "Sponsor Now",
+          "desc": "Support the sacred journey of a student memorizing the Holy Qur’an with full tuition and care."
+        },
+        {
+          "tag": "Infrastructure",
+          "title": "Build Facilities",
+          "cta": "Fund Building",
+          "desc": "Contribute to the construction of state-of-the-art classrooms and research laboratories."
+        },
+        {
+          "tag": "Living",
+          "title": "Hostel Support",
+          "cta": "Support Housing",
+          "desc": "Help provide a secure, nurturing, and professional environment for our boarding students."
+        },
+        {
+          "tag": "Legacy",
+          "title": "Mosque Fund",
+          "cta": "Contribute",
+          "desc": "Support the spiritual center of our institution, ensuring its maintenance and community life."
+        },
+        {
+          "tag": "Learning",
+          "title": "Library & Books",
+          "cta": "Give Books",
+          "desc": "Stock the shelves that every subject depends on, from Qur’anic study to the sciences."
+        }
+      ]
+    },
+    "wall": {
+      "title": "Wall of Gratitude",
+      "subtitle": "May Allah reward all those who support the pursuit of beneficial knowledge.",
+      "patrons": [
+        {
+          "name": "The Al-Fayed Family",
+          "quote": "A legacy of learning for our children and generations to come."
+        },
+        {
+          "name": "Umar & Sarah Mansoor",
+          "quote": "Proud to support the next generation of global leaders."
+        },
+        {
+          "name": "Islamic Relief",
+          "quote": "Committed to global excellence in faith-based education."
+        },
+        {
+          "name": "Community Fund",
+          "quote": "Building a sustainable and enlightened future together."
+        },
+        {
+          "name": "Anonymous Patron",
+          "quote": "Give quietly, and let the work speak for itself."
+        },
+        {
+          "name": "The Kromah Trust",
+          "quote": "Education is the surest investment a community can make."
+        }
+      ]
+    }
+  },
+  "academicPage": {
+    "hero": {
+      "breadcrumbHome": "Home",
+      "breadcrumbAcademic": "Academics",
+      "tagline": "Learning with Purpose",
+      "headline_1": "Knowledge Rooted in Faith.",
+      "headline_2": "Excellence Built for Life.",
+      "lede": "Rigorous academics, Islamic character, and global readiness — nurturing curious minds and compassionate hearts to lead with purpose and confidence."
+    },
+    "programs": {
+      "explore": "Explore Program",
+      "readMore": "Read More"
+    },
+    "approach": {
+      "title": "How Learning Comes to Life",
+      "items": [
+        {
+          "title": "Academic Rigor",
+          "desc": "Challenging curriculum and high expectations that inspire deep understanding and excellence in every subject."
+        },
+        {
+          "title": "Faith & Character",
+          "desc": "Islamic values are woven into daily learning to nurture integrity, compassion, and a sense of purpose."
+        },
+        {
+          "title": "Mentorship",
+          "desc": "Caring teachers guide each student through personalized support and meaningful relationships beyond the textbook."
+        },
+        {
+          "title": "Real-World Discovery",
+          "desc": "Experiential projects, fieldwork, and technology connect classroom learning to the world around us."
+        }
+      ],
+      "alt": "A teacher leading a class discussion",
+      "statValue": "98%",
+      "statDesc": "University placement rate for our graduates",
+      "tagline": "Our Approach"
+    },
+    "programsList": {
+      "quran-memorization": {
+        "title": "Qur'an Memorization",
+        "eyebrow": "Academic Excellence",
+        "desc": "Guided Hifz program with tajweed, understanding, and character building — rooted in love for the Qur’an.",
+        "lede": "Yahaya International's Qur'an Memorization & Hifz Program offers a scholarly environment where spiritual devotion meets academic rigor, nurturing tomorrow's leaders through the wisdom of the Holy Qur'an.",
+        "pathwayTitle": "The Hifz Pathway",
+        "pathwayLede": "Our Qur’an Memorization program is more than a curriculum; it is a transformative journey. We combine traditional Ottoman and African memorization techniques with modern pedagogical approaches to ensure deep retention and authentic Tajweed.",
+        "steps": [
+          {
+            "title": "Intensive Memorization",
+            "desc": "Daily structured sessions focused on new verses, previous revision, and long-term retention."
+          },
+          {
+            "title": "Tafsir & Understanding",
+            "desc": "Weekly sessions exploring the context and meaning of the memorized portions."
+          },
+          {
+            "title": "Tajweed Mastery",
+            "desc": "Close attention to articulation and rhythm, corrected one to one with a qualified teacher."
+          },
+          {
+            "title": "Ijazah Pathway",
+            "desc": "A route to certification for students who complete the programme with consistent excellence."
+          }
+        ]
+      },
+      "arabic-immersion": {
+        "title": "Arabic Immersion",
+        "eyebrow": "Language",
+        "desc": "Comprehensive language acquisition enabling students to engage deeply with classical texts and modern dialogue.",
+        "lede": "A full immersion in classical and modern Arabic, giving students the confidence to read primary sources and hold a conversation with equal ease.",
+        "pathwayTitle": "The Language Pathway",
+        "pathwayLede": "Students move from spoken confidence to classical fluency through daily immersion, structured grammar, and wide reading in original texts.",
+        "steps": [
+          {
+            "title": "Spoken Foundations",
+            "desc": "Daily conversation practice that builds fluency before formal grammar takes over."
+          },
+          {
+            "title": "Classical Grammar",
+            "desc": "Nahw and Sarf taught systematically so that original texts become approachable."
+          },
+          {
+            "title": "Reading Original Texts",
+            "desc": "Guided study of classical works, read in Arabic from the first term."
+          },
+          {
+            "title": "Composition",
+            "desc": "Written expression developed through regular assignments and close feedback."
+          }
+        ]
+      },
+      "stem-robotics": {
+        "title": "STEM & Robotics",
+        "eyebrow": "Innovation",
+        "desc": "Hands-on scientific inquiry and programming skills that prepare students for competitive technical fields.",
+        "lede": "Laboratory work, programming, and competitive robotics, taught as a single discipline so that theory and practice reinforce one another.",
+        "pathwayTitle": "The STEM Pathway",
+        "pathwayLede": "From first principles to regional competition, students build, test, and defend their own work throughout the programme.",
+        "steps": [
+          {
+            "title": "Scientific Method",
+            "desc": "Enquiry, measurement, and honest reporting established from the first year."
+          },
+          {
+            "title": "Programming",
+            "desc": "Practical coding taught through problems students actually want to solve."
+          },
+          {
+            "title": "Robotics Build",
+            "desc": "Design and fabrication in the workshop, culminating in a working machine."
+          },
+          {
+            "title": "Competition",
+            "desc": "Regional challenges where students present and defend their engineering choices."
+          }
+        ]
+      },
+      "islamic-studies": {
+        "title": "Islamic Studies",
+        "eyebrow": "Faith & Character",
+        "desc": "In-depth exploration of Fiqh, Aqeedah, and Seerah to build a strong foundational worldview.",
+        "lede": "A grounding in Fiqh, Aqeedah, and Seerah that gives students a coherent worldview and the tools to reason within it.",
+        "pathwayTitle": "The Studies Pathway",
+        "pathwayLede": "Sources are read closely and discussed openly, so that conviction rests on understanding rather than habit.",
+        "steps": [
+          {
+            "title": "Aqeedah",
+            "desc": "The foundations of belief, taught with room for genuine questions."
+          },
+          {
+            "title": "Fiqh",
+            "desc": "Practical jurisprudence applied to the situations students actually meet."
+          },
+          {
+            "title": "Seerah",
+            "desc": "The Prophetic biography studied as history and as a model of conduct."
+          },
+          {
+            "title": "Ethics in Practice",
+            "desc": "Character work carried into daily school life, not confined to the classroom."
+          }
+        ]
+      },
+      "humanities-arts": {
+        "title": "Humanities & Arts",
+        "eyebrow": "Culture",
+        "desc": "Critical thinking through history, literature, and social sciences from global and Islamic perspectives.",
+        "lede": "History, literature, and the social sciences read from both global and Islamic perspectives, with argument taken seriously.",
+        "pathwayTitle": "The Humanities Pathway",
+        "pathwayLede": "Students learn to read closely, weigh evidence, and write clearly — the habits that transfer to every other subject.",
+        "steps": [
+          {
+            "title": "Close Reading",
+            "desc": "Texts studied slowly and argued over, rather than summarised."
+          },
+          {
+            "title": "Historical Method",
+            "desc": "Sources weighed for reliability, bias, and context."
+          },
+          {
+            "title": "Written Argument",
+            "desc": "Essays built on evidence and revised through feedback."
+          },
+          {
+            "title": "Creative Practice",
+            "desc": "Studio and performance work alongside the written curriculum."
+          }
+        ]
+      },
+      "global-leadership": {
+        "title": "Global Leadership",
+        "eyebrow": "Leadership",
+        "desc": "Mentorship, public speaking, and community service projects designed to nurture confident future leaders.",
+        "lede": "Mentorship, public speaking, and service projects that ask students to lead in front of people who will hold them to it.",
+        "pathwayTitle": "The Leadership Pathway",
+        "pathwayLede": "Responsibility is given early and reviewed honestly, so that confidence is earned rather than assumed.",
+        "steps": [
+          {
+            "title": "Public Speaking",
+            "desc": "Regular speaking before real audiences, with structured critique."
+          },
+          {
+            "title": "Mentorship",
+            "desc": "Each student paired with a teacher who follows their progress across years."
+          },
+          {
+            "title": "Service Projects",
+            "desc": "Community work planned and run by students themselves."
+          },
+          {
+            "title": "Reflection",
+            "desc": "Written and spoken review of what worked, what did not, and why."
+          }
+        ]
+      }
+    }
+  },
+  "academicDetail": {
+    "hero": {
+      "home": "Home",
+      "academics": "Academics",
+      "details": "Academics-details",
+      "headline_1": "Knowledge Rooted in Faith.",
+      "headline_2": "Excellence Built for Life.",
+      "contactUs": "Contact Us",
+      "downloadPdf": "Download Pdf"
+    }
+  },
+  "onlineLearningPage": {
+    "breadcrumbHome": "Home",
+    "breadcrumbOnline": "Online Learning",
+    "tagline": "Learning with Purpose",
+    "headline_1": "Knowledge at Your",
+    "headline_2": "Fingertips",
+    "lede": "Access world-class Islamic and academic education from anywhere in the world. Begin your journey of lifelong learning today.",
+    "joinEnrollment": "Join Enrollment",
+    "coursesList": {
+      "0": {
+        "title": "Advanced Arabic Grammar",
+        "tag": "Languages • Advanced",
+        "badge": "New Release",
+        "desc": "An intensive study into classical Nahw and Sarf for profound textual understanding."
+      },
+      "1": {
+        "title": "Tajweed Foundations",
+        "tag": "Qur’an • Beginner",
+        "badge": "New Release",
+        "desc": "Articulation and rhythm taught from first principles, corrected one to one."
+      },
+      "2": {
+        "title": "Islamic History",
+        "tag": "Humanities • Intermediate",
+        "badge": "New Release",
+        "desc": "The major periods and figures, read through primary sources rather than summaries."
+      },
+      "3": {
+        "title": "English for Academic Study",
+        "tag": "Languages • Intermediate",
+        "badge": "New Release",
+        "desc": "Speaking, writing, and listening built around the demands of academic work."
+      },
+      "4": {
+        "title": "Qur’anic Arabic",
+        "tag": "Qur’an • Intermediate",
+        "badge": "New Release",
+        "desc": "Vocabulary and syntax drawn directly from the text, taught verse by verse."
+      },
+      "5": {
+        "title": "Fiqh Essentials",
+        "tag": "Islamic Studies • Beginner",
+        "badge": "New Release",
+        "desc": "Practical jurisprudence for daily life, with evidence given for every ruling."
+      }
+    },
+    "liveLesson": "Live Lesson"
+  },
+  "enrollmentModal": {
+    "payOnline": "Pay Online",
+    "alreadyPaid": "Already Paid",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "country": "Country",
+    "uploadInvoice": "Upload Invoice",
+    "selectAmount": "Select Amount",
+    "selectCurrency": "Select Currency",
+    "selectCourse": "Select Course",
+    "checkout": "Checkout",
+    "submit": "Submit Enrollment",
+    "successTitle": "Submitted Successfully",
+    "successDesc": "Your enrollment has been submitted and is under review. You will receive a confirmation email shortly.",
+    "enrollNow": "Enroll Now",
+    "fullName": "Full Name",
+    "inquiryTopic": "Inquiry Topic",
+    "message": "Your Message",
+    "sendMessage": "Send Message",
+    "uploadReceipt": "Payment Receipt",
+    "optional": "Optional",
+    "uploadReceiptClick": "Click to upload receipt",
+    "orDragDrop": "or drag and drop",
+    "uploadReceiptHint": "Transfer slip, bank confirmation, or screenshot (PDF, PNG, JPG up to 10MB)",
+    "removeFile": "Remove",
+    "readyToSend": "Ready to send",
+    "successThanks": "Thanks — we have your details and will be in touch shortly.",
+    "successThanksWithReceipt": "Thank you! Your enrollment details and payment receipt have been received. We will verify your payment and contact you shortly.",
+    "securePayment": "Your payment is processed securely.",
+    "currencies": {
+      "usd": "USD - US Dollar",
+      "eur": "EUR - Euro",
+      "gbp": "GBP - British Pound",
+      "lrd": "LRD - Liberian Dollar"
+    },
+    "amountDefault": "500",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@example.com"
+    }
+  },
+  "policyModal": {
+    "titleTerms": "Terms and Conditions",
+    "titlePrivacy": "Privacy Policy",
+    "contentTerms": "\n<h3>1. Introduction</h3>\n<p>Welcome to YAHAYA SCHOOL. These Terms and Conditions govern your use of our website and your enrollment in our educational programs. By accessing our website or enrolling, you agree to be bound by these Terms.</p>\n<hr/>\n<h3>2. Admissions and Enrollment</h3>\n<p>All admissions are subject to review by the YAHAYA SCHOOL administration. We reserve the right to accept or decline any application based on our academic criteria and capacity.</p>\n<ul>\n  <li>Applications must be complete with all required documents.</li>\n  <li>An application fee may apply and is non-refundable.</li>\n</ul>\n<hr/>\n<h3>3. Tuition and Fees</h3>\n<p>All tuition and fees must be paid in accordance with the schedule provided upon enrollment. Fees are quoted in Liberian Dollars (LRD) or US Dollars (USD).</p>\n<hr/>\n<h3>4. Code of Conduct</h3>\n<p>Students and parents are expected to adhere to the YAHAYA SCHOOL Code of Conduct. Any behavior that disrupts the educational environment may result in disciplinary action, up to and including expulsion.</p>\n<hr/>\n<h3>5. Intellectual Property</h3>\n<p>All course materials, website content, and resources provided by YAHAYA SCHOOL are our intellectual property and may not be reproduced or distributed without written permission.</p>\n<hr/>\n<h3>6. Governing Law</h3>\n<p>These Terms and Conditions shall be governed by and construed in accordance with the laws of the Republic of Liberia. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts of Liberia.</p>\n",
+    "contentPrivacy": "This is a placeholder for the Privacy Policy content. Please update this from the localization files.",
+    "close": "Close"
+  },
+  "privacyPage": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last Updated: August 2026",
+    "content": "\n<h3>1. Information We Collect</h3>\n<p>We collect personal information that you voluntarily provide to us when you register on the website, express an interest in obtaining information about us or our programs, or otherwise contact us. This includes:</p>\n<ul>\n  <li>Names and contact information (phone numbers, email addresses)</li>\n  <li>Educational history and transcripts</li>\n  <li>Billing and payment information</li>\n</ul>\n<hr/>\n<h3>2. How We Use Your Information</h3>\n<p>We use personal information collected via our website for a variety of business purposes, including:</p>\n<ol>\n  <li>Facilitating the enrollment process.</li>\n  <li>Sending administrative information to you.</li>\n  <li>Responding to your inquiries and support requests.</li>\n</ol>\n<hr/>\n<h3>3. Information Sharing</h3>\n<p>We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We do not sell your personal data to third parties.</p>\n<hr/>\n<h3>4. Data Security</h3>\n<p>We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process.</p>\n<hr/>\n<h3>5. Your Privacy Rights</h3>\n<p>You may review, change, or terminate your account at any time. If you have questions or comments about your privacy rights, you may email us at <strong>info@yahayaschool.com</strong>.</p>\n"
+  },
+  "certificateSection": {
+    "title": "Our Certificates",
+    "view": "View",
+    "download": "Download"
+  }
+}

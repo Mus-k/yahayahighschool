@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "academic_terms",
+  "info": {
+    "singularName": "academic-term",
+    "pluralName": "academic-terms",
+    "displayName": "Academic Term",
+    "description": "Specific terms within an academic year (e.g., First Term)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string",
+      "required": true
+    },
+    "startDate": {
+      "type": "date",
+      "required": true
+    },
+    "endDate": {
+      "type": "date",
+      "required": true
+    },
+    "academicYear": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-year.academic-year",
+      "inversedBy": "terms"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

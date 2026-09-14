@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student-rankings",
+  "info": {
+    "singularName": "student-ranking",
+    "pluralName": "student-rankings",
+    "displayName": "Student Ranking",
+    "description": "Pre-calculated student rankings"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    },
+    "academic_year": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-year.academic-year"
+    },
+    "academic_term": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-term.academic-term"
+    },
+    "rankContext": {
+      "type": "enumeration",
+      "enum": [
+        "School",
+        "Department",
+        "Section",
+        "Subject",
+        "Program"
+      ]
+    },
+    "subject": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::subject.subject"
+    },
+    "rankPosition": {
+      "type": "integer"
+    },
+    "averageScore": {
+      "type": "decimal"
+    },
+    "isTied": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

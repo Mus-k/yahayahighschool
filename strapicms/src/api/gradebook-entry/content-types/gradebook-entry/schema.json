@@ -1,0 +1,91 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gradebook_entries",
+  "info": {
+    "singularName": "gradebook-entry",
+    "pluralName": "gradebook-entries",
+    "displayName": "Gradebook Entry"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "assessmentType": {
+      "type": "enumeration",
+      "enum": [
+        "Homework",
+        "Quiz",
+        "Project",
+        "Participation",
+        "Attendance",
+        "Exam",
+        "Other"
+      ],
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "score": {
+      "type": "decimal",
+      "required": true
+    },
+    "maxScore": {
+      "type": "decimal",
+      "required": true
+    },
+    "percentage": {
+      "type": "decimal"
+    },
+    "weight": {
+      "type": "decimal"
+    },
+    "teacherComment": {
+      "type": "text"
+    },
+    "recordStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Draft",
+        "Published"
+      ],
+      "default": "Draft"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    },
+    "teacher": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::teacher.teacher"
+    },
+    "subject": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::subject.subject"
+    },
+    "section": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::section.section"
+    },
+    "academicYear": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-year.academic-year"
+    },
+    "academicTerm": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-term.academic-term"
+    },
+    "courseOffering": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course-offering.course-offering"
+    }
+  }
+}

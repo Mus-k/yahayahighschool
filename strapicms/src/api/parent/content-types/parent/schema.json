@@ -1,0 +1,113 @@
+{
+  "kind": "collectionType",
+  "collectionName": "parents",
+  "info": {
+    "singularName": "parent",
+    "pluralName": "parents",
+    "displayName": "Parent Management",
+    "description": "Parent and guardian profiles linked to students"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "schoolId": {
+      "type": "string",
+      "required": false,
+      "unique": true
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "name": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string",
+      "required": true
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ]
+    },
+    "occupation": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "employer": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string"
+    },
+    "relationship": {
+      "type": "enumeration",
+      "enum": [
+        "father",
+        "mother",
+        "guardian",
+        "other"
+      ],
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "text"
+    },
+    "nationalId": {
+      "type": "string"
+    },
+    "passport": {
+      "type": "string"
+    },
+    "emergencyContact": {
+      "type": "string"
+    },
+    "preferredLanguage": {
+      "type": "enumeration",
+      "enum": [
+        "en",
+        "ar",
+        "fr",
+        "tr"
+      ],
+      "default": "en"
+    },
+    "religion": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string",
+      "default": "Islam"
+    },
+    "notes": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "richtext"
+    },
+    "children": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::student.student",
+      "inversedBy": "parents"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

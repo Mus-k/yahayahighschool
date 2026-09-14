@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_sections_about_values",
+  "info": {
+    "displayName": "About Core Values Bar",
+    "icon": "shield-check",
+    "description": "Core values bar with title, description, and repeatable value items"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Our Core Values"
+    },
+    "description": {
+      "type": "string",
+      "default": "Principles guiding every action"
+    },
+    "values": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about.value-item"
+    }
+  }
+}

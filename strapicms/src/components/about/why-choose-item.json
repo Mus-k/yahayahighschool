@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_about_why_choose_items",
+  "info": {
+    "displayName": "Why Choose Item",
+    "icon": "check-circle",
+    "description": "Individual reason card with key, title, body, and icon"
+  },
+  "options": {},
+  "attributes": {
+    "key": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "text",
+      "required": true
+    },
+    "iconName": {
+      "type": "string"
+    }
+  }
+}

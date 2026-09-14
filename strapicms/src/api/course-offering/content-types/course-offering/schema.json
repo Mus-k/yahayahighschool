@@ -1,0 +1,112 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_offerings",
+  "info": {
+    "singularName": "course-offering",
+    "pluralName": "course-offerings",
+    "displayName": "Course Offering",
+    "description": "Specific scheduled course instance"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": false
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "academicSection": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::section.section",
+      "inversedBy": "courseOfferings"
+    },
+    "gradeLevel": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::grade-level.grade-level",
+      "inversedBy": "courseOfferings"
+    },
+    "subject": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::subject.subject",
+      "inversedBy": "courseOfferings"
+    },
+    "teacher": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::teacher.teacher",
+      "inversedBy": "courseOfferings"
+    },
+    "room": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::classroom.classroom"
+    },
+    "academicYear": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-year.academic-year"
+    },
+    "academicTerm": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-term.academic-term"
+    },
+    "capacity": {
+      "type": "integer",
+      "default": 35
+    },
+    "schedule": {
+      "type": "json"
+    },
+    "deliveryMode": {
+      "type": "enumeration",
+      "enum": [
+        "in-person",
+        "online",
+        "hybrid"
+      ],
+      "default": "in-person"
+    },
+    "offeringStatus": {
+      "type": "enumeration",
+      "enum": [
+        "ACTIVE",
+        "DRAFT",
+        "CANCELLED"
+      ],
+      "default": "ACTIVE"
+    },
+
+    "studentEnrollments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::student-enrollment.student-enrollment",
+      "mappedBy": "courseOffering"
+    },
+    "teacherAssignments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::teacher-assignment.teacher-assignment",
+      "mappedBy": "courseOffering"
+    },
+    "gradebookStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Draft",
+        "Submitted",
+        "Verified",
+        "Approved",
+        "Released",
+        "Archived"
+      ],
+      "default": "Draft"
+    }
+  }
+}

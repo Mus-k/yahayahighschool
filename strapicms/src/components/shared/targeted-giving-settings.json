@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_targeted_giving_settings",
+  "info": {
+    "displayName": "Targeted Giving Settings",
+    "icon": "bullseye"
+  },
+  "options": {},
+  "attributes": {
+    "title1": { "type": "string", "default": "Where Your" },
+    "title2": { "type": "string", "default": "Gift Goes" },
+    "subtitle": { "type": "string", "default": "Choose a specific area to support, and see exactly how your contribution builds the future." },
+    "raisedLabel": { "type": "string", "default": "raised" },
+    "goalLabel": { "type": "string", "default": "goal" }
+  }
+}

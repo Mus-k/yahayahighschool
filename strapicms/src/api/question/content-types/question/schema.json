@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions",
+  "info": {
+    "singularName": "question",
+    "pluralName": "questions",
+    "displayName": "Question",
+    "description": "Schema for Question"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "MCQ",
+        "True/False",
+        "Short Answer",
+        "Essay",
+        "Practical",
+        "Oral",
+        "Other"
+      ]
+    },
+    "difficulty": {
+      "type": "enumeration",
+      "enum": [
+        "Easy",
+        "Medium",
+        "Hard"
+      ]
+    },
+    "marks": {
+      "type": "decimal"
+    },
+    "correctAnswer": {
+      "type": "text"
+    },
+    "explanation": {
+      "type": "text"
+    },
+    "tags": {
+      "type": "json"
+    },
+    "subject": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::subject.subject"
+    },
+    "question_pool": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::question-pool.question-pool"
+    }
+  }
+}

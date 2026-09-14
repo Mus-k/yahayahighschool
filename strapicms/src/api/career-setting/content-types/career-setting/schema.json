@@ -1,0 +1,94 @@
+{
+  "kind": "singleType",
+  "collectionName": "career_settings",
+  "info": {
+    "singularName": "career-setting",
+    "pluralName": "career-settings",
+    "displayName": "[F] Available Positions Header",
+    "description": "The title and description that appears above the list of positions."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "boardTitle": {
+      "type": "string",
+      "required": true,
+      "default": "Available Positions",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "boardDescription": {
+      "type": "text",
+      "required": true,
+      "default": "Join our mission of nurturing global leadership.",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "formTitle": {
+      "type": "string",
+      "default": "Application Form"
+    },
+    "formFullNameLabel": {
+      "type": "string",
+      "default": "Full Name"
+    },
+    "formFullNamePlaceholder": {
+      "type": "string",
+      "default": "Full Name"
+    },
+    "formEmailLabel": {
+      "type": "string",
+      "default": "Email Address"
+    },
+    "formEmailPlaceholder": {
+      "type": "string",
+      "default": "Email Address"
+    },
+    "formPhoneLabel": {
+      "type": "string",
+      "default": "Phone"
+    },
+    "formPhonePlaceholder": {
+      "type": "string",
+      "default": "Phone"
+    },
+    "formUploadInstruction": {
+      "type": "string",
+      "default": "Click to upload or drag and drop"
+    },
+    "formUploadRequirements": {
+      "type": "string",
+      "default": "PDF, DOC (Maximum 5Mb)"
+    },
+    "formTermsPrefix": {
+      "type": "string",
+      "default": "I read and accept the"
+    },
+    "formTermsLinkText": {
+      "type": "string",
+      "default": "legal terms and service"
+    },
+    "formSubmitButtonText": {
+      "type": "string",
+      "default": "Send Message"
+    },
+    "formBackgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

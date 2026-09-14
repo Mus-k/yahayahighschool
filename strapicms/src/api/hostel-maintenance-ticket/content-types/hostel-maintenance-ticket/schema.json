@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hostel_maintenance_tickets",
+  "info": {
+    "singularName": "hostel-maintenance-ticket",
+    "pluralName": "hostel-maintenance-tickets",
+    "displayName": "Hostel Maintenance Ticket",
+    "description": "Schema for Hostel Maintenance Ticket"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "room": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hostel-room.hostel-room"
+    },
+    "bed": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hostel-bed.hostel-bed"
+    },
+    "building": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hostel-building.hostel-building"
+    },
+    "issueType": {
+      "type": "enumeration",
+      "enum": [
+        "broken_bed",
+        "water_leakage",
+        "electrical_fault",
+        "ac_failure",
+        "other"
+      ],
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "priority": {
+      "type": "enumeration",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "urgent"
+      ],
+      "default": "medium"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "open",
+        "in_progress",
+        "resolved",
+        "closed"
+      ],
+      "default": "open"
+    },
+    "cost": {
+      "type": "decimal",
+      "default": 0
+    }
+  }
+}

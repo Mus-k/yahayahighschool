@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "purchase_orders",
+  "info": {
+    "singularName": "purchase-order",
+    "pluralName": "purchase-orders",
+    "displayName": "Purchase Order"
+  },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "poNumber": { "type": "string", "required": true, "unique": true },
+    "requisitionNumber": { "type": "string" },
+    "vendorId": { "type": "string" },
+    "vendorName": { "type": "string", "required": true },
+    "orderDate": { "type": "date" },
+    "expectedDeliveryDate": { "type": "date" },
+    "subtotal": { "type": "decimal", "default": 0 },
+    "tax": { "type": "decimal", "default": 0 },
+    "totalAmount": { "type": "decimal", "default": 0 },
+    "approvalStatus": {
+      "type": "enumeration",
+      "enum": ["pending_finance", "approved", "rejected"],
+      "default": "approved"
+    },
+    "fulfillmentStatus": {
+      "type": "enumeration",
+      "enum": ["unfulfilled", "partially_received", "fully_received"],
+      "default": "unfulfilled"
+    },
+    "threeWayMatchStatus": {
+      "type": "enumeration",
+      "enum": ["pending", "matched", "discrepancy"],
+      "default": "pending"
+    },
+    "invoiceId": { "type": "string" },
+    "items": { "type": "json" }
+  }
+}

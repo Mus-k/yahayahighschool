@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sections_feature_cards",
+  "info": {
+    "displayName": "Feature Cards Section",
+    "icon": "apps",
+    "description": "Grid of core feature or value proposition cards"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "cards": {
+      "type": "json"
+    }
+  }
+}

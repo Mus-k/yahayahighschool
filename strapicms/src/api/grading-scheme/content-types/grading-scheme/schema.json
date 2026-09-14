@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "grading_schemes",
+  "info": {
+    "singularName": "grading-scheme",
+    "pluralName": "grading-schemes",
+    "displayName": "Grading Scheme",
+    "description": "Updated schema for Grading Scheme container"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "calculationMethod": {
+      "type": "enumeration",
+      "enum": [
+        "Percentage",
+        "Grade Points",
+        "Weighted Average",
+        "Rubric Based"
+      ]
+    },
+    "promotionRules": {
+      "type": "text"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "version": {
+      "type": "integer",
+      "default": 1
+    },
+    "grade_bands": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::grade-band.grade-band",
+      "mappedBy": "grading_scheme"
+    }
+  }
+}

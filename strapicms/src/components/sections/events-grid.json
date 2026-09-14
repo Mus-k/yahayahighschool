@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_events_grids",
+  "info": {
+    "displayName": "Upcoming Events Grid",
+    "icon": "calendar",
+    "description": "Showcase of upcoming school events with countdown timer support"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Upcoming Events"
+    },
+    "subtitle": {
+      "type": "string",
+      "default": "Mark your calendar for our upcoming school activities"
+    },
+    "limit": {
+      "type": "integer",
+      "default": 3
+    }
+  }
+}

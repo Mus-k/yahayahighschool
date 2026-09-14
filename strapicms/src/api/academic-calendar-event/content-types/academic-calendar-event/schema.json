@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "academic_calendar_events",
+  "info": {
+    "singularName": "academic-calendar-event",
+    "pluralName": "academic-calendar-events",
+    "displayName": "Academic Calendar Event"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "eventType": {
+      "type": "enumeration",
+      "enum": [
+        "Holiday",
+        "Exam",
+        "Meeting",
+        "Custom"
+      ],
+      "default": "Custom"
+    },
+    "startDate": {
+      "type": "date",
+      "required": true
+    },
+    "endDate": {
+      "type": "date",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "academicYear": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-year.academic-year"
+    },
+    "academicTerms": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::academic-term.academic-term"
+    }
+  }
+}

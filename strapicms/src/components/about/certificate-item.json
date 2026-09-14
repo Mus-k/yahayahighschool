@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_about_certificate_items",
+  "info": {
+    "displayName": "Certificate Item",
+    "icon": "award",
+    "description": "Accreditation or certificate with title, image preview, download file or URL"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["files", "images"]
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

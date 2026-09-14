@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "career_positions",
+  "info": {
+    "singularName": "career-position",
+    "pluralName": "career-positions",
+    "displayName": "[F] Available Positions",
+    "description": "Join our mission of nurturing global leadership."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "type": {
+      "type": "string",
+      "required": true,
+      "default": "Full-time",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "location": {
+      "type": "string",
+      "required": true,
+      "default": "Main Campus",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "locationUrl": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "requirements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.string-item"
+    },
+    "responsibilities": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.string-item"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

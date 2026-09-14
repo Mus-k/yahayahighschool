@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inventory_movements",
+  "info": {
+    "singularName": "inventory-movement",
+    "pluralName": "inventory-movements",
+    "displayName": "Inventory Movement"
+  },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "movementNumber": { "type": "string" },
+    "type": {
+      "type": "enumeration",
+      "enum": ["goods_receipt", "goods_issue", "stock_transfer", "adjustment", "cycle_count"],
+      "required": true
+    },
+    "quantity": { "type": "decimal", "required": true },
+    "unitCost": { "type": "decimal", "default": 0 },
+    "totalCost": { "type": "decimal", "default": 0 },
+    "performedBy": { "type": "string" },
+    "referenceDocNumber": { "type": "string" },
+    "vendorSupplier": { "type": "string" },
+    "sourceWarehouse": { "type": "string" },
+    "destinationWarehouse": { "type": "string" },
+    "notes": { "type": "text" },
+    "movementDate": { "type": "date" },
+    "item": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::inventory-item.inventory-item"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "finance_journal_entrys",
+  "info": {
+    "singularName": "finance-journal-entry",
+    "pluralName": "finance-journal-entrys",
+    "displayName": "Finance Journal Entry",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "entryNumber": {
+      "type": "string",
+      "unique": true
+    },
+    "period": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::finance-accounting-period.finance-accounting-period"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "description": {
+      "type": "string"
+    },
+    "originalCurrency": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::finance-currency.finance-currency"
+    },
+    "baseCurrency": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::finance-currency.finance-currency"
+    },
+    "exchangeRate": {
+      "type": "decimal"
+    },
+    "totalDebitOriginal": {
+      "type": "decimal"
+    },
+    "totalCreditOriginal": {
+      "type": "decimal"
+    },
+    "totalDebitBase": {
+      "type": "decimal"
+    },
+    "totalCreditBase": {
+      "type": "decimal"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "draft",
+        "posted",
+        "voided"
+      ],
+      "default": "draft"
+    },
+    "lines": {
+      "type": "json"
+    }
+  }
+}

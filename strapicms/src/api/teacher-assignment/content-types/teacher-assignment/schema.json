@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teacher_assignments",
+  "info": {
+    "singularName": "teacher-assignment",
+    "pluralName": "teacher-assignments",
+    "displayName": "Teacher Assignment",
+    "description": "Teacher workloads per Course Offering"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "teacher": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::teacher.teacher",
+      "inversedBy": "assignments"
+    },
+    "courseOffering": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course-offering.course-offering",
+      "inversedBy": "teacherAssignments"
+    },
+    "workload": {
+      "type": "decimal"
+    }
+  }
+}

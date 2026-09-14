@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "finance_accounting_periods",
+  "info": {
+    "singularName": "finance-accounting-period",
+    "pluralName": "finance-accounting-periods",
+    "displayName": "Finance Accounting Period",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "schoolId": {
+      "type": "string"
+    },
+    "periodCode": {
+      "type": "string",
+      "unique": true
+    },
+    "startDate": {
+      "type": "date",
+      "required": true
+    },
+    "endDate": {
+      "type": "date",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "open",
+        "closed",
+        "locked",
+        "archived"
+      ],
+      "default": "open"
+    }
+  }
+}

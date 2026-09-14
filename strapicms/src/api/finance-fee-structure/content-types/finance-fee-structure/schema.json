@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "finance_fee_structures",
+  "info": {
+    "singularName": "finance-fee-structure",
+    "pluralName": "finance-fee-structures",
+    "displayName": "Finance Fee Structure",
+    "description": "Institutional fee schedules, tuition templates, and grade-level billing matrices"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "academicYearCode": {
+      "type": "string"
+    },
+    "gradeCode": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string",
+      "default": "USD"
+    },
+    "totalAnnualFee": {
+      "type": "decimal"
+    },
+    "totalAmount": {
+      "type": "decimal"
+    },
+    "amount": {
+      "type": "decimal"
+    },
+    "installmentAllowed": {
+      "type": "boolean",
+      "default": true
+    },
+    "scholarshipEligible": {
+      "type": "boolean",
+      "default": true
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "items": {
+      "type": "json"
+    },
+    "description": {
+      "type": "text"
+    },
+    "metadata": {
+      "type": "json"
+    }
+  }
+}

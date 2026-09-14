@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "graduation-records",
+  "info": {
+    "singularName": "graduation-record",
+    "pluralName": "graduation-records",
+    "displayName": "Graduation Record",
+    "description": "Tracking for school graduates and alumni transition"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "student": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::student.student"
+    },
+    "graduationDate": {
+      "type": "date"
+    },
+    "className": {
+      "type": "string"
+    },
+    "awards": {
+      "type": "json"
+    },
+    "finalTranscript": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::academic-transcript.academic-transcript"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_home_testimonial_items",
+  "info": {
+    "displayName": "Testimonial Item",
+    "description": "Community testimonial item for homepage"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "quote": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "rating": {
+      "type": "integer",
+      "default": 5
+    }
+  }
+}

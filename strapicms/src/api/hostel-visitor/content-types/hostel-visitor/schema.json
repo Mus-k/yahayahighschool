@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hostel_visitors",
+  "info": {
+    "singularName": "hostel-visitor",
+    "pluralName": "hostel-visitors",
+    "displayName": "Hostel Visitor",
+    "description": "Schema for Hostel Visitor"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "visitorName": {
+      "type": "string",
+      "required": true
+    },
+    "nationalId": {
+      "type": "string"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    },
+    "purpose": {
+      "type": "text"
+    },
+    "checkIn": {
+      "type": "datetime"
+    },
+    "checkOut": {
+      "type": "datetime"
+    },
+    "approval": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ],
+      "default": "approved"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "assignedRoom": {
+      "type": "string"
+    },
+    "dailyCharge": {
+      "type": "decimal"
+    },
+    "securityDeposit": {
+      "type": "decimal"
+    },
+    "hostStudent": {
+      "type": "string"
+    },
+    "building": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hostel-building.hostel-building"
+    },
+    "floor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hostel-floor.hostel-floor"
+    },
+    "room": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hostel-room.hostel-room"
+    },
+    "bed": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hostel-bed.hostel-bed"
+    }
+  }
+}

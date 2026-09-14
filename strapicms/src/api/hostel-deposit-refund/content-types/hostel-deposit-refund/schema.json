@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hostel_deposit_refunds",
+  "info": {
+    "singularName": "hostel-deposit-refund",
+    "pluralName": "hostel-deposit-refunds",
+    "displayName": "Hostel Deposit Refund",
+    "description": "Schema for Hostel Deposit Refund"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "allocation": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hostel-allocation.hostel-allocation"
+    },
+    "refundAmount": {
+      "type": "decimal",
+      "required": true
+    },
+    "damageCharges": {
+      "type": "decimal",
+      "default": 0
+    },
+    "netRefund": {
+      "type": "decimal",
+      "required": true
+    },
+    "refundDate": {
+      "type": "date",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "approved",
+        "paid"
+      ],
+      "default": "pending"
+    }
+  }
+}

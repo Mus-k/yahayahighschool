@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_erp_enrollment_records",
+  "info": {
+    "displayName": "Enrollment Record",
+    "icon": "user-check",
+    "description": "Historical and active multi-section academic enrollment records"
+  },
+  "options": {},
+  "attributes": {
+    "academicYear": {
+      "type": "string",
+      "required": true
+    },
+    "term": {
+      "type": "string",
+      "required": true
+    },
+    "enrollmentDate": {
+      "type": "date",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "active",
+        "completed",
+        "transferred",
+        "withdrawn"
+      ],
+      "default": "active",
+      "required": true
+    },
+    "primarySection": {
+      "type": "string",
+      "required": true
+    },
+    "secondarySections": {
+      "type": "json"
+    },
+    "notes": {
+      "type": "text"
+    }
+  }
+}

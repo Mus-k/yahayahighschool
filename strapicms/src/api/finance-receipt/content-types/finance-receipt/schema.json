@@ -1,0 +1,135 @@
+{
+  "kind": "collectionType",
+  "collectionName": "finance_receipts",
+  "info": {
+    "singularName": "finance-receipt",
+    "pluralName": "finance-receipts",
+    "displayName": "Finance Receipt",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    },
+    "invoice": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::finance-invoice.finance-invoice"
+    },
+    "receiptNumber": {
+      "type": "string",
+      "unique": true
+    },
+    "paymentCurrency": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::finance-currency.finance-currency"
+    },
+    "paymentAmount": {
+      "type": "decimal"
+    },
+    "exchangeRateToInvoice": {
+      "type": "decimal"
+    },
+    "exchangeRateToBase": {
+      "type": "decimal"
+    },
+    "baseAmount": {
+      "type": "decimal"
+    },
+    "paymentMethod": {
+      "type": "enumeration",
+      "enum": [
+        "Cash",
+        "Bank Transfer",
+        "Stripe",
+        "Orange Money",
+        "MTN Mobile Money",
+        "Wave",
+        "POS Terminal",
+        "Cheque",
+        "Advance Wallet"
+      ]
+    },
+    "providerTransactionId": {
+      "type": "string"
+    },
+    "paymentMetadata": {
+      "type": "json"
+    },
+    "paymentDate": {
+      "type": "datetime"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "completed",
+        "failed",
+        "refunded"
+      ],
+      "default": "completed"
+    },
+    "walletAllocation": {
+      "type": "decimal",
+      "default": 0
+    },
+    "cashAllocation": {
+      "type": "decimal",
+      "default": 0
+    },
+    "invoiceAllocation": {
+      "type": "decimal",
+      "default": 0
+    },
+    "walletCreditGenerated": {
+      "type": "decimal",
+      "default": 0
+    },
+    "cashierName": {
+      "type": "string"
+    },
+    "bankPortion": {
+      "type": "decimal",
+      "default": 0
+    },
+    "mobileMoneyPortion": {
+      "type": "decimal",
+      "default": 0
+    },
+    "chequePortion": {
+      "type": "decimal",
+      "default": 0
+    },
+    "totalReceived": {
+      "type": "decimal",
+      "default": 0
+    },
+    "appliedAmount": {
+      "type": "decimal",
+      "default": 0
+    },
+    "walletCreditCreated": {
+      "type": "decimal",
+      "default": 0
+    },
+    "qrCodePayload": {
+      "type": "text"
+    },
+    "journalRef": {
+      "type": "string"
+    },
+    "ledgerRef": {
+      "type": "string"
+    },
+    "auditRef": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hostel_vacations",
+  "info": {
+    "singularName": "hostel-vacation",
+    "pluralName": "hostel-vacations",
+    "displayName": "Hostel Vacation",
+    "description": "Schema for Hostel Vacation"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "allocation": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hostel-allocation.hostel-allocation"
+    },
+    "vacateDate": {
+      "type": "date",
+      "required": true
+    },
+    "reason": {
+      "type": "text"
+    },
+    "damageCharges": {
+      "type": "decimal",
+      "default": 0
+    },
+    "refundAmount": {
+      "type": "decimal",
+      "default": 0
+    },
+    "refundStatus": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "refunded",
+        "no_refund"
+      ],
+      "default": "pending"
+    }
+  }
+}

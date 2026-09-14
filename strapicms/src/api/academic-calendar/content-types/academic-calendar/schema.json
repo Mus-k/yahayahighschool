@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "academic_calendars",
+  "info": {
+    "singularName": "academic-calendar",
+    "pluralName": "academic-calendars",
+    "displayName": "Academic Calendar",
+    "description": "School academic year and term schedule details"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "registrationStart": {
+      "type": "date"
+    },
+    "registrationEnd": {
+      "type": "date"
+    },
+    "dropPeriodStart": {
+      "type": "date"
+    },
+    "dropPeriodEnd": {
+      "type": "date"
+    },
+    "examWeekStart": {
+      "type": "date"
+    },
+    "examWeekEnd": {
+      "type": "date"
+    },
+    "graduationDate": {
+      "type": "date"
+    },
+    "holidayStart": {
+      "type": "date"
+    },
+    "holidayEnd": {
+      "type": "date"
+    },
+    "academic_year": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-year.academic-year"
+    }
+  }
+}

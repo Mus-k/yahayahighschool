@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hostel_audit_logs",
+  "info": {
+    "singularName": "hostel-audit-log",
+    "pluralName": "hostel-audit-logs",
+    "displayName": "Hostel Audit Log",
+    "description": "Schema for Hostel Audit Log"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "performedBy": {
+      "type": "string",
+      "required": true
+    },
+    "performedByRole": {
+      "type": "string"
+    },
+    "action": {
+      "type": "string",
+      "required": true
+    },
+    "timestamp": {
+      "type": "datetime",
+      "required": true
+    },
+    "oldValue": {
+      "type": "json"
+    },
+    "newValue": {
+      "type": "json"
+    },
+    "notes": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_sections_cta_banners",
+  "info": {
+    "displayName": "Call To Action Banner",
+    "icon": "bullhorn",
+    "description": "High-conversion call to action banner for admissions or inquiries"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "buttonText": {
+      "type": "string",
+      "required": true
+    },
+    "buttonUrl": {
+      "type": "string",
+      "required": true
+    },
+    "themeStyle": {
+      "type": "enumeration",
+      "enum": ["emerald", "gold", "dark"],
+      "default": "emerald"
+    }
+  }
+}

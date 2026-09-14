@@ -1,0 +1,99 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homeworks",
+  "info": {
+    "singularName": "homework",
+    "pluralName": "homeworks",
+    "displayName": "Homework"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "instructions": {
+      "type": "text"
+    },
+    "assignedDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "dueDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "maxScore": {
+      "type": "decimal"
+    },
+    "submissionType": {
+      "type": "enumeration",
+      "enum": [
+        "Individual",
+        "Group"
+      ],
+      "default": "Individual"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Reading",
+        "Writing",
+        "Research",
+        "Project",
+        "Presentation",
+        "Practical",
+        "Memorization",
+        "Listening",
+        "Speaking",
+        "Other"
+      ],
+      "default": "Writing"
+    },
+    "visibility": {
+      "type": "enumeration",
+      "enum": [
+        "Draft",
+        "Published"
+      ],
+      "default": "Draft"
+    },
+    "subject": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::subject.subject"
+    },
+    "teacher": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::teacher.teacher"
+    },
+    "section": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::section.section"
+    },
+    "academicYear": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-year.academic-year"
+    },
+    "academicTerm": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-term.academic-term"
+    },
+    "attachments": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

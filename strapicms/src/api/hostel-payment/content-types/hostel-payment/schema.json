@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hostel_payments",
+  "info": {
+    "singularName": "hostel-payment",
+    "pluralName": "hostel-payments",
+    "displayName": "Hostel Payment",
+    "description": "Schema for Hostel Payment"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    },
+    "invoice": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hostel-invoice.hostel-invoice"
+    },
+    "paymentNumber": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "amount": {
+      "type": "decimal",
+      "required": true
+    },
+    "paymentMethod": {
+      "type": "enumeration",
+      "enum": [
+        "Cash",
+        "Bank",
+        "Wallet",
+        "Scholarship",
+        "Waiver"
+      ],
+      "required": true
+    },
+    "paymentDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "completed",
+        "failed"
+      ],
+      "default": "completed"
+    }
+  }
+}

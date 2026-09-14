@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_about_timelines",
+  "info": {
+    "displayName": "About Timeline Section",
+    "icon": "calendar",
+    "description": "School history timeline slider with year navigation, parallax photos, and milestone narratives"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Our Timeline"
+    },
+    "milestones": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about.timeline-milestone"
+    }
+  }
+}

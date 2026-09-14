@@ -1,0 +1,132 @@
+{
+  "kind": "singleType",
+  "collectionName": "school_academic_programs_pages",
+  "info": {
+    "singularName": "school-academic-programs-page",
+    "pluralName": "school-academic-programs-pages",
+    "displayName": "[F] School Academic Programs Page",
+    "description": "Main Academic Programs listing page (/programs)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Academic Programs"
+    },
+    "breadcrumbTitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Academic programs"
+    },
+    "tagline": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "LEARNING WITH PURPOSE"
+    },
+    "headlineLine1": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Knowledge Rooted in Faith."
+    },
+    "headlineLine2": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Excellence Built for Life."
+    },
+    "lede": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text",
+      "default": "Rigorous academics, Islamic character, and global readiness—nurturing curious minds and compassionate hearts to lead with purpose and confidence."
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "approachTagline": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "OUR APPROACH"
+    },
+    "approachTitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "How Learning Comes to Life"
+    },
+    "approachImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "approachStatValue": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "98%"
+    },
+    "approachStatDescription": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "UNIVERSITY PLACEMENT RATE FOR OUR GRADUATES"
+    },
+    "approachItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "academic.approach-item"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.meta"
+    }
+  }
+}

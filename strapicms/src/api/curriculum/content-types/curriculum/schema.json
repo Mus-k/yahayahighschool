@@ -1,0 +1,103 @@
+{
+  "kind": "collectionType",
+  "collectionName": "curriculums",
+  "info": {
+    "singularName": "curriculum",
+    "pluralName": "curriculums",
+    "displayName": "Curriculum",
+    "description": "Updated curriculum syllabus records"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "version": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "objectives": {
+      "type": "text"
+    },
+    "learningOutcomes": {
+      "type": "text"
+    },
+    "estimatedDuration": {
+      "type": "string"
+    },
+    "recordStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Active",
+        "Draft",
+        "Archived"
+      ],
+      "default": "Draft"
+    },
+    "subject": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::subject.subject"
+    },
+    "academicYear": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-year.academic-year"
+    },
+    "program": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::program.program"
+    },
+    "department": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::department.department"
+    },
+    "section": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::section.section"
+    },
+    "topics": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::topic.topic",
+      "mappedBy": "curriculum"
+    },
+    "attachments": {
+      "type": "media",
+      "multiple": true
+    },
+    "credits": {
+      "type": "integer",
+      "default": 3
+    },
+    "prerequisites": {
+      "type": "text"
+    },
+    "electives": {
+      "type": "text"
+    },
+    "graduationCredits": {
+      "type": "integer"
+    },
+    "gradeLevels": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::grade-level.grade-level",
+      "mappedBy": "curriculum"
+    }
+  }
+}

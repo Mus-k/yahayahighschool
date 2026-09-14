@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transcript_versions",
+  "info": {
+    "singularName": "transcript-version",
+    "pluralName": "transcript-versions",
+    "displayName": "Transcript Version"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "versionNumber": {
+      "type": "integer",
+      "required": true
+    },
+    "sha256Hash": {
+      "type": "string",
+      "required": true
+    },
+    "qrCodeData": {
+      "type": "string"
+    },
+    "issuedDate": {
+      "type": "date",
+      "required": true
+    },
+    "reason": {
+      "type": "text"
+    },
+    "recordStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Active",
+        "Archived"
+      ],
+      "default": "Active"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    },
+    "issuedBy": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

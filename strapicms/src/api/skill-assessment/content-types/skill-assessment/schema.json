@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "skill_assessments",
+  "info": {
+    "singularName": "skill-assessment",
+    "pluralName": "skill-assessments",
+    "displayName": "Skill Assessment",
+    "description": "Schema for Skill Assessment"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "skillType": {
+      "type": "enumeration",
+      "enum": [
+        "Reading",
+        "Writing",
+        "Listening",
+        "Speaking",
+        "Grammar",
+        "Vocabulary",
+        "Conversation",
+        "Pronunciation",
+        "Comprehension"
+      ],
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "score": {
+      "type": "decimal"
+    },
+    "maxScore": {
+      "type": "decimal"
+    },
+    "rubric": {
+      "type": "json"
+    },
+    "teacherFeedback": {
+      "type": "text"
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    },
+    "teacher": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::teacher.teacher"
+    },
+    "language_program": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::language-program.language-program"
+    },
+    "courseOffering": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course-offering.course-offering"
+    }
+  }
+}

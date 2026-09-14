@@ -1,0 +1,65 @@
+{
+  "collectionName": "components_contact_campus_infos",
+  "info": {
+    "displayName": "Campus Info",
+    "icon": "pinMap",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "campusTitle": {
+      "type": "string",
+      "default": "Campus Information"
+    },
+    "addressLabel": {
+      "type": "string",
+      "default": "Main Campus"
+    },
+    "address": {
+      "type": "text",
+      "required": true
+    },
+    "phoneLabel": {
+      "type": "string",
+      "default": "Administration"
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "whatsappLabel": {
+      "type": "string",
+      "default": "WhatsApp Us"
+    },
+    "whatsapp": {
+      "type": "string"
+    },
+    "emailLabel": {
+      "type": "string",
+      "default": "Admissions Desk"
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "officeHoursLabel": {
+      "type": "string",
+      "default": "Office Hours"
+    },
+    "officeHours": {
+      "type": "text",
+      "default": "Monday - Friday: 8:00 AM - 4:00 PM\nFriday Prayer Break: 12:00 PM - 2:00 PM"
+    },
+    "mapUrl": {
+      "type": "text"
+    },
+    "latitude": {
+      "type": "decimal",
+      "default": 6.3005
+    },
+    "longitude": {
+      "type": "decimal",
+      "default": -10.7969
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_shared_wall_of_gratitudes",
+  "info": {
+    "displayName": "Wall of Gratitude Settings",
+    "description": "Settings for the Wall of Gratitude section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Wall of Gratitude",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true,
+      "default": "May Allah reward all those who support the pursuit of beneficial knowledge.",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "patrons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.patron",
+      "pluginOptions": { "i18n": { "localized": true } }
+    }
+  }
+}

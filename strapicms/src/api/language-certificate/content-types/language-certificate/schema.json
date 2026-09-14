@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "language_certificates",
+  "info": {
+    "singularName": "language-certificate",
+    "pluralName": "language-certificates",
+    "displayName": "Language Certificate",
+    "description": "Schema for Language Certificate"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Course Completion",
+        "Level Completion",
+        "Reading Excellence",
+        "Writing Excellence",
+        "Listening Excellence",
+        "Speaking Excellence",
+        "Grammar Excellence",
+        "Vocabulary Excellence",
+        "Competition Winner"
+      ]
+    },
+    "issueDate": {
+      "type": "date",
+      "required": true
+    },
+    "recordStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Draft",
+        "Issued",
+        "Revoked"
+      ],
+      "default": "Draft"
+    },
+    "certificateUrl": {
+      "type": "string"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    },
+    "language_program": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::language-program.language-program"
+    }
+  }
+}

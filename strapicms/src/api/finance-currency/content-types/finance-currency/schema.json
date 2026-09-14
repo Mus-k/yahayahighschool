@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "finance_currencys",
+  "info": {
+    "singularName": "finance-currency",
+    "pluralName": "finance-currencys",
+    "displayName": "Finance Currency",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "isoCode": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "symbol": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "string"
+    },
+    "decimalPlaces": {
+      "type": "integer",
+      "default": 2
+    },
+    "isBaseCurrency": {
+      "type": "boolean",
+      "default": false
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "assessment_types",
+  "info": {
+    "singularName": "assessment-type",
+    "pluralName": "assessment-types",
+    "displayName": "Assessment Type",
+    "description": "Schema for Assessment Type"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "weight": {
+      "type": "decimal"
+    },
+    "passingScore": {
+      "type": "decimal"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "assessment_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::assessment-category.assessment-category"
+    }
+  }
+}

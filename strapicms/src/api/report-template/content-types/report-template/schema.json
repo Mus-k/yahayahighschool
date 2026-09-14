@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "report-templates",
+  "info": {
+    "singularName": "report-template",
+    "pluralName": "report-templates",
+    "displayName": "Report Template",
+    "description": "Configurable layouts for report cards"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "layoutType": {
+      "type": "enumeration",
+      "enum": [
+        "Primary",
+        "Secondary",
+        "Quran",
+        "Arabic",
+        "English",
+        "Boarding",
+        "Custom"
+      ],
+      "default": "Primary"
+    },
+    "brandingConfig": {
+      "type": "json"
+    },
+    "signatureConfig": {
+      "type": "json"
+    },
+    "version": {
+      "type": "integer",
+      "default": 1
+    }
+  }
+}

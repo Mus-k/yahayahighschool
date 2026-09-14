@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_home_hero_slides",
+  "info": {
+    "displayName": "Hero Slide",
+    "description": "Slide item for the homepage hero carousel"
+  },
+  "options": {},
+  "attributes": {
+    "titlePart1": {
+      "type": "string"
+    },
+    "titlePart2": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

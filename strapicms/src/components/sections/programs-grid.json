@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_sections_programs_grids",
+  "info": {
+    "displayName": "Academic Programs Grid",
+    "icon": "book",
+    "description": "Showcase grid of academic programs dynamically loaded from CMS"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Our Academic Programs"
+    },
+    "subtitle": {
+      "type": "string",
+      "default": "Excellence in Islamic and Western Education"
+    },
+    "limit": {
+      "type": "integer",
+      "default": 6
+    },
+    "showFeaturedOnly": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

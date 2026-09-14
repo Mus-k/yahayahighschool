@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exam_sessions",
+  "info": {
+    "singularName": "exam-session",
+    "pluralName": "exam-sessions",
+    "displayName": "Exam Session",
+    "description": "Updated exam session schedules with lock windows"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "startDate": {
+      "type": "date",
+      "required": true
+    },
+    "endDate": {
+      "type": "date",
+      "required": true
+    },
+    "recordStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Upcoming",
+        "Active",
+        "Completed"
+      ],
+      "default": "Upcoming"
+    },
+    "academic_year": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-year.academic-year"
+    },
+    "academic_term": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-term.academic-term"
+    },
+    "registrationWindowStart": {
+      "type": "date"
+    },
+    "registrationWindowEnd": {
+      "type": "date"
+    },
+    "publicationDate": {
+      "type": "date"
+    },
+    "lockDate": {
+      "type": "date"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_sections_about_why_chooses",
+  "info": {
+    "displayName": "About Why Choose Section",
+    "icon": "thumbs-up",
+    "description": "Why choose Yahaya International section with title, description, and reason cards"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Why Choose Yahaya International?"
+    },
+    "description": {
+      "type": "text",
+      "default": "We bring together two rich educational traditions — the academic depth of the British National Curriculum and the spiritual and intellectual heritage of Classical Islamic scholarship."
+    },
+    "reasons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about.why-choose-item"
+    }
+  }
+}

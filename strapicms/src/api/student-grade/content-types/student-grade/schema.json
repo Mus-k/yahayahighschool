@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student_grades",
+  "info": {
+    "singularName": "student-grade",
+    "pluralName": "student-grades",
+    "displayName": "Student Grade",
+    "description": "Teacher grade marks with moderation and locking workflow states"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "marksObtained": {
+      "type": "decimal"
+    },
+    "maxMarks": {
+      "type": "decimal"
+    },
+    "weightPercent": {
+      "type": "decimal"
+    },
+    "isModerated": {
+      "type": "boolean",
+      "default": false
+    },
+    "moderatorRemarks": {
+      "type": "text"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Draft",
+        "TeacherSubmitted",
+        "DepartmentReview",
+        "RegistrarApproved",
+        "Published",
+        "Locked"
+      ],
+      "default": "Draft"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    },
+    "teacher": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::teacher.teacher"
+    },
+    "subject": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::subject.subject"
+    },
+    "academic_year": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-year.academic-year"
+    },
+    "academic_term": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-term.academic-term"
+    },
+    "exam_session": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::exam-session.exam-session"
+    },
+    "assessment_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::assessment-category.assessment-category"
+    }
+  }
+}

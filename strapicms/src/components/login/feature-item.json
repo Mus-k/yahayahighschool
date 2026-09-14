@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_login_feature_items",
+  "info": {
+    "displayName": "Feature Item",
+    "icon": "shield",
+    "description": "Highlight feature bullet for the login branding panel"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "default": "Shield"
+    },
+    "text": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    }
+  }
+}

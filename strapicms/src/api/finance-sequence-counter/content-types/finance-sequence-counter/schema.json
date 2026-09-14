@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "finance_sequence_counters",
+  "info": {
+    "singularName": "finance-sequence-counter",
+    "pluralName": "finance-sequence-counters",
+    "displayName": "Finance Sequence Counter",
+    "description": "Centralized sequence generator for all ERP documents"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "module": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "prefix": {
+      "type": "string",
+      "required": true
+    },
+    "currentValue": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "padding": {
+      "type": "integer",
+      "required": true,
+      "default": 6
+    }
+  }
+}

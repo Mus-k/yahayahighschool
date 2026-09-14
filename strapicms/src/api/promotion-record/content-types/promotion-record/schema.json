@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "promotion-records",
+  "info": {
+    "singularName": "promotion-record",
+    "pluralName": "promotion-records",
+    "displayName": "Promotion Record",
+    "description": "Updated grade promotion history log"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "decision": {
+      "type": "enumeration",
+      "enum": [
+        "Promoted",
+        "Conditionally Promoted",
+        "Repeat Class",
+        "Graduated",
+        "Transferred",
+        "Withdrawn",
+        "Probation",
+        "Dismissed"
+      ]
+    },
+    "remarks": {
+      "type": "text"
+    },
+    "committee": {
+      "type": "string"
+    },
+    "approvalDate": {
+      "type": "date"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    },
+    "fromYear": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-year.academic-year"
+    },
+    "fromSection": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::section.section"
+    },
+    "toYear": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-year.academic-year"
+    },
+    "toSection": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::section.section"
+    }
+  }
+}

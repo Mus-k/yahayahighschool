@@ -1,0 +1,286 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "singularName": "student",
+    "pluralName": "students",
+    "displayName": "Student Profile",
+    "description": "Comprehensive Student Information System (SIS) profile entity"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "schoolId": {
+      "type": "string",
+      "required": false,
+      "unique": true
+    },
+    "admissionNumber": {
+      "type": "string",
+      "required": false,
+      "unique": true
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "firstName": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "middleName": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "lastName": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ],
+      "required": true
+    },
+    "dateOfBirth": {
+      "type": "date"
+    },
+    "nationality": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "religion": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Islam"
+    },
+    "placeOfBirth": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "nationalId": {
+      "type": "string"
+    },
+    "passportNumber": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    },
+    "city": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "county": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "country": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "admissionDate": {
+      "type": "date"
+    },
+    "graduationDate": {
+      "type": "date"
+    },
+    "enrollmentStatus": {
+      "type": "enumeration",
+      "enum": [
+        "active",
+        "inactive",
+        "suspended",
+        "graduated",
+        "transferred",
+        "withdrawn",
+        "expelled",
+        "alumni"
+      ],
+      "default": "active"
+    },
+    "biography": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
+    },
+    "generalNotes": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
+    },
+    "emergencyContacts": {
+      "type": "json"
+    },
+    "qrCodeData": {
+      "type": "string"
+    },
+    "barcodeData": {
+      "type": "string"
+    },
+    "parents": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::parent.parent",
+      "mappedBy": "children"
+    },
+    "departments": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::department.department",
+      "mappedBy": "studentsList"
+    },
+    "programs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::program.program",
+      "mappedBy": "studentsList"
+    },
+    "sections": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::section.section",
+      "mappedBy": "students"
+    },
+    "teachers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::teacher.teacher",
+      "mappedBy": "students"
+    },
+    "academicYears": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::academic-year.academic-year",
+      "mappedBy": "students"
+    },
+    "enrollmentHistory": {
+      "type": "component",
+      "repeatable": true,
+      "component": "erp.enrollment-record"
+    },
+    "timeline": {
+      "type": "component",
+      "repeatable": true,
+      "component": "erp.timeline-item"
+    },
+    "behaviorRecords": {
+      "type": "component",
+      "repeatable": true,
+      "component": "erp.behavior-record"
+    },
+    "medicalInfo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "erp.medical-record"
+    },
+    "staffNotes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "erp.staff-note"
+    },
+    "documents": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "advanceBalance": {
+      "type": "decimal",
+      "default": 0,
+      "description": "Student pre-payment/advance wallet balance. Credited when payment exceeds invoice amount. Applied to future invoices."
+    },
+    "walletTransactions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::wallet-transaction.wallet-transaction",
+      "mappedBy": "student"
+    },
+    "multiCurrencyWallets": {
+      "type": "json",
+      "description": "Multi-currency wallet balances map, e.g. { USD: 5, GNF: 1000000, LRD: 500 }"
+    },
+    "enrollments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::student-enrollment.student-enrollment",
+      "mappedBy": "student"
+    }
+  }
+}

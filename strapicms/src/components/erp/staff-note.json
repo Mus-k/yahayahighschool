@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_erp_staff_notes",
+  "info": {
+    "displayName": "Staff Note",
+    "icon": "file-text",
+    "description": "Authorized staff notes with priority and visibility levels"
+  },
+  "options": {},
+  "attributes": {
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "author": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "priority": {
+      "type": "enumeration",
+      "enum": [
+        "low",
+        "normal",
+        "high",
+        "urgent"
+      ],
+      "default": "normal",
+      "required": true
+    },
+    "visibility": {
+      "type": "enumeration",
+      "enum": [
+        "internal_staff_only",
+        "share_with_parent",
+        "share_with_student"
+      ],
+      "default": "internal_staff_only",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

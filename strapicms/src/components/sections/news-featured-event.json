@@ -1,0 +1,78 @@
+{
+  "collectionName": "components_sections_news_featured_events",
+  "info": {
+    "displayName": "News Featured Event",
+    "description": "Featured event slider item for the news page"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "headlineLine1": {
+      "type": "string"
+    },
+    "headlineLine2": {
+      "type": "string"
+    },
+    "lede": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "month": {
+      "type": "string"
+    },
+    "day": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "category": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "time": {
+      "type": "string"
+    },
+    "place": {
+      "type": "string"
+    },
+    "blurb": {
+      "type": "text"
+    },
+    "href": {
+      "type": "string",
+      "required": false
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Read More"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "author": {
+      "type": "string",
+      "default": "School Communications"
+    },
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.tag"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "grading_policies",
+  "info": {
+    "singularName": "grading-policy",
+    "pluralName": "grading-policies",
+    "displayName": "Grading Policy"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "gradeName": {
+      "type": "string",
+      "required": true
+    },
+    "minScore": {
+      "type": "decimal",
+      "required": true
+    },
+    "maxScore": {
+      "type": "decimal",
+      "required": true
+    },
+    "gpaPoints": {
+      "type": "decimal",
+      "required": true
+    },
+    "isPassing": {
+      "type": "boolean",
+      "default": true
+    },
+    "isDistinction": {
+      "type": "boolean",
+      "default": false
+    },
+    "remedialThreshold": {
+      "type": "decimal",
+      "default": 50
+    }
+  }
+}

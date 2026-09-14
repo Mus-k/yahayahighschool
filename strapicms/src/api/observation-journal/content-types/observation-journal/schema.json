@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "observation_journals",
+  "info": {
+    "singularName": "observation-journal",
+    "pluralName": "observation-journals",
+    "displayName": "Observation Journal",
+    "description": "Schema for Observation Journal"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "participation": {
+      "type": "integer"
+    },
+    "confidence": {
+      "type": "integer"
+    },
+    "motivation": {
+      "type": "integer"
+    },
+    "behavior": {
+      "type": "integer"
+    },
+    "strengths": {
+      "type": "text"
+    },
+    "weaknesses": {
+      "type": "text"
+    },
+    "recommendations": {
+      "type": "text"
+    },
+    "visibility": {
+      "type": "enumeration",
+      "enum": [
+        "Teacher Only",
+        "Parent",
+        "Director"
+      ],
+      "default": "Teacher Only"
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    },
+    "teacher": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::teacher.teacher"
+    }
+  }
+}

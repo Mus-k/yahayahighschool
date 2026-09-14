@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hostel_fee_plans",
+  "info": {
+    "singularName": "hostel-fee-plan",
+    "pluralName": "hostel-fee-plans",
+    "displayName": "Hostel Fee Plan",
+    "description": "Schema for Hostel Fee Plan"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "planName": {
+      "type": "string",
+      "required": true
+    },
+    "academicYear": {
+      "type": "string",
+      "required": true
+    },
+    "term": {
+      "type": "string",
+      "required": true
+    },
+    "accommodationFee": {
+      "type": "decimal",
+      "required": true
+    },
+    "securityDeposit": {
+      "type": "decimal",
+      "required": true
+    },
+    "laundryFee": {
+      "type": "decimal",
+      "default": 0
+    },
+    "mealFee": {
+      "type": "decimal",
+      "default": 0
+    },
+    "transportFee": {
+      "type": "decimal",
+      "default": 0
+    },
+    "utilityFee": {
+      "type": "decimal",
+      "default": 0
+    },
+    "building": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hostel-building.hostel-building"
+    },
+    "floor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hostel-floor.hostel-floor"
+    },
+    "room": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hostel-room.hostel-room"
+    },
+    "bed": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hostel-bed.hostel-bed"
+    }
+  }
+}

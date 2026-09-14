@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quran_certificates",
+  "info": {
+    "singularName": "quran-certificate",
+    "pluralName": "quran-certificates",
+    "displayName": "Quran Certificate",
+    "description": "Schema for Quran Certificate"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Juz Completion",
+        "Half Quran",
+        "Full Quran",
+        "Excellent Memorization",
+        "Perfect Attendance",
+        "Outstanding Tajweed",
+        "Competition Winner"
+      ]
+    },
+    "issueDate": {
+      "type": "date",
+      "required": true
+    },
+    "recordStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Draft",
+        "Issued",
+        "Revoked"
+      ],
+      "default": "Draft"
+    },
+    "certificateUrl": {
+      "type": "string"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    },
+    "quran_program": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::quran-program.quran-program"
+    }
+  }
+}

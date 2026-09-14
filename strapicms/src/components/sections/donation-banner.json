@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_sections_donation_banners",
+  "info": {
+    "displayName": "Donation Banner Section",
+    "icon": "heart",
+    "description": "Call to action banner highlighting ongoing school development campaigns"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Support School Development & Islamic Endowment (Waqf)"
+    },
+    "description": {
+      "type": "text",
+      "default": "Your contributions help build state-of-the-art laboratories, mosques, and scholarship funds for deserving students."
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Donate Now"
+    },
+    "buttonUrl": {
+      "type": "string",
+      "default": "/donations"
+    },
+    "badge": {
+      "type": "string",
+      "default": "Sadaqah Jariyah"
+    }
+  }
+}

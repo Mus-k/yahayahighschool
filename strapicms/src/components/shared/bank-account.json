@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_shared_bank_accounts",
+  "info": {
+    "displayName": "Bank Account",
+    "icon": "briefcase"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": ["Globe", "Building"],
+      "default": "Building"
+    },
+    "rows": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.bank-account-row"
+    }
+  }
+}

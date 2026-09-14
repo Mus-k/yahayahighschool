@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "library_books",
+  "info": {
+    "singularName": "library-book",
+    "pluralName": "library-books",
+    "displayName": "Library Book"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "isbn": {
+      "type": "string",
+      "required": true
+    },
+    "author": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Islamic Studies",
+        "STEM & Sciences",
+        "Languages",
+        "Literature",
+        "History",
+        "General Reference"
+      ]
+    },
+    "totalCopies": {
+      "type": "integer",
+      "default": 1
+    },
+    "availableCopies": {
+      "type": "integer",
+      "default": 1
+    },
+    "borrowedCopies": {
+      "type": "integer",
+      "default": 0
+    },
+    "rackLocation": {
+      "type": "string"
+    },
+    "isDigital": {
+      "type": "boolean",
+      "default": false
+    },
+    "pdfUrl": {
+      "type": "string"
+    },
+    "coverUrl": {
+      "type": "string"
+    },
+    "section": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::section.section"
+    },
+    "gradeLevel": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::grade-level.grade-level"
+    }
+  }
+}

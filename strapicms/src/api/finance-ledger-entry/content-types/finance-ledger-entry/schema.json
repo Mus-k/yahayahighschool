@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "finance_ledger_entrys",
+  "info": {
+    "singularName": "finance-ledger-entry",
+    "pluralName": "finance-ledger-entrys",
+    "displayName": "Finance Ledger Entry",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    },
+    "documentNumber": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "debit",
+        "credit",
+        "advance_deposit",
+        "credit_with_advance",
+        "wallet_used",
+        "adjustment"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "originalCurrency": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::finance-currency.finance-currency"
+    },
+    "originalAmount": {
+      "type": "decimal"
+    },
+    "exchangeRate": {
+      "type": "decimal"
+    },
+    "baseCurrency": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::finance-currency.finance-currency"
+    },
+    "baseAmount": {
+      "type": "decimal"
+    },
+    "runningBalance": {
+      "type": "decimal"
+    },
+    "transactionDate": {
+      "type": "datetime"
+    },
+    "referenceId": {
+      "type": "string"
+    }
+  }
+}

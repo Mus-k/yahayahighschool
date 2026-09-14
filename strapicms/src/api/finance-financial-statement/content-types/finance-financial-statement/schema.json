@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "finance_financial_statements",
+  "info": {
+    "singularName": "finance-financial-statement",
+    "pluralName": "finance-financial-statements",
+    "displayName": "Finance Financial Statement",
+    "description": "Generated institutional financial statement versions"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "reportType": {
+      "type": "string"
+    },
+    "period": {
+      "type": "string"
+    },
+    "academicYear": {
+      "type": "string"
+    },
+    "generationDate": {
+      "type": "datetime"
+    },
+    "generatedBy": {
+      "type": "string"
+    },
+    "reportData": {
+      "type": "json"
+    },
+    "reportHash": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Draft",
+        "Reviewed",
+        "Certified"
+      ],
+      "default": "Draft"
+    }
+  }
+}

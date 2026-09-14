@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "finance_scholarships",
+  "info": {
+    "singularName": "finance-scholarship",
+    "pluralName": "finance-scholarships",
+    "displayName": "Finance Scholarship",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dummyField": {
+      "type": "string"
+    }
+  }
+}

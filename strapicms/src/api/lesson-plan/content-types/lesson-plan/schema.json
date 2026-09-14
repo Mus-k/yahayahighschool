@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lesson_plans",
+  "info": {
+    "singularName": "lesson-plan",
+    "pluralName": "lesson-plans",
+    "displayName": "Lesson Plan"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "lessonNumber": {
+      "type": "string"
+    },
+    "objectives": {
+      "type": "text"
+    },
+    "teachingMethod": {
+      "type": "text"
+    },
+    "homework": {
+      "type": "text"
+    },
+    "assessmentMethod": {
+      "type": "text"
+    },
+    "recordStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Draft",
+        "Pending Approval",
+        "Approved",
+        "Rejected"
+      ],
+      "default": "Draft"
+    },
+    "teacher": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::teacher.teacher"
+    },
+    "subject": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::subject.subject"
+    },
+    "section": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::section.section"
+    },
+    "curriculum": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::curriculum.curriculum"
+    },
+    "academicYear": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-year.academic-year"
+    },
+    "academicTerm": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-term.academic-term"
+    },
+    "attachments": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos",
+        "audios"
+      ]
+    },
+    "rejectionReason": {
+      "type": "text"
+    }
+  }
+}

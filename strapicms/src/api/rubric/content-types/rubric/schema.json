@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rubrics",
+  "info": {
+    "singularName": "rubric",
+    "pluralName": "rubrics",
+    "displayName": "Rubric",
+    "description": "Schema for Rubric"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "criteria": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "maxPoints": {
+      "type": "decimal"
+    },
+    "levels": {
+      "type": "json"
+    }
+  }
+}

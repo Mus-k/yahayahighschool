@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hostel_beds",
+  "info": {
+    "singularName": "hostel-bed",
+    "pluralName": "hostel-beds",
+    "displayName": "Hostel Bed",
+    "description": "Schema for Hostel Bed"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bedNumber": {
+      "type": "string",
+      "required": true
+    },
+    "room": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hostel-room.hostel-room",
+      "inversedBy": "beds"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "available",
+        "occupied",
+        "reserved",
+        "maintenance",
+        "blocked"
+      ],
+      "default": "available"
+    }
+  }
+}

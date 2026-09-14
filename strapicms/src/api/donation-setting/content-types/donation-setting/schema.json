@@ -1,0 +1,57 @@
+{
+  "kind": "singleType",
+  "collectionName": "donation_settings",
+  "info": {
+    "singularName": "donation-setting",
+    "pluralName": "donation-settings",
+    "displayName": "[F] Donation Settings",
+    "description": "Global settings for the donation page (Bank Accounts, Form Options)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "bankTransfer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.bank-transfer-settings"
+    },
+    "formLabels": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.form-labels"
+    },
+    "targetedGiving": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.targeted-giving-settings",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "wallOfGratitude": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.wall-of-gratitude",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "amounts": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.string-item"
+    },
+    "currencies": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.string-item"
+    },
+    "designations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.string-item"
+    }
+  }
+}

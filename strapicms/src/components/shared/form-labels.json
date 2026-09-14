@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_form_labels",
+  "info": {
+    "displayName": "Form Labels",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "formTitle": { "type": "string", "default": "Make a Contribution" },
+    "amountLabel": { "type": "string", "default": "Select Amount" },
+    "frequencyLabel": { "type": "string", "default": "Frequency" },
+    "oneTimeLabel": { "type": "string", "default": "One-time" },
+    "monthlyLabel": { "type": "string", "default": "Monthly" },
+    "currencyLabel": { "type": "string", "default": "Currency" },
+    "designationLabel": { "type": "string", "default": "Designation" },
+    "donorInfoLabel": { "type": "string", "default": "Donor Information" },
+    "fullNameLabel": { "type": "string", "default": "Full Name" },
+    "fullNamePlaceholder": { "type": "string", "default": "e.g. John Doe" },
+    "emailLabel": { "type": "string", "default": "Email Address" },
+    "emailPlaceholder": { "type": "string", "default": "e.g. john@example.com" },
+    "phoneLabel": { "type": "string", "default": "Phone Number" },
+    "submitButtonLabel": { "type": "string", "default": "Pledge Donation" },
+    "secureInfoText": { "type": "string", "default": "Your donation is processed securely." }
+  }
+}

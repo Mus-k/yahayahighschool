@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "placement_tests",
+  "info": {
+    "singularName": "placement-test",
+    "pluralName": "placement-tests",
+    "displayName": "Placement Test",
+    "description": "Schema for Placement Test"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "language": {
+      "type": "enumeration",
+      "enum": [
+        "Arabic",
+        "English"
+      ],
+      "required": true
+    },
+    "readingScore": {
+      "type": "decimal"
+    },
+    "writingScore": {
+      "type": "decimal"
+    },
+    "listeningScore": {
+      "type": "decimal"
+    },
+    "speakingScore": {
+      "type": "decimal"
+    },
+    "grammarScore": {
+      "type": "decimal"
+    },
+    "vocabularyScore": {
+      "type": "decimal"
+    },
+    "overallScore": {
+      "type": "decimal"
+    },
+    "recommendedLevel": {
+      "type": "string"
+    },
+    "teacherNotes": {
+      "type": "text"
+    },
+    "dateTaken": {
+      "type": "date",
+      "required": true
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    },
+    "teacher": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::teacher.teacher"
+    }
+  }
+}

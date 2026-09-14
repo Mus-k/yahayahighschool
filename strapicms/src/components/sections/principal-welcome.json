@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_sections_principal_welcomes",
+  "info": {
+    "displayName": "Principal Welcome Section",
+    "icon": "user",
+    "description": "Welcome message and introduction from the School Principal / Director"
+  },
+  "options": {},
+  "attributes": {
+    "sectionBadge": {
+      "type": "string",
+      "default": "Principal's Welcome"
+    },
+    "title": {
+      "type": "string",
+      "default": "Nurturing Academic Excellence & Moral Integrity"
+    },
+    "message": {
+      "type": "text",
+      "required": true
+    },
+    "principalName": {
+      "type": "string",
+      "default": "Sheikh Dr. Yahaya Al-Hassan"
+    },
+    "principalTitle": {
+      "type": "string",
+      "default": "Director General & Principal"
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "quote": {
+      "type": "string"
+    }
+  }
+}

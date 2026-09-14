@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hostel_gate_passs",
+  "info": {
+    "singularName": "hostel-gate-pass",
+    "pluralName": "hostel-gate-passs",
+    "displayName": "Hostel Gate Pass",
+    "description": "Schema for Hostel Gate Pass"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    },
+    "allocation": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hostel-allocation.hostel-allocation"
+    },
+    "requestDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "purpose": {
+      "type": "text"
+    },
+    "exitDateTime": {
+      "type": "datetime"
+    },
+    "expectedReturnDateTime": {
+      "type": "datetime"
+    },
+    "actualReturnDateTime": {
+      "type": "datetime"
+    },
+    "parentApproval": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ],
+      "default": "pending"
+    },
+    "wardenApproval": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ],
+      "default": "pending"
+    },
+    "securityValidation": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ],
+      "default": "pending"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected",
+        "used",
+        "expired"
+      ],
+      "default": "pending"
+    }
+  }
+}

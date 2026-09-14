@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "library_borrow_records",
+  "info": {
+    "singularName": "library-borrow-record",
+    "pluralName": "library-borrow-records",
+    "displayName": "Library Borrow Record"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "borrowNumber": {
+      "type": "string"
+    },
+    "book": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::library-book.library-book"
+    },
+    "borrowerId": {
+      "type": "string"
+    },
+    "borrowerName": {
+      "type": "string"
+    },
+    "borrowerType": {
+      "type": "enumeration",
+      "enum": [
+        "student",
+        "teacher",
+        "worker"
+      ]
+    },
+    "issueDate": {
+      "type": "date"
+    },
+    "dueDate": {
+      "type": "date"
+    },
+    "returnDate": {
+      "type": "date"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "issued",
+        "returned",
+        "overdue",
+        "lost",
+        "damaged"
+      ]
+    },
+    "fineAmount": {
+      "type": "decimal"
+    },
+    "finePaid": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

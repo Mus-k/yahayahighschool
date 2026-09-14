@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "finance_holds",
+  "info": {
+    "singularName": "finance-hold",
+    "pluralName": "finance-holds",
+    "displayName": "Finance Hold",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    },
+    "holdType": {
+      "type": "enumeration",
+      "enum": [
+        "Admission",
+        "Registration",
+        "Examination",
+        "Report Card",
+        "Certificate",
+        "Promotion",
+        "Graduation",
+        "Hostel",
+        "Library"
+      ]
+    },
+    "reason": {
+      "type": "string"
+    },
+    "expirationDate": {
+      "type": "date"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "active",
+        "released"
+      ],
+      "default": "active"
+    },
+    "overrideReason": {
+      "type": "string"
+    }
+  }
+}

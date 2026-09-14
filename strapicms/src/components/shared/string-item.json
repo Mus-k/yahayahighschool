@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_string_items",
+  "info": {
+    "displayName": "String Item",
+    "icon": "bold"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

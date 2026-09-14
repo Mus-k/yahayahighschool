@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hostel_floors",
+  "info": {
+    "singularName": "hostel-floor",
+    "pluralName": "hostel-floors",
+    "displayName": "Hostel Floor",
+    "description": "Schema for Hostel Floor"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "building": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hostel-building.hostel-building",
+      "inversedBy": "floors"
+    },
+    "floorName": {
+      "type": "string",
+      "required": true
+    },
+    "floorNumber": {
+      "type": "integer",
+      "required": true
+    },
+    "capacity": {
+      "type": "integer"
+    },
+    "roomsCount": {
+      "type": "integer",
+      "default": 0
+    },
+    "rooms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::hostel-room.hostel-room",
+      "mappedBy": "floor"
+    }
+  }
+}

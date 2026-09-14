@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vendors",
+  "info": {
+    "singularName": "vendor",
+    "pluralName": "vendors",
+    "displayName": "Vendor"
+  },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "vendorCode": { "type": "string", "required": true, "unique": true },
+    "companyName": { "type": "string", "required": true },
+    "contactPerson": { "type": "string" },
+    "email": { "type": "email" },
+    "phone": { "type": "string" },
+    "category": { "type": "string", "default": "General Supplies" },
+    "ratingScore": { "type": "decimal", "default": 5.0 },
+    "taxRegistrationNumber": { "type": "string" },
+    "bankAccountDetails": { "type": "text" },
+    "status": {
+      "type": "enumeration",
+      "enum": ["approved", "pending", "suspended"],
+      "default": "approved"
+    }
+  }
+}

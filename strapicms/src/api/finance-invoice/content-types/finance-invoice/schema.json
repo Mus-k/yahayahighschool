@@ -1,0 +1,97 @@
+{
+  "kind": "collectionType",
+  "collectionName": "finance_invoices",
+  "info": {
+    "singularName": "finance-invoice",
+    "pluralName": "finance-invoices",
+    "displayName": "Finance Invoice",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    },
+    "invoiceNumber": {
+      "type": "string",
+      "unique": true
+    },
+    "academicYearId": {
+      "type": "string"
+    },
+    "termId": {
+      "type": "string"
+    },
+    "invoiceCurrency": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::finance-currency.finance-currency"
+    },
+    "exchangeRateToBase": {
+      "type": "decimal"
+    },
+    "baseCurrency": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::finance-currency.finance-currency"
+    },
+    "subtotal": {
+      "type": "decimal"
+    },
+    "totalAmount": {
+      "type": "decimal"
+    },
+    "baseTotalAmount": {
+      "type": "decimal"
+    },
+    "paidAmount": {
+      "type": "decimal"
+    },
+    "basePaidAmount": {
+      "type": "decimal"
+    },
+    "remainingBalance": {
+      "type": "decimal"
+    },
+    "issueDate": {
+      "type": "date"
+    },
+    "dueDate": {
+      "type": "date"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "draft",
+        "submitted",
+        "approved",
+        "pending_payment",
+        "partially_paid",
+        "paid",
+        "overdue",
+        "cancelled",
+        "refunded"
+      ],
+      "default": "draft"
+    },
+    "items": {
+      "type": "json"
+    },
+    "installments": {
+      "type": "json"
+    },
+    "notes": {
+      "type": "text"
+    },
+    "advanceApplied": {
+      "type": "decimal",
+      "default": 0,
+      "description": "Amount applied from student advance wallet balance to this invoice."
+    }
+  }
+}

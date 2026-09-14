@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_about_value_items",
+  "info": {
+    "displayName": "Core Value Item",
+    "icon": "sparkles",
+    "description": "Core value item with key, label, and icon identifier"
+  },
+  "options": {},
+  "attributes": {
+    "key": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "iconName": {
+      "type": "string"
+    }
+  }
+}

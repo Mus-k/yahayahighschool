@@ -1,0 +1,73 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_pages",
+  "info": {
+    "singularName": "about-page",
+    "pluralName": "about-pages",
+    "displayName": "[F] About Page",
+    "description": "The About Us page content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "About Us"
+    },
+    "breadcrumbTitle": {
+      "type": "string",
+      "default": "About Us"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.meta"
+    },
+    "introSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.about-intro"
+    },
+    "missionVisionSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.about-mission-vision"
+    },
+    "valuesSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.about-values"
+    },
+    "directorSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.about-director"
+    },
+    "whyChooseSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.about-why-choose"
+    },
+    "timelineSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.about-timeline"
+    },
+    "certificatesSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.about-certificates"
+    }
+  }
+}

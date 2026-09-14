@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "murajaahs",
+  "info": {
+    "singularName": "murajaah",
+    "pluralName": "murajaahs",
+    "displayName": "Murajaah",
+    "description": "Schema for Murajaah"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "assignedPortions": {
+      "type": "text"
+    },
+    "completedPortions": {
+      "type": "text"
+    },
+    "revisionScore": {
+      "type": "decimal"
+    },
+    "mistakesCount": {
+      "type": "integer",
+      "default": 0
+    },
+    "teacherNotes": {
+      "type": "text"
+    },
+    "recordStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Pending",
+        "In Progress",
+        "Completed",
+        "Needs Retest"
+      ]
+    },
+    "dueDate": {
+      "type": "date"
+    },
+    "completionDate": {
+      "type": "date"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    },
+    "teacher": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::teacher.teacher"
+    },
+    "quran_group": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::quran-group.quran-group"
+    },
+    "courseOffering": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course-offering.course-offering"
+    }
+  }
+}

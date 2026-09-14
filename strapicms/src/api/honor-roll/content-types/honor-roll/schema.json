@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "honor-rolls",
+  "info": {
+    "singularName": "honor-roll",
+    "pluralName": "honor-rolls",
+    "displayName": "Honor Roll",
+    "description": "Merit lists"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "academic_year": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-year.academic-year"
+    },
+    "academic_term": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-term.academic-term"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Dean's List",
+        "Principal's List",
+        "Perfect Attendance",
+        "Most Improved",
+        "Custom"
+      ]
+    },
+    "students": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::student.student"
+    }
+  }
+}

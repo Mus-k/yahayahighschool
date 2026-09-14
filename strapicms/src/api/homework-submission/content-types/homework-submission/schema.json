@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homework_submissions",
+  "info": {
+    "singularName": "homework-submission",
+    "pluralName": "homework-submissions",
+    "displayName": "Homework Submission"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "submissionDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "isLate": {
+      "type": "boolean",
+      "default": false
+    },
+    "grade": {
+      "type": "decimal"
+    },
+    "feedback": {
+      "type": "text"
+    },
+    "textContent": {
+      "type": "text"
+    },
+    "homework": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::homework.homework"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    },
+    "attachments": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

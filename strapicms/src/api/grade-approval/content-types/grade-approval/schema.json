@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "grade_approvals",
+  "info": {
+    "singularName": "grade-approval",
+    "pluralName": "grade-approvals",
+    "displayName": "Grade Approval"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Draft",
+        "Submitted",
+        "Approved",
+        "Locked",
+        "Released"
+      ],
+      "default": "Draft"
+    },
+    "submittedAt": {
+      "type": "datetime"
+    },
+    "releasedAt": {
+      "type": "datetime"
+    },
+    "courseOffering": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course-offering.course-offering"
+    },
+    "academicTerm": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-term.academic-term"
+    },
+    "approvedBy": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

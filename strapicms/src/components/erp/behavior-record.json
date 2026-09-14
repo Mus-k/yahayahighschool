@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_erp_behavior_records",
+  "info": {
+    "displayName": "Behavior Record",
+    "icon": "shield-alert",
+    "description": "Student conduct and behavior monitoring records (Green/Yellow/Red)"
+  },
+  "options": {},
+  "attributes": {
+    "teacherName": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "level": {
+      "type": "enumeration",
+      "enum": [
+        "green",
+        "yellow",
+        "red"
+      ],
+      "default": "green",
+      "required": true
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "recommendation": {
+      "type": "text"
+    },
+    "parentNotified": {
+      "type": "boolean",
+      "default": false
+    },
+    "followUpRequired": {
+      "type": "boolean",
+      "default": false
+    },
+    "resolution": {
+      "type": "text"
+    }
+  }
+}

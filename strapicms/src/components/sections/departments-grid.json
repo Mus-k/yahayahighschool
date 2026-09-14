@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_departments_grids",
+  "info": {
+    "displayName": "Departments Grid",
+    "icon": "briefcase",
+    "description": "Showcase grid of academic and administrative departments"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Departments"
+    },
+    "subtitle": {
+      "type": "string",
+      "default": "Explore our specialized faculty departments"
+    },
+    "limit": {
+      "type": "integer",
+      "default": 6
+    }
+  }
+}

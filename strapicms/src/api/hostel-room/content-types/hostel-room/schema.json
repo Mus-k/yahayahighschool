@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hostel_rooms",
+  "info": {
+    "singularName": "hostel-room",
+    "pluralName": "hostel-rooms",
+    "displayName": "Hostel Room",
+    "description": "Schema for Hostel Room"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "roomNumber": {
+      "type": "string",
+      "required": true
+    },
+    "building": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hostel-building.hostel-building",
+      "inversedBy": "rooms"
+    },
+    "floor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hostel-floor.hostel-floor",
+      "inversedBy": "rooms"
+    },
+    "roomType": {
+      "type": "enumeration",
+      "enum": [
+        "single",
+        "double",
+        "triple",
+        "quad",
+        "dormitory",
+        "vip",
+        "scholarship"
+      ],
+      "required": true
+    },
+    "capacity": {
+      "type": "integer",
+      "required": true
+    },
+    "currentOccupancy": {
+      "type": "integer",
+      "default": 0
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "available",
+        "full",
+        "maintenance"
+      ],
+      "default": "available"
+    },
+    "beds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::hostel-bed.hostel-bed",
+      "mappedBy": "room"
+    }
+  }
+}

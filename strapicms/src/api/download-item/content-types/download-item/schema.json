@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "download_items",
+  "info": {
+    "singularName": "download-item",
+    "pluralName": "download-items",
+    "displayName": "Download Item",
+    "description": "Public documents, brochures, application forms, and prospectuses"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "text"
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["files", "images"]
+    },
+    "category": {
+      "pluginOptions": { "i18n": { "localized": true } },
+      "type": "string",
+      "default": "General"
+    },
+    "fileSizeLabel": {
+      "type": "string",
+      "default": "2.4 MB"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "finance_accounts",
+  "info": {
+    "singularName": "finance-account",
+    "pluralName": "finance-accounts",
+    "displayName": "Finance Account",
+    "description": "Standard institutional chart of accounts"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "accountCode": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "accountName": {
+      "type": "string",
+      "required": true
+    },
+    "accountType": {
+      "type": "enumeration",
+      "enum": [
+        "Asset",
+        "Liability",
+        "Equity",
+        "Revenue",
+        "Expense"
+      ],
+      "required": true
+    },
+    "parentAccountCode": {
+      "type": "string"
+    },
+    "isControlAccount": {
+      "type": "boolean",
+      "default": false
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

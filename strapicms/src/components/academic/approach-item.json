@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_academic_approach_items",
+  "info": {
+    "displayName": "Approach Item",
+    "description": "Item in the How Learning Comes to Life section",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "default": "Zap"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

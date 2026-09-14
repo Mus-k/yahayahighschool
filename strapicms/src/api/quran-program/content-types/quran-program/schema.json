@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quran_programs",
+  "info": {
+    "singularName": "quran-program",
+    "pluralName": "quran-programs",
+    "displayName": "Quran Program",
+    "description": "Schema for Quran Program"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "durationMonths": {
+      "type": "integer"
+    },
+    "targetJuz": {
+      "type": "integer"
+    },
+    "ageGroup": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "teachers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::teacher.teacher"
+    },
+    "students": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::student.student"
+    },
+    "quran_groups": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::quran-group.quran-group",
+      "mappedBy": "quran_program"
+    }
+  }
+}

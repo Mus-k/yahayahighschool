@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "islamic_extensions",
+  "info": {
+    "singularName": "islamic-extension",
+    "pluralName": "islamic-extensions",
+    "displayName": "Islamic Extension"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "currentJuz": {
+      "type": "integer"
+    },
+    "currentSurah": {
+      "type": "string"
+    },
+    "currentAyah": {
+      "type": "integer"
+    },
+    "tajweedCompetency": {
+      "type": "enumeration",
+      "enum": [
+        "Beginner",
+        "Intermediate",
+        "Hafiz",
+        "Qari"
+      ],
+      "default": "Beginner"
+    },
+    "ijazahEarned": {
+      "type": "boolean",
+      "default": false
+    },
+    "sanadChain": {
+      "type": "text"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    }
+  }
+}

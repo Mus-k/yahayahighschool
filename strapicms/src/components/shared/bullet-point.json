@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_bullet_points",
+  "info": {
+    "displayName": "Bullet Point",
+    "icon": "bulletList",
+    "description": "A single bullet point text"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

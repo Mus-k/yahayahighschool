@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "question_pools",
+  "info": {
+    "singularName": "question-pool",
+    "pluralName": "question-pools",
+    "displayName": "Question Pool",
+    "description": "Schema for Question Pool"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

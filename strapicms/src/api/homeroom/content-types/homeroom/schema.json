@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homerooms",
+  "info": {
+    "singularName": "homeroom",
+    "pluralName": "homerooms",
+    "displayName": "Homeroom",
+    "description": "Administrative cohort group"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string",
+      "required": true
+    },
+    "gradeLevel": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::grade-level.grade-level",
+      "inversedBy": "homerooms"
+    },
+    "advisor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::teacher.teacher"
+    },
+    "classroom": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::classroom.classroom"
+    },
+    "students": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::student.student"
+    }
+  }
+}

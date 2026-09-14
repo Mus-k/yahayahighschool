@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lesson_deliveries",
+  "info": {
+    "singularName": "lesson-delivery",
+    "pluralName": "lesson-deliveries",
+    "displayName": "Lesson Delivery"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "actualStartTime": {
+      "type": "datetime"
+    },
+    "actualEndTime": {
+      "type": "datetime"
+    },
+    "topicsCovered": {
+      "type": "json"
+    },
+    "teacherReflection": {
+      "type": "text"
+    },
+    "completionPercentage": {
+      "type": "integer"
+    },
+    "lessonPlan": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::lesson-plan.lesson-plan"
+    },
+    "attachments": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student-results",
+  "info": {
+    "singularName": "student-result",
+    "pluralName": "student-results",
+    "displayName": "Student Result",
+    "description": "Calculated final outcome for a student per subject"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    },
+    "academic_year": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-year.academic-year"
+    },
+    "academic_term": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-term.academic-term"
+    },
+    "subject": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::subject.subject"
+    },
+    "caTotal": {
+      "type": "decimal"
+    },
+    "examTotal": {
+      "type": "decimal"
+    },
+    "overallScore": {
+      "type": "decimal"
+    },
+    "letterGrade": {
+      "type": "string"
+    },
+    "gradePoint": {
+      "type": "decimal"
+    },
+    "teacherComments": {
+      "type": "text"
+    },
+    "directorComments": {
+      "type": "text"
+    },
+    "isPass": {
+      "type": "boolean"
+    }
+  }
+}

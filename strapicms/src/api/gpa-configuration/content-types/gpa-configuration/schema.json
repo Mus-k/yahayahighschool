@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gpa_configurations",
+  "info": {
+    "singularName": "gpa-configuration",
+    "pluralName": "gpa-configurations",
+    "displayName": "GPA Configuration",
+    "description": "Dynamic rules for GPA and credit evaluation"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "creditCalcMethod": {
+      "type": "enumeration",
+      "enum": [
+        "Weighted GPA",
+        "Unweighted GPA",
+        "Semester GPA",
+        "CGPA"
+      ],
+      "default": "Weighted GPA"
+    },
+    "gradeReplacementPolicy": {
+      "type": "string"
+    },
+    "repeatedCoursePolicy": {
+      "type": "string"
+    },
+    "transferCreditPolicy": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

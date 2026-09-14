@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_academic_pathway_steps",
+  "info": {
+    "displayName": "Pathway Step",
+    "description": "A single curriculum or learning progression step in an academic program",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "stageNumber": {
+      "type": "integer"
+    }
+  }
+}

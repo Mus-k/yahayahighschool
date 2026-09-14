@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hostel_settings",
+  "info": {
+    "singularName": "hostel-setting",
+    "pluralName": "hostel-settings",
+    "displayName": "Hostel Setting",
+    "description": "Schema for Hostel Setting"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hostelName": {
+      "type": "string",
+      "required": true
+    },
+    "hostelCode": {
+      "type": "string",
+      "required": true
+    },
+    "genderType": {
+      "type": "enumeration",
+      "enum": [
+        "boys",
+        "girls",
+        "mixed"
+      ],
+      "required": true
+    },
+    "capacity": {
+      "type": "integer"
+    },
+    "defaultCurrency": {
+      "type": "string",
+      "default": "USD"
+    },
+    "checkInPolicy": {
+      "type": "text"
+    },
+    "checkOutPolicy": {
+      "type": "text"
+    },
+    "lateExitRules": {
+      "type": "text"
+    },
+    "securityDepositRules": {
+      "type": "text"
+    },
+    "refundPolicy": {
+      "type": "text"
+    },
+    "wardenAssignmentRules": {
+      "type": "text"
+    },
+    "gatePassRules": {
+      "type": "text"
+    },
+    "medicalEmergencySettings": {
+      "type": "text"
+    }
+  }
+}

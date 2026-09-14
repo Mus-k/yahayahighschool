@@ -1,0 +1,52 @@
+{
+  "collectionName": "components_sections_about_directors",
+  "info": {
+    "displayName": "About Founding Director",
+    "icon": "user-check",
+    "description": "Founding director quote and bio panel with portrait, title, 3 quote paragraphs, and signature"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "default": "Dr. Yahaya Kromah"
+    },
+    "role": {
+      "type": "string",
+      "required": true,
+      "default": "Founding Director"
+    },
+    "portrait": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "portraitUrl": {
+      "type": "string",
+      "default": "/images/figma-home/08-activity.jpeg"
+    },
+    "quoteTitle": {
+      "type": "string",
+      "required": true,
+      "default": "A word from our founding director"
+    },
+    "quoteP1": {
+      "type": "text",
+      "default": "When we laid the cornerstone of Yahaya International, our aspiration was clear: to create an institution that neither compromises on academic excellence nor dilutes our sacred Islamic identity. Knowledge without moral purpose is adrift, and devotion without intellectual rigor is incomplete."
+    },
+    "quoteP2": {
+      "type": "text",
+      "default": "Today, seeing our students master British curriculum mathematics while memorising the Qur'an with profound understanding confirms that this vision is not only possible — it is the future of Muslim education."
+    },
+    "quoteP3": {
+      "type": "text",
+      "default": "We welcome every family that shares our belief that education should cultivate both the mind and the soul."
+    },
+    "signature": {
+      "type": "string",
+      "default": "Dr. Yahaya Kromah, Ph.D. — Founding Director"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "grade_bands",
+  "info": {
+    "singularName": "grade-band",
+    "pluralName": "grade-bands",
+    "displayName": "Grade Band",
+    "description": "Updated grade bands scale maps"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "minScore": {
+      "type": "decimal",
+      "required": true
+    },
+    "maxScore": {
+      "type": "decimal",
+      "required": true
+    },
+    "letterGrade": {
+      "type": "string"
+    },
+    "gradePoint": {
+      "type": "decimal"
+    },
+    "performanceLevel": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "isPass": {
+      "type": "boolean",
+      "default": true
+    },
+    "grading_scheme": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::grading-scheme.grading-scheme",
+      "inversedBy": "grade_bands"
+    }
+  }
+}

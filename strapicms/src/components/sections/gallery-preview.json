@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sections_gallery_previews",
+  "info": {
+    "displayName": "Gallery Preview Section",
+    "icon": "picture",
+    "description": "Preview grid of school photos and videos"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Campus Life & Gallery"
+    },
+    "subtitle": {
+      "type": "string",
+      "default": "A glimpse into academic and student life at YAHAYASCOOL"
+    },
+    "mediaItems": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images", "videos"]
+    },
+    "viewAllUrl": {
+      "type": "string",
+      "default": "/gallery"
+    }
+  }
+}

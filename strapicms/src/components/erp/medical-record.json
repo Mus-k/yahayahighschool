@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_erp_medical_records",
+  "info": {
+    "displayName": "Medical Record",
+    "icon": "heart",
+    "description": "Student health and clinic emergency instruction summary"
+  },
+  "options": {},
+  "attributes": {
+    "bloodGroup": {
+      "type": "enumeration",
+      "enum": [
+        "A+",
+        "A-",
+        "B+",
+        "B-",
+        "AB+",
+        "AB-",
+        "O+",
+        "O-"
+      ]
+    },
+    "medicalConditions": {
+      "type": "text"
+    },
+    "currentMedications": {
+      "type": "text"
+    },
+    "primaryDoctor": {
+      "type": "string"
+    },
+    "hospitalClinic": {
+      "type": "string"
+    },
+    "emergencyInstructions": {
+      "type": "richtext"
+    },
+    "vaccinationHistory": {
+      "type": "text"
+    },
+    "insuranceDetails": {
+      "type": "text"
+    }
+  }
+}

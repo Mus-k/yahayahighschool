@@ -1,0 +1,387 @@
+{
+  "kind": "singleType",
+  "collectionName": "online_learning_pages",
+  "info": {
+    "singularName": "online-learning-page",
+    "pluralName": "online-learning-pages",
+    "displayName": "[F] Online Learning Page",
+    "description": "Online Learning page (/online-learning)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Online Learning"
+    },
+    "breadcrumbTitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Online Learning"
+    },
+    "tagline": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "LEARNING WITH PURPOSE"
+    },
+    "headlineLine1": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Knowledge at Your"
+    },
+    "headlineLine2": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Fingertips"
+    },
+    "lede": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text",
+      "default": "Access world-class Islamic and academic education from anywhere in the world. Begin your journey of lifelong learning today."
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "liveLessonButtonText": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Live Lesson"
+    },
+    "liveLessonButtonUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "coursesSectionTitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Online Courses"
+    },
+    "coursesSectionSubtitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Explore our live and recorded offerings"
+    },
+    "joinEnrollmentButtonText": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Join Enrollment"
+    },
+    "approachTagline": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "OUR APPROACH"
+    },
+    "approachTitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "How Learning Comes to Life"
+    },
+    "approachImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "approachStatValue": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "98%"
+    },
+    "approachStatDescription": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "UNIVERSITY PLACEMENT RATE FOR OUR GRADUATES"
+    },
+    "approachItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "academic.approach-item"
+    },
+    "popupTitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Pay Online"
+    },
+    "popupTabPayOnline": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Pay Online"
+    },
+    "popupTabAlreadyPaid": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Already Paid"
+    },
+    "popupPayOnlineTitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Pay Online"
+    },
+    "popupAlreadyPaidTitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Enroll Now"
+    },
+    "popupNameLabel": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "First Name & Last Name"
+    },
+    "popupNamePlaceholder": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "John Doe"
+    },
+    "popupEmailLabel": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Email"
+    },
+    "popupEmailPlaceholder": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "john@example.com"
+    },
+    "popupPhoneLabel": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Phone Number"
+    },
+    "popupSelectCourseLabel": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Select Course"
+    },
+    "popupSelectAmountLabel": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Select Amount"
+    },
+    "popupDefaultAmount": {
+      "type": "decimal",
+      "default": 500
+    },
+    "popupSelectCurrencyLabel": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Select Currency"
+    },
+    "popupCurrencies": {
+      "type": "string",
+      "default": "USD,EUR,GBP,LRD"
+    },
+    "popupCheckoutButtonText": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Checkout"
+    },
+    "popupNote": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text",
+      "default": "Your payment is processed securely."
+    },
+    "popupCountryPlaceholder": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Country"
+    },
+    "popupTopicPlaceholder": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Inquiry Topic"
+    },
+    "popupMessagePlaceholder": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Your Message"
+    },
+    "popupReceiptLabel": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Payment Receipt"
+    },
+    "popupReceiptHint": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Transfer slip, bank confirmation, or screenshot (PDF, PNG, JPG up to 10MB)"
+    },
+    "popupTermsLinkText": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Read the legal terms and service,"
+    },
+    "popupTermsSuffix": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "I have accept it"
+    },
+    "popupSendMessageButtonText": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Send Message"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.meta"
+    }
+  }
+}

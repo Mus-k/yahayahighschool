@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_sponsors_grids",
+  "info": {
+    "displayName": "Partners & Sponsors Grid",
+    "icon": "hand-heart",
+    "description": "Grid display of school accreditation bodies, educational partners, and waqf sponsors"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Accreditations & Global Partners"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "partnersList": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,1378 @@
+{
+  "common": {
+    "loading": "Yükleniyor...",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "view": "Görüntüle",
+    "create": "Oluştur",
+    "update": "Güncelle",
+    "search": "Ara",
+    "filter": "Filtrele",
+    "export": "Dışa Aktar",
+    "import": "İçe Aktar",
+    "confirm": "Onayla",
+    "back": "Geri",
+    "next": "İleri",
+    "previous": "Önceki",
+    "submit": "Gönder",
+    "reset": "Sıfırla",
+    "close": "Kapat",
+    "yes": "Evet",
+    "no": "Hayır",
+    "actions": "İşlemler",
+    "status": "Durum",
+    "date": "Tarih",
+    "time": "Saat",
+    "name": "Ad",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "address": "Adres",
+    "description": "Açıklama",
+    "noData": "Veri bulunamadı",
+    "noResults": "Aramanız için sonuç yok",
+    "error": "Bir hata oluştu. Lütfen tekrar deneyin.",
+    "success": "İşlem başarıyla tamamlandı.",
+    "required": "Bu alan zorunludur",
+    "invalidEmail": "Geçerli bir e-posta adresi girin",
+    "rowsPerPage": "Sayfa başına satır",
+    "showing": "{total} sonuçtan {from}-{to} arası gösteriliyor"
+  },
+  "auth": {
+    "login": "Giriş Yap",
+    "logout": "Çıkış Yap",
+    "forgotPassword": "Şifremi Unuttum",
+    "resetPassword": "Şifre Sıfırla",
+    "verifyEmail": "E-posta Doğrula",
+    "email": "E-posta Adresi",
+    "password": "Şifre",
+    "newPassword": "Yeni Şifre",
+    "confirmPassword": "Şifreyi Onayla",
+    "rememberMe": "Beni hatırla",
+    "signInTitle": "Tekrar Hoş Geldiniz",
+    "signInSubtitle": "YAHAYASCOOL hesabınıza giriş yapın",
+    "forgotTitle": "Şifremi Unuttum",
+    "forgotSubtitle": "E-postanızı girin, sıfırlama bağlantısı gönderelim",
+    "resetTitle": "Şifre Sıfırla",
+    "resetSubtitle": "Yeni şifrenizi girin",
+    "sendResetLink": "Sıfırlama Bağlantısı Gönder",
+    "backToLogin": "Girişe Dön",
+    "invalidCredentials": "Geçersiz e-posta veya şifre",
+    "accountDisabled": "Hesabınız devre dışı bırakıldı. Yöneticiye başvurun.",
+    "emailSent": "Bağlantı gönderildi! E-posta kutunuzu kontrol edin.",
+    "passwordReset": "Şifre başarıyla sıfırlandı.",
+    "emailVerified": "E-posta başarıyla doğrulandı!",
+    "schoolId": "Okul Kimliği",
+    "role": "Rol"
+  },
+  "navigation": {
+    "dashboard": "Kontrol Paneli",
+    "users": "Kullanıcılar",
+    "students": "Öğrenciler",
+    "teachers": "Öğretmenler",
+    "parents": "Veliler",
+    "workers": "Personel",
+    "finance": "Finans",
+    "hostel": "Yurt",
+    "exams": "Sınavlar",
+    "attendance": "Yoklama",
+    "timetable": "Ders Programı",
+    "events": "Etkinlikler",
+    "quran": "Kur'an",
+    "messages": "Mesajlar",
+    "notifications": "Bildirimler",
+    "auditLogs": "Denetim Günlükleri",
+    "settings": "Ayarlar",
+    "schoolProfile": "Okul Profili",
+    "roles": "Roller ve İzinler",
+    "reports": "Raporlar",
+    "overview": "Genel Bakış",
+    "administration": "Yönetim",
+    "academics": "Akademik",
+    "system": "Sistem"
+  },
+  "dashboard": {
+    "title": "Kontrol Paneli",
+    "welcome": "Hoş geldiniz, {name}",
+    "totalStudents": "Toplam Öğrenci",
+    "totalTeachers": "Toplam Öğretmen",
+    "totalStaff": "Toplam Personel",
+    "totalParents": "Toplam Veli",
+    "activeUsers": "Aktif Kullanıcılar",
+    "recentActivity": "Son Etkinlik",
+    "quickActions": "Hızlı İşlemler",
+    "announcements": "Duyurular",
+    "upcomingEvents": "Yaklaşan Etkinlikler",
+    "attendanceToday": "Bugünün Yoklaması",
+    "pendingApprovals": "Bekleyen Onaylar"
+  },
+  "users": {
+    "title": "Kullanıcı Yönetimi",
+    "createUser": "Kullanıcı Oluştur",
+    "editUser": "Kullanıcıyı Düzenle",
+    "viewUser": "Kullanıcıyı Görüntüle",
+    "deleteUser": "Kullanıcıyı Sil",
+    "firstName": "Ad",
+    "lastName": "Soyad",
+    "displayName": "Görünen Ad",
+    "username": "Kullanıcı Adı",
+    "email": "E-posta",
+    "phone": "Telefon Numarası",
+    "role": "Rol",
+    "status": "Durum",
+    "schoolId": "Okul Kimliği",
+    "gender": "Cinsiyet",
+    "male": "Erkek",
+    "female": "Kadın",
+    "dateOfBirth": "Doğum Tarihi",
+    "nationality": "Uyruk",
+    "address": "Adres",
+    "preferredLanguage": "Tercih Edilen Dil",
+    "isActive": "Aktif",
+    "lastLogin": "Son Giriş",
+    "createdAt": "Oluşturulma Tarihi",
+    "confirmDelete": "Bu kullanıcıyı silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+    "emailTaken": "Bu e-posta adresi zaten kayıtlı.",
+    "emailAvailable": "E-posta kullanılabilir",
+    "checkingEmail": "Kontrol ediliyor...",
+    "userCreated": "Kullanıcı başarıyla oluşturuldu. Okul Kimliği: {schoolId}",
+    "userUpdated": "Kullanıcı başarıyla güncellendi.",
+    "userDeleted": "Kullanıcı başarıyla silindi.",
+    "filterByRole": "Role Göre Filtrele",
+    "filterByStatus": "Duruma Göre Filtrele",
+    "searchPlaceholder": "Ad, e-posta veya okul kimliğine göre ara..."
+  },
+  "roles": {
+    "super-administrator": "Süper Yönetici",
+    "director": "Müdür",
+    "teacher": "Öğretmen",
+    "student": "Öğrenci",
+    "parent": "Veli",
+    "worker": "Çalışan",
+    "accountant": "Muhasebeci",
+    "account-lead": "Muhasebe Müdürü",
+    "driver": "Sürücü",
+    "authenticated": "Kimliği Doğrulanmış",
+    "public": "Genel"
+  },
+  "auditLogs": {
+    "title": "Denetim Günlükleri",
+    "action": "İşlem",
+    "entity": "Varlık",
+    "performedBy": "Gerçekleştiren",
+    "severity": "Önem Derecesi",
+    "timestamp": "Zaman Damgası",
+    "metadata": "Ayrıntılar",
+    "ipAddress": "IP Adresi",
+    "filterBySeverity": "Önem Derecesine Göre Filtrele",
+    "filterByAction": "İşleme Göre Filtrele",
+    "info": "Bilgi",
+    "warning": "Uyarı",
+    "error": "Hata",
+    "critical": "Kritik"
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "schoolProfile": "Okul Profili",
+    "security": "Güvenlik",
+    "notifications": "Bildirimler",
+    "languages": "Diller",
+    "schoolName": "Okul Adı",
+    "motto": "Okul Sloganı",
+    "address": "Adres",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "website": "Web Sitesi",
+    "logo": "Okul Logosu",
+    "academicYear": "Akademik Yıl",
+    "timezone": "Zaman Dilimi",
+    "defaultLanguage": "Varsayılan Dil",
+    "profileSaved": "Okul profili başarıyla kaydedildi."
+  },
+  "notifications": {
+    "title": "Bildirimler",
+    "markAllRead": "Tümünü okundu olarak işaretle",
+    "noNotifications": "Yeni bildirim yok",
+    "viewAll": "Tüm bildirimleri görüntüle"
+  },
+  "theme": {
+    "light": "Açık Mod",
+    "dark": "Koyu Mod",
+    "system": "Sistem Varsayılanı"
+  },
+  "language": {
+    "en": "English",
+    "ar": "العربية",
+    "fr": "Français",
+    "tr": "Türkçe"
+  },
+  "publicNav": {
+    "home": "Ana Sayfa",
+    "academicPrograms": "Akademik programlar",
+    "onlineLearning": "Çevrimiçi öğrenme",
+    "newsAndEvents": "Haberler ve etkinlikler",
+    "about": "Hakkında",
+    "aboutUs": "Hakkımızda",
+    "staffs": "Personel",
+    "career": "Kariyer",
+    "gallery": "Galeri",
+    "contact": "İletişim",
+    "donations": "Bağışlar",
+    "ourCommunity": "Topluluğumuz",
+    "ourTeam": "Ekibimiz",
+    "joinUs": "Bize Katılın",
+    "loginPortal": "Giriş / Öğrenci Portalı"
+  },
+  "hero": {
+    "startApplication": "Başvuruyu Başlat",
+    "slide1Title1": "Eğitim, Uygulama",
+    "slide1Title2": "ve Savunuculuk.",
+    "slide1Desc": "Yahaya Uluslararası İslam ve İngiliz Okulu, geleneksel İslami değerlerin derinliğini modern uluslararası eğitimin titiz standartlarıyla harmanlayarak, bütünsel öğrenci gelişimi için besleyici bir ortam sağlar.",
+    "slide2Title1": "Zihinleri Beslemek,",
+    "slide2Title2": "Geleceği İnşa Etmek.",
+    "slide2Desc": "Kapsamlı müfredatımız, öğrencilere zihinsel olarak meydan okumak ve aynı zamanda duygusal ve ruhsal esenliklerini desteklemek için tasarlanmıştır.",
+    "slide3Title1": "Her Adımda",
+    "slide3Title2": "Mükemmellik.",
+    "slide3Desc": "Destekleyici bir ortamda akademik mükemmellik, ahlaki bütünlük ve yaşam boyu öğrenmeye adanmış bir topluluğa katılın.",
+    "established": "KRL. 2020"
+  },
+  "homeAbout": {
+    "eyebrow": "Mirasımız Hakkında",
+    "headingLine1": "Mükemmelliği Teşvik Etmek",
+    "headingLine2": "Yoluyla",
+    "headingHighlight": "İnanç ve Bilim",
+    "body": "Yahaya Uluslararası İslami ve İngiliz Lisesi sadece bir eğitim kurumu olmaktan öte; her çocuğun bütünsel gelişimini şekillendirmeye adanmış bir topluluktur. Geleneksel İslami ahlak ile modern Batı eğitimi arasındaki boşluğu kapatıyoruz.",
+    "caption": "Yahaya Uluslararası İslami ve İngiliz Lisesi sadece bir eğitim kurumu değildir",
+    "students": "Öğrenci",
+    "employees": "Çalışan",
+    "years": "Yıl"
+  },
+  "programsSection": {
+    "eyebrow": "Programlarımız",
+    "heading": "Programlarımızı Keşfedin",
+    "description": "En son eğitim teknolojileriyle donatılmış modern tesislere ve öğrenme ortamlarına katkıda bulunun. En son eğitim teknolojileriyle donatılmış modern tesislere ve öğrenme ortamlarına katkıda bulunun.",
+    "learnMore": "Daha Fazla Bilgi",
+    "programs": {
+      "arabic": {
+        "title": "Arapça Programları",
+        "desc": "En son eğitim teknolojileriyle donatılmış modern tesislere ve öğrenme ortamlarına katkıda bulunun. En son eğitim teknolojileriyle donatılmış modern tesislere ve öğrenme ortamlarına katkıda bulunun."
+      },
+      "english": {
+        "title": "İngilizce Programları",
+        "desc": "Dil becerilerinin geliştiği bir ortama dalın. İngilizce programlarımız güven, akıcılık ve küresel edebiyat ve iletişime dair derin bir anlayış oluşturmak üzere tasarlanmıştır."
+      },
+      "dawah": {
+        "title": "Davet Programları",
+        "desc": "İslam teolojisinde ve başkalarını bilgelik ve mükemmel vaaz yoluyla İslam'ın güzel öğretilerine davet etme ilkelerinde güçlü bir temel geliştirin."
+      },
+      "online": {
+        "title": "Çevrimiçi Öğrenme Programları",
+        "desc": "Birinci sınıf müfredatımıza her yerden erişin. Evden mükemmellik arayan modern öğrenciler için tasarlanmış esnek, ilgi çekici ve etkileşimli çevrimiçi modüller."
+      }
+    }
+  },
+  "homeAnimation": {
+    "attribution": "— Sahih-i Buhari ve Sahih-i Müslim",
+    "quote": "Ameller ancak niyetlere göredir ve herkese sadece niyet ettiği şey vardır.",
+    "bookAr": "إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ",
+    "bookTranslation": "ve herkese sadece niyet ettiği şey vardır"
+  },
+  "homeActivities": {
+    "mosqueActivities": "Cami Etkinlikleri",
+    "publicSpeaking": "Topluluk Önünde Konuşma",
+    "artsCreativity": "Sanat ve Yaratıcılık",
+    "heading": "İlim aramak iyiliğe giden bir yoldur.",
+    "subtitle": "Her eylem bir hikaye anlatır - neler olup bittiğini görün.",
+    "joinUs": "Bize katılın"
+  },
+  "testimonialsSection": {
+    "heading": "Topluluğumuzdan Nazik Sözler",
+    "subtitle": "Yahaya International'da yaşamı şekillendiren — ve yaşam tarafından şekillendirilen — ebeveynlerden, mezunlardan ve toplum liderlerinden dinleyin.",
+    "verifiedReview": "Doğrulanmış İnceleme",
+    "items": {
+      "t1": {
+        "name": "Mia Thompson",
+        "role": "VELİ",
+        "title": "Çocuğumuz için dönüştürücü bir deneyim.",
+        "quote": "\"Kızımızı Yahaya International'a kaydettirdiğimizden beri, sadece akademik performansında değil, karakterinde de dikkate değer bir büyüme gördük. İslami değerlerin titiz modern eğitimle kusursuz entegrasyonu tam olarak aradığımız şeydi.\""
+      },
+      "t2": {
+        "name": "James Miller",
+        "role": "MEZUN",
+        "title": "Akademik memnuniyeti, referansları vurgular.",
+        "quote": "\"Yahaya International'daki yıllarım dünya görüşümü tamamen değiştirdi. Müfredattaki detaylara verilen önem ve mentorlara erişim kolaylığı, dünya standartlarında akademik performans sunarken inanç kimliğimi korumamı sağladı. Bu sadece bir okul değil; rekabet avantajı.\""
+      },
+      "t3": {
+        "name": "Olivia Carter",
+        "role": "TOPLUM LİDERİ",
+        "title": "Gerçek mükemmellik üzerine inşa edilmiş bir kurum.",
+        "quote": "\"Yahaya International'daki liderlik, eğitim mükemmelliğine derin bir bağlılık göstermektedir. Öğrencileri ahlaki dürüstlükle küresel zorluklarla başa çıkmaya hazır çok yönlü bireyler olarak nasıl yetiştirdiklerine ilk elden tanık oldum.\""
+      },
+      "t4": {
+        "name": "Matthew Bennett",
+        "role": "VELİ",
+        "title": "Verdiğimiz en iyi karar.",
+        "quote": "\"Yahaya International'ı seçmeden önce birçok okulu değerlendirdik. Tesisler modern, öğretmenler son derece kalifiye ve hem Da'wah hem de STEM'e verilen önem burayı çocuklarımız için eşsiz ve paha biçilmez bir ortam haline getiriyor.\""
+      }
+    }
+  },
+  "newsSection": {
+    "eyebrow": "Haberler & Etkinlikler",
+    "heading": "En Son Haberler & Güncellemeler",
+    "description": "En son eğitim teknolojileriyle donatılmış modern tesislere ve öğrenme ortamlarına katkıda bulunun. En son eğitim teknolojileriyle donatılmış modern tesislere ve öğrenme ortamlarına katkıda bulunun.",
+    "readMore": "Daha Fazla Oku",
+    "items": {
+      "n1": {
+        "title": "Ufkumuzu Genişletmek: Yeni Ofis Açılışı",
+        "excerpt": "Teşvik etmek için tasarlanmış en yeni inovasyon merkezimizin açılışını duyurmaktan heyecan duyuyoruz...",
+        "category": "KURUMSAL"
+      },
+      "n2": {
+        "title": "İşbirliği Yoluyla İnovasyon: Yıllık Teknoloji Zirvemiz",
+        "excerpt": "Bu yılki zirve, sektördeki en parlak zihinleri bir araya getirerek...",
+        "category": "ETKİNLİKLER"
+      },
+      "n3": {
+        "title": "TrustVibe 2.0: Modern Web İçin Güvenliği Yeniden Hayal Etmek",
+        "excerpt": "Gelişmiş tehdit algılama ve bir platformumuzun yeni neslini keşfedin...",
+        "category": "ETKİNLİKLER"
+      },
+      "n4": {
+        "title": "Küresel Eğitim Standartları ve Modern Pedagojiler",
+        "excerpt": "Dünya çapındaki eğitim standartlarını entegre etmenin öğrencilerimizi küresel ölçekte rekabet etmeleri için nasıl güçlendirdiğini keşfetmek...",
+        "category": "KURUMSAL"
+      },
+      "n5": {
+        "title": "Günümüz Dünyasında İki Dilli Eğitimin Önemi",
+        "excerpt": "İki dilli programlarımız benzersiz bilişsel ve sosyal avantajlar sunar. Faydaları hakkında daha fazla bilgi edinin...",
+        "category": "ETKİNLİKLER"
+      }
+    }
+  },
+  "footer": {
+    "contact": {
+      "socials": "Bizi Sosyal Medyada Takip Edin",
+      "email": "E-posta",
+      "phone": "Telefon"
+    },
+    "brand": {
+      "name": "Yahaya Uluslararası İslami ve İngilizce Lisesi",
+      "tagline1": "Bilgi İnanç &",
+      "tagline2": "Mükemmellik",
+      "description": "İslami değerler, kaliteli eğitim ve karakter gelişimi yoluyla daha parlak bir gelecek inşa etmek"
+    },
+    "pills": {
+      "islamicEducation": "İslami Eğitim",
+      "modernLearning": "Modern Öğrenim",
+      "brightFuture": "Parlak Gelecek"
+    },
+    "links": {
+      "quickLinks": {
+        "title": "Hızlı Bağlantılar",
+        "aboutUs": "Hakkımızda",
+        "academicPrograms": "Akademik Programlar",
+        "newsEvents": "Haberler & Etkinlikler",
+        "gallery": "Galeri",
+        "careers": "Kariyer",
+        "contact": "İletişim"
+      },
+      "academics": {
+        "title": "Akademik",
+        "quranDepartment": "Kuran Departmanı",
+        "arabicLanguage": "Arapça Dili",
+        "englishDepartment": "İngilizce Departmanı",
+        "onlineLearning": "Çevrimiçi Öğrenim",
+        "studentLife": "Öğrenci Hayatı"
+      },
+      "support": {
+        "title": "Destek",
+        "faqs": "SSS",
+        "helpCenter": "Yardım Merkezi"
+      }
+    },
+    "bottom": {
+      "copyright": "© {year} Yahaya Uluslararası İslami ve İngilizce Okulu. Tüm hakları saklıdır.",
+      "terms": "Hizmet Şartları",
+      "privacy": "Gizlilik Politikası"
+    }
+  },
+  "pageHeaders": {
+    "about": {
+      "title": "Hakkımızda",
+      "description": "Sorularınızı yanıtlamak ve çocuğunuzun Modern İslami Mükemmellik yolculuğunda rehberlik etmek için buradayız."
+    },
+    "contact": {
+      "title": "İletişime Geçin",
+      "crumb": "İletişim",
+      "description": "Sorularınızı yanıtlamak ve çocuğunuzun Modern İslami Mükemmellik yolculuğunda rehberlik etmek için buradayız."
+    },
+    "staffs": {
+      "title": "Kadro",
+      "description": "Yahaya International'da, küresel akademik titizliğin prestijini derin köklü ruhsal liderlikle harmanlıyoruz. Öğretim üyelerimiz eğitimcilerden daha fazlasıdır; onlar, yarının liderlerini yetiştirmeye adanmış mentorlar, araştırmacılar ve bilgeliğin koruyucularıdır."
+    }
+  },
+  "contactPage": {
+    "form": {
+      "firstName": "Adınız",
+      "firstNamePlaceholder": "Musa",
+      "lastName": "Soyadınız",
+      "lastNamePlaceholder": "Kamara",
+      "email": "E-posta Adresi",
+      "emailPlaceholder": "musakamara@gmail.com",
+      "phone": "Telefon Numarası",
+      "phonePlaceholder": "+1 (555) 000-0000",
+      "subject": "Konu",
+      "message": "Mesajınız",
+      "messagePlaceholder": "Size bugün nasıl yardımcı olabiliriz?",
+      "terms1": "Yasal şartları ve hizmet koşullarını okuyun,",
+      "terms2": "Kabul ediyorum",
+      "send": "Mesaj Gönder",
+      "success": "Teşekkürler — en kısa sürede sizinle iletişime geçeceğiz."
+    },
+    "subjects": {
+      "admissions": "Kayıt Sorgulama",
+      "academic": "Akademik Programlar",
+      "fees": "Ücretler ve Ödemeler",
+      "careers": "Kariyer",
+      "general": "Genel Sorgulama"
+    },
+    "campus": {
+      "title": "Kampüs Bilgileri",
+      "mainCampus": "Ana Kampüs",
+      "address1": "123 Bilgelik Caddesi",
+      "address2": "Eğitim Bölgesi, ED 45678",
+      "address3": "Monrovia, Liberya",
+      "administration": "Yönetim",
+      "whatsapp": "Bize WhatsApp'tan Ulaşın",
+      "admissionsDesk": "Kayıt Masası",
+      "officeHours": "Çalışma Saatleri",
+      "hours1": "Pazartesi - Cuma: 08:00 - 16:00",
+      "hours2": "Cuma Namazı Arası: 12:00 - 14:00"
+    }
+  },
+  "galleryPage": {
+    "categories": {
+      "All": "Tümü",
+      "Academic Excellence": "Akademik Mükemmellik",
+      "Spiritual Life": "Ruhsal Yaşam",
+      "Sports & Arts": "Spor ve Sanat",
+      "Campus Facilities": "Kampüs Tesisleri"
+    },
+    "photoGrid": {
+      "title": "Yahaya'da Yaşam",
+      "playVideos": "Videoları Oynat",
+      "empty": "Henüz bu kategoride bir şey yok.",
+      "loadMore": "Daha Fazla Yükle"
+    },
+    "videoHighlights": {
+      "title": "Öne Çıkan Videolar",
+      "blurb": "Özenle seçilmiş video koleksiyonumuz aracılığıyla Yahaya International'ın canlı enerjisini ve ruhunu deneyimleyin.",
+      "clips": {
+        "testimonials": "Öğrenci Görüşleri",
+        "library": "Kütüphanenin İçi",
+        "reading": "Birlikte Okuma",
+        "campus": "Kampüs Yaşamı",
+        "assembly": "Toplantı Günü"
+      }
+    },
+    "visitCta": {
+      "title": "Yahaya International'ı Bizzat Deneyimleyin",
+      "description": "Kampüsümüzü ziyaret edin, öğrencilerimiz ve öğretim üyelerimizle tanışın ve hem inanç hem de bilgide mükemmelliği nasıl beslediğimizi görün.",
+      "contactUs": "Bize Ulaşın"
+    }
+  },
+  "aboutPage": {
+    "intro": {
+      "badge": "KURULUŞ {year}",
+      "title1": "Eğitim, Pratik",
+      "title2": "ve Savunuculuk.",
+      "description": "Yahaya Uluslararası İslami ve İngiliz Okulu, geleneksel İslami değerlerin derinliğini modern uluslararası eğitimin titiz standartlarıyla harmanlayarak, öğrencilerin bütünsel gelişimi için besleyici bir ortam oluşturur."
+    },
+    "missionVision": {
+      "mission": {
+        "label": "Misyonumuz",
+        "body": "Öğrencileri hem akademik mükemmellik hem de İslami ilkelere dayanan derin bir ahlaki karakterle donatan kapsamlı, dengeli bir eğitim sağlamak."
+      },
+      "vision": {
+        "label": "Vizyonumuz",
+        "body": "İslami değerleri girdikleri her alana taşıyan ve topluluklarına seçkin bir şekilde hizmet eden kendinden emin, ilkeli mezunlar yetiştirmesiyle tanınan lider bir kurum olmak."
+      }
+    },
+    "coreValues": {
+      "title": "Temel Değerler",
+      "description": "Eğitim felsefemizi ayakta tutan sütunlar.",
+      "values": {
+        "knowledge": "Bilgi (İlim)",
+        "action": "Eylem (Amel)",
+        "advocacy": "Savunuculuk (Davet)",
+        "empathy": "Empati"
+      }
+    },
+    "director": {
+      "name": "Dr. Ahmad Kromah",
+      "role": "Kurucu Direktör",
+      "quoteTitle": "Aklı ve ruhu beslemek.",
+      "quoteP1": "Yahaya International'a hoş geldiniz. 2020 yılında bu kurumu kurduğumuzda, amacımız basit ama derindi: akademik titizliğin manevi derinlikle buluştuğu bir ortam yaratmak.",
+      "quoteP2": "Aileleri modern mükemmellik ile inanca dayalı değerler arasında seçim yapmaya zorlamayan bir eğitim modeline yönelik artan bir ihtiyaç olduğunun farkına vardık. Burada bunlar sorunsuz bir şekilde bütünleştirilmiştir. Öğrencilerimiz zihinsel olarak zorlanırken, duygusal ve ruhsal olarak desteklenirler.",
+      "quoteP3": "Topluluğumuzu keşfettikçe, kendini adamış bir öğretim üyesi kadrosu, son teknoloji tesisler ve en önemlisi, daha iyi bir dünya için öğrenmeye, pratik yapmaya ve savunuculuk yapmaya hevesli canlı bir öğrenci topluluğu bulacaksınız.",
+      "signature": "Ahmad Kromah"
+    },
+    "timeline": {
+      "title": "Zaman Çizelgemiz",
+      "entries": {
+        "2020": {
+          "title": "Kuruluş & İlk Alım",
+          "body": "Yahaya International, kurucu bir kohort ve basit bir inançla kapılarını açtı: titiz akademisyenler ve İslami karakter oluşumu birbirleriyle rekabet içinde değil, aynı sınıfta yer alır."
+        },
+        "2021": {
+          "title": "Müfredat & Fakülte Büyümesi",
+          "body": "Öğretim kadromuzu ikiye katladık ve uluslararası müfredatın Kur'an ve Arapça programlarımızla entegrasyonunu tamamlayarak okulun bugün bilinen çift kulvarlı modelini kurduk."
+        },
+        "2022": {
+          "title": "Küresel Akreditasyon & Liderlik Genişlemesi",
+          "body": "Önde gelen küresel bir kurum olarak tanınmamızla damgasını vuran çok önemli bir yıl. Adaleti savunan, empatiyi somutlaştıran ve dünya çapındaki topluluklarında olumlu değişimi yönlendiren geleceğin liderlerini yetiştirerek bilgi ve inancı bir araya getirdik."
+        },
+        "2023": {
+          "title": "Kampüs & Tesis Yatırımı",
+          "body": "Kampüs dışında okuyan öğrenciler için çevrimiçi öğrenme platformumuzun lansmanının yanı sıra yeni bilim laboratuvarları, genişletilmiş bir kütüphane ve özel spor tesisleri çevrimiçi oldu."
+        },
+        "2024": {
+          "title": "Topluluk & Mezunlar Ağı",
+          "body": "Mezun olan ilk sınıflarımız yurt içi ve yurt dışındaki üniversitelere taşındı ve mezunlar ağı, mevcut öğrencilere rehberlik etmek ve okulun erişimini daha geniş topluluğa yaymak için resmi olarak kuruldu."
+        },
+        "2025": {
+          "title": "Kampüs & Tesis Yatırımı",
+          "body": "Kampüs dışında okuyan öğrenciler için çevrimiçi öğrenme platformumuzun lansmanının yanı sıra yeni bilim laboratuvarları, genişletilmiş bir kütüphane ve özel spor tesisleri çevrimiçi oldu."
+        },
+        "2026": {
+          "title": "Topluluk & Mezunlar Ağı",
+          "body": "Mezun olan ilk sınıflarımız yurt içi ve yurt dışındaki üniversitelere taşındı ve mezunlar ağı, mevcut öğrencilere rehberlik etmek ve okulun erişimini daha geniş topluluğa yaymak için resmi olarak kuruldu."
+        }
+      }
+    },
+    "whyChoose": {
+      "title": "Neden Yahaya International'ı Seçmelisiniz?",
+      "description": "Öğrenci yaşamının her boyutunda mükemmelliği teşvik etmek için tasarlanmış benzersiz bir eğitim ortamı.",
+      "reasons": {
+        "faith": {
+          "title": "İnanç Odaklı",
+          "body": "İslami değerler günlük yaşama ve müfredata dokunmuştur."
+        },
+        "academic": {
+          "title": "Akademik Mükemmellik",
+          "body": "Öğrencileri en iyi üniversitelere hazırlayan titiz uluslararası standartlar."
+        },
+        "facilities": {
+          "title": "Modern Tesisler",
+          "body": "Son teknoloji sınıflar, laboratuvarlar ve spor kompleksleri."
+        },
+        "community": {
+          "title": "Güçlü Topluluk",
+          "body": "Eğitimciler, ebeveynler ve mezunlardan oluşan destekleyici bir ağ."
+        }
+      }
+    },
+    "pursuitCta": {
+      "title": "Olağanüstü Eğitimin Peşinde",
+      "description": "Fakülte işe alımımız, her öğretmenin mükemmellik, dürüstlük ve yaşam boyu öğrenme değerlerimizi somutlaştırmasını sağlayan titiz bir seçim sürecini takip eder.",
+      "join": "Okulumuza Katılın",
+      "events": "Etkinliklerimizi Görüntüleyin"
+    }
+  },
+  "staffsPage": {
+    "loadMore": "Daha Fazla Yükle",
+    "members": [
+      {
+        "name": "Dr. Amina Al-Hassan",
+        "role": "İslami İlimler Başkanı",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/01-hero.jpeg"
+      },
+      {
+        "name": "Prof. Julian Sterling",
+        "role": "İngiliz Müfredatı Dekanı",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/20-news.jpeg"
+      },
+      {
+        "name": "Dr. Farah Ibrahim",
+        "role": "Lider, Bilim & Teknoloji",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/04-programs.jpeg"
+      },
+      {
+        "name": "Bay Marcus Chen",
+        "role": "Sanat Direktörü",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/08-activity.jpeg"
+      },
+      {
+        "name": "Bayan Layla Haruna",
+        "role": "Arapça Dili Başkanı",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/01-hero.jpeg"
+      },
+      {
+        "name": "Bay David Okoro",
+        "role": "Matematik Başkanı",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/08-activity.jpeg"
+      },
+      {
+        "name": "Dr. Zainab Bello",
+        "role": "Öğrenci Refahı Lideri",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/04-programs.jpeg"
+      },
+      {
+        "name": "Prof. Samuel Adeyemi",
+        "role": "Kabul Dekanı",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/20-news.jpeg"
+      },
+      {
+        "name": "Bayan Hauwa Sanni",
+        "role": "Erken Yaşlar Başkanı",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/01-hero.jpeg"
+      },
+      {
+        "name": "Bay Ibrahim Toure",
+        "role": "Kuran Çalışmaları Başkanı",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/08-activity.jpeg"
+      },
+      {
+        "name": "Bayan Grace Mensah",
+        "role": "Beşeri Bilimler Başkanı",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/04-programs.jpeg"
+      },
+      {
+        "name": "Bay Yusuf Danladi",
+        "role": "Beden Eğitimi Başkanı",
+        "email": "Yahayahighschool@Gmail.Com",
+        "image": "/images/figma-home/20-news.jpeg"
+      }
+    ]
+  },
+  "newsPage": {
+    "categories": [
+      "Tümü",
+      "Haberler",
+      "Etkinlikler",
+      "Davet"
+    ],
+    "loadMore": "Daha Fazla Yükle",
+    "featured": [
+      {
+        "eyebrow": "Okul Hikayeleri",
+        "headline": [
+          "Haberler, Etkinlikler &",
+          "Topluluk"
+        ],
+        "lede": "Yahaya International'daki en son gelişmeleri keşfedin. Akademik başarılardan ruhsal dönüm noktalarına kadar hikayelerimiz inanç, öğrenme ve karaktere olan bağlılığımızı yansıtıyor.",
+        "month": "TEM",
+        "day": "15",
+        "category": "TÖREN",
+        "title": "Mezuniyet Töreni",
+        "time": "10:00 - 13:00",
+        "place": "Ana Oditoryum",
+        "blurb": "Mezun olan sınıfımızın başarılarını kutlarken bize katılın."
+      },
+      {
+        "eyebrow": "Kampüs Yaşamı",
+        "headline": [
+          "Hıfz İçin",
+          "Yeni Bir Ev"
+        ],
+        "lede": "Özel ezber merkezimiz kapılarını açıyor ve öğrencilere okuma, gözden geçirme ve sessiz çalışma için amaca yönelik bir alan sağlıyor.",
+        "month": "EYL",
+        "day": "12",
+        "category": "AÇILIŞ",
+        "title": "Ezber Merkezi",
+        "time": "09:00 - 11:00",
+        "place": "Hıfz Merkezi",
+        "blurb": "Özel Hıfz öğrenim merkezimizin kapıları açılıyor."
+      },
+      {
+        "eyebrow": "Davet",
+        "headline": [
+          "Kapıların Ötesinde",
+          "Hizmet"
+        ],
+        "lede": "Son sınıf öğrencileri bu ay değerlerimizi üç mahalleye taşıdı ve öğretmek kadar dinlemeye de dayalı bir sosyal yardım programına liderlik etti.",
+        "month": "HAZ",
+        "day": "18",
+        "category": "DAVET",
+        "title": "Toplumsal Sosyal Yardım",
+        "time": "14:00 - 17:00",
+        "place": "Şehir Merkezi",
+        "blurb": "Son sınıf öğrencileri üç mahallede bir sosyal yardım programına öncülük ediyor."
+      },
+      {
+        "eyebrow": "Başarı",
+        "headline": [
+          "Karakter ve",
+          "Burs"
+        ],
+        "lede": "Mükemmellik Ödülleri, çalışmaları ve davranışları çevrelerindeki herkesin tonunu belirleyen öğrencileri ödüllendirir.",
+        "month": "MAY",
+        "day": "10",
+        "category": "ÖDÜLLER",
+        "title": "Mükemmellik Ödülleri",
+        "time": "11:00 - 13:00",
+        "place": "Ana Salon",
+        "blurb": "Üstün akademik ve karakter başarılarının tanınması."
+      },
+      {
+        "eyebrow": "Etkinlikler",
+        "headline": [
+          "Uğruna Toplanmaya",
+          "Değer Fikirler"
+        ],
+        "lede": "Bugün alanda çalışan en parlak beyinlerden bazılarını bir araya getiren tam günlük görüşmeler ve gösteriler.",
+        "month": "AĞU",
+        "day": "05",
+        "category": "ETKİNLİKLER",
+        "title": "İnovasyon Zirvesi",
+        "time": "10:00 - 16:00",
+        "place": "Kütüphane Ek Binası",
+        "blurb": "Alandaki en parlak beyinleri bir araya getiren bir konuşma günü."
+      }
+    ],
+    "articles": [
+      {
+        "title": "Yıllık Bilim & Teknoloji Fuarı 2024",
+        "date": "24 Eki 2024",
+        "desc": "Öğrenciler 15. Yıllık Bilim ve Teknoloji Fuarı sırasında yaratıcılıklarını sergilediler.",
+        "category": "Etkinlikler"
+      },
+      {
+        "title": "Yeni Ezber Merkezi Açılışı",
+        "date": "12 Eyl 2024",
+        "desc": "Yeni özel Hıfz öğrenim merkezimizin açılışını duyurmaktan heyecan duyuyoruz.",
+        "category": "Haberler"
+      },
+      {
+        "title": "İşbirliği Yoluyla İnovasyon",
+        "date": "05 Ağu 2024",
+        "desc": "Bu yılki zirve, sektördeki en parlak beyinleri bir araya getirdi.",
+        "category": "Etkinlikler"
+      },
+      {
+        "title": "Dijital Güvenliği Yeniden Hayal Etmek",
+        "date": "20 Tem 2024",
+        "desc": "Gelişmiş siber protokoller içeren platformumuzun yeni neslini keşfedin.",
+        "category": "Haberler"
+      },
+      {
+        "title": "Toplumsal Davet Girişimi",
+        "date": "18 Haz 2024",
+        "desc": "Son sınıf öğrencilerimiz, üç mahalleyi kapsayan bir toplumsal sosyal yardım programına liderlik etti.",
+        "category": "Davet"
+      },
+      {
+        "title": "Mükemmellik Ödülleri 2024",
+        "date": "10 May 2024",
+        "desc": "Öğrencilerimiz arasındaki üstün akademik ve karakter başarılarını takdir etmek.",
+        "category": "Etkinlikler"
+      }
+    ],
+    "readMore": "Daha Fazla Oku",
+    "emptyState": "Henüz {category} altında hiçbir şey dosyalanmadı.",
+    "breadcrumbHome": "Ana Sayfa",
+    "breadcrumbNews": "Haberler"
+  },
+  "newsDetailPage": {
+    "breadcrumbNews": "Haberler",
+    "breadcrumbDetails": "Haber-detayları",
+    "nextEvent": "Sonraki Etkinlik",
+    "applyNow": "Şimdi Başvur",
+    "sidebarTitle": "Olağanüstü Eğitimin<br/>Peşinde",
+    "sidebarDesc": "Öğretim üyesi alımımız, her öğretmenin mükemmellik, dürüstlük ve yaşam boyu öğrenme değerlerimizi somutlaştırmasını sağlayan titiz bir seçim sürecini takip eder.",
+    "joinSchool": "Okulumuza Katılın",
+    "returnNews": "Haberlere Dön",
+    "newsletter": {
+      "title": "Haberdar Olun",
+      "desc": "En son okul haberlerini ve etkinlik hatırlatıcılarını doğrudan gelen kutunuza alın.",
+      "placeholder": "E-posta Adresi",
+      "subscribe": "Abone Ol",
+      "subscribed": "Abone Olundu!",
+      "success": "Teşekkürler — {email} adresinden sizinle iletişime geçeceğiz.",
+      "error": "Bir sorun oluştu. Lütfen tekrar deneyin."
+    },
+    "breadcrumbHome": "Ana Sayfa",
+    "body": {
+      "p1": "Yahaya International'daki atmosfer geçen hafta tüm sınıflardan öğrencilerin 15. Yıllık Bilim ve Teknoloji Fuarı'nda yaratıcılıklarını sergilemesiyle heyecan vericiydi.",
+      "p2": "Bu yılki tema, \"İnovasyon Yoluyla Sürdürülebilirlik\", genç zihinlerimizi gerçek dünyadaki çevresel sorunlara çözümler üretmeye zorladı.",
+      "h2_1": "Gelenek ile Moderniteyi Birleştirmek",
+      "p3": "Güneş enerjisiyle çalışan su filtreleme sistemlerinden yapay zeka destekli atık ayırma algoritmalarına kadar projeler karmaşık bilimsel ilkelerin derinlemesine anlaşıldığını gösterdi. Müdür Ahmed açılış konuşmasında, \"Amacımız sadece bilimi öğretmek değil, etik bir problem çözme zihniyeti geliştirmektir\" dedi.",
+      "quote": "\"Vicdansız bilim, ruhun yıkımından başka bir şey değildir. Yahaya'da öğrencilerimizin her teknolojik ilerlemenin insanlığa hizmet etmesi ve gezegenimizi koruması gerektiğini anlamalarını sağlıyoruz.\"",
+      "h2_2": "Fuarın Önemli Noktaları",
+      "list": [
+        {
+          "strong": "Akıllı Sulama Projesi:",
+          "text": "11. sınıf öğrencileri kampüs su kullanımını %40 azaltan sensör tabanlı bir sistem geliştirdi."
+        },
+        {
+          "strong": "Yenilenebilir Enerji Modelleri:",
+          "text": "Dikey eksenli rüzgar türbinleri için deneysel tasarımlar içeren rekabetçi bir kategori."
+        },
+        {
+          "strong": "Okullar Arası Robotik Yarışması:",
+          "text": "Yahaya öğrencileri altı bölgesel rakibe karşı birinci oldu."
+        }
+      ],
+      "p4": "Gelecek dönemi dört gözle beklerken, okul kazanan su filtreleme projesini standart tesislerimize entegre etmeyi planlıyor ve bu yılki katılımcılar için somut bir miras sağlıyor. Tüm öğrencileri sıkı çalışmaları ve mükemmelliğe olan bağlılıkları için tebrik ediyoruz.",
+      "tags": [
+        "#BilimFuarı2024",
+        "#ÖğrenciMükemmelliği",
+        "#İnovasyon",
+        "#YahayaUluslararası"
+      ]
+    }
+  },
+  "careerPage": {
+    "hero": {
+      "breadcrumb": {
+        "home": "Ana Sayfa",
+        "about": "Hakkımızda",
+        "career": "Kariyer"
+      },
+      "titleLine1": "Zihinleri Güçlendiriyor,",
+      "titleLine2": "Ruhları Zenginleştiriyoruz",
+      "desc": "Yahaya International'da, yüzyıllar süren İslami bilgeliği modern akademik zorluklarla harmanlıyoruz. Gelecek nesil küresel liderleri yetiştirmeye kararlı vizyon sahibi eğitimciler ve personel arıyoruz.",
+      "applyNow": "ŞİMDİ BAŞVUR"
+    },
+    "board": {
+      "title": "Açık Pozisyonlar",
+      "desc": "Küresel liderlik yetiştirme misyonumuza katılın.",
+      "viewDetails": "Detayları Görüntüle",
+      "applyNow": "Şimdi Başvur",
+      "requirements": "Gereksinimler",
+      "responsibilities": "Sorumluluklar",
+      "noPositions": "Şu anda uygun iş pozisyonu bulunmamaktadır. Lütfen daha sonra tekrar kontrol ediniz.",
+      "positions": [
+        {
+          "title": "Arapça Dili Eğitmeni",
+          "type": "Tam zamanlı",
+          "location": "Ana Kampüs",
+          "requirements": [
+            "Arap Dili veya Eğitim alanında lisans derecesi.",
+            "Uluslararası okullarda 3+ yıllık kanıtlanmış öğretmenlik deneyimi.",
+            "Arapça ve İngilizcede tam akıcılık (Yazılı ve Sözlü)."
+          ],
+          "responsibilities": [
+            "Modern Arapça öğrenimi için müfredat geliştirme.",
+            "Farklı öğrenci ihtiyaçları için dinamik sınıf yönetimi.",
+            "Sürekli öğrenci değerlendirmesi ve raporlaması."
+          ]
+        },
+        {
+          "title": "İdari Memur",
+          "type": "Tam zamanlı",
+          "location": "Ana Kampüs",
+          "requirements": [
+            "İşletme veya ilgili bir alanda derece.",
+            "Bir okul veya kurumsal yönetici rolünde 2+ yıl.",
+            "Güçlü yazılı ve sözlü İngilizce."
+          ],
+          "responsibilities": [
+            "Kampüs operasyonlarının günlük koordinasyonu.",
+            "Öğrenci ve personel kayıtlarının doğru bir şekilde tutulması.",
+            "Kabul ve ebeveyn iletişimlerini desteklemek."
+          ]
+        },
+        {
+          "title": "Matematik Uzmanı (IB)",
+          "type": "Tam zamanlı",
+          "location": "Ana Kampüs",
+          "requirements": [
+            "Matematik veya Matematik Eğitimi alanında derece.",
+            "IB müfredatını öğretme konusunda kanıtlanmış deneyim.",
+            "Sorgulamaya dayalı sınıf uygulamasına aşinalık."
+          ],
+          "responsibilities": [
+            "Yıl grupları genelinde IB matematiği sunmak.",
+            "Öğrencileri dış değerlendirmeye hazırlamak.",
+            "Müfredat incelemesine ve planlamasına katkıda bulunmak."
+          ]
+        }
+      ]
+    },
+    "form": {
+      "title": "Başvuru Formu",
+      "fullName": "Ad Soyad",
+      "email": "E-posta Adresi",
+      "phone": "Telefon",
+      "position": "Pozisyon",
+      "upload": "Yüklemek için tıklayın veya sürükleyip bırakın",
+      "uploadDesc": "PDF, DOC (Maksimum 5Mb)",
+      "acceptTerms": "Okudum ve kabul ediyorum ",
+      "legalTerms": "yasal şartlar ve hizmetler",
+      "sendMessage": "Mesaj Gönder",
+      "success": "Teşekkürler — başvurunuz alınmıştır."
+    }
+  },
+  "donationsPage": {
+    "hero": {
+      "breadcrumbHome": "Ana Sayfa",
+      "breadcrumbDonation": "Bağış",
+      "headline_1": "Yarının Liderlerine ",
+      "headline_2": "Yatırım Yapın",
+      "lede": "Katkınız inancı, bilgiyi ve karakteri besliyor. Birlikte, her çocuk için dünya standartlarında İslami ve modern bir eğitim sağlayabiliriz.",
+      "bullet_1": "Güvenli ve Şeffaf",
+      "bullet_2": "%100 Etki Odaklı"
+    },
+    "give": {
+      "title": "Katkıda Bulunun",
+      "subtitle": "Güvenli bir doğrudan transfer ile misyonumuzu destekleyin.",
+      "oneTime": "Tek Seferlik",
+      "oneTimeLabel": "Tek Seferlik",
+      "monthly": "Aylık",
+      "monthlyLabel": "Aylık",
+      "amountLabel": "Miktar Seçin",
+      "frequencyLabel": "Sıklık",
+      "currencyLabel": "Para Birimi",
+      "designationLabel": "Hedef",
+      "donateButton": "Bağış Taahhüdünde Bulunun",
+      "bankDetails": "Banka Detayları",
+      "copyBtn": "Kopyala",
+      "copiedBtn": "Kopyalandı!",
+      "amounts": [
+        "$25",
+        "$50",
+        "$100",
+        "$250",
+        "$500",
+        "Diğer"
+      ],
+      "currencies": [
+        "USD - ABD Doları",
+        "EUR - Euro",
+        "GBP - İngiliz Sterlini",
+        "LRD - Liberya Doları"
+      ],
+      "designations": [
+        "Genel Fon (En çok ihtiyaç duyulan yer)",
+        "Burslar ve Sponsorluk",
+        "Binalar ve Tesisler",
+        "Yatılı Okul ve Öğrenci Refahı",
+        "Cami ve Manevi Hayat"
+      ],
+      "freqTitle": "Sıklık",
+      "preferBank": "Banka havalesi mi tercih edersiniz?",
+      "donorInfo": "Bağışçı Bilgileri",
+      "fullName": "Ad Soyad",
+      "fullNamePlaceholder": "örn: Ahmet Yılmaz",
+      "email": "E-posta Adresi",
+      "emailPlaceholder": "örn: ahmet@example.com",
+      "phone": "Telefon Numarası",
+      "secureInfo": "Bağışınız güvenli bir şekilde işlenmektedir.",
+      "bankAccounts": [
+        {
+          "label": "Uluslararası Transfer (USD/EUR)",
+          "bankName": "Ecobank of Liberia",
+          "accountName": "Yahaya International Islamic & English High School"
+        },
+        {
+          "label": "Yerel Hesap (Liberya)",
+          "bankName": "Ecobank of Liberia",
+          "accountName": "Yahaya International Islamic & English High School"
+        }
+      ],
+      "bankKeys": {
+        "bankName": "Banka Adı",
+        "accountName": "Hesap Adı",
+        "iban": "Hesap Numarası (IBAN)",
+        "swift": "SWIFT / BIC Kodu",
+        "accountNum": "Hesap Numarası"
+      }
+    },
+    "targeted": {
+      "title_1": "Bağışınız ",
+      "title_2": "Nereye Gidiyor",
+      "subtitle": "Desteklemek için belirli bir alan seçin ve katkınızın geleceği nasıl inşa ettiğini tam olarak görün.",
+      "causes": [
+        {
+          "tag": "Burs",
+          "title": "Hafız Sponsoru Ol",
+          "cta": "Şimdi Sponsor Ol",
+          "desc": "Kur'an-ı Kerim'i ezberleyen bir öğrencinin kutsal yolculuğunu tam eğitim ve bakımla destekleyin."
+        },
+        {
+          "tag": "Altyapı",
+          "title": "Tesis İnşa Et",
+          "cta": "Bina Fonla",
+          "desc": "Son teknoloji sınıfların ve araştırma laboratuvarlarının inşasına katkıda bulunun."
+        },
+        {
+          "tag": "Yaşam",
+          "title": "Yatılı Okul Desteği",
+          "cta": "Barınmayı Destekle",
+          "desc": "Yatılı öğrencilerimize güvenli, besleyici ve profesyonel bir ortam sağlamaya yardımcı olun."
+        },
+        {
+          "tag": "Miras",
+          "title": "Cami Fonu",
+          "cta": "Katkıda Bulun",
+          "desc": "Kurumumuzun manevi merkezini destekleyin, bakımını ve topluluk hayatını güvence altına alın."
+        },
+        {
+          "tag": "Öğrenme",
+          "title": "Kütüphane ve Kitaplar",
+          "cta": "Kitap Ver",
+          "desc": "Kur'an çalışmasından bilimlere kadar her konunun bağlı olduğu rafları doldurun."
+        }
+      ]
+    },
+    "wall": {
+      "title": "Minnettarlık Duvarı",
+      "subtitle": "Allah faydalı bilgi arayışını destekleyen herkesi mükafatlandırsın.",
+      "patrons": [
+        {
+          "name": "Al-Fayed Ailesi",
+          "quote": "Çocuklarımız ve gelecek nesiller için bir öğrenme mirası."
+        },
+        {
+          "name": "Ömer ve Sarah Mansur",
+          "quote": "Gelecek nesil küresel liderleri desteklemekten gurur duyuyoruz."
+        },
+        {
+          "name": "İslami Yardım",
+          "quote": "İnanç temelli eğitimde küresel mükemmelliğe adanmış."
+        },
+        {
+          "name": "Topluluk Fonu",
+          "quote": "Birlikte sürdürülebilir ve aydınlık bir gelecek inşa ediyoruz."
+        },
+        {
+          "name": "İsimsiz Bağışçı",
+          "quote": "Sessizce verin, bırakın iş kendi adına konuşsun."
+        },
+        {
+          "name": "Kromah Vakfı",
+          "quote": "Eğitim, bir topluluğun yapabileceği en güvenli yatırımdır."
+        }
+      ]
+    }
+  },
+  "academicPage": {
+    "hero": {
+      "breadcrumbHome": "Ana Sayfa",
+      "breadcrumbAcademic": "Akademik",
+      "tagline": "Amacı Olan Öğrenim",
+      "headline_1": "İnanca Dayalı Bilgi.",
+      "headline_2": "Yaşam Boyu Mükemmellik.",
+      "lede": "Titiz akademisyenler, İslami karakter ve küresel hazırlık — amaç ve güvenle liderlik etmek için meraklı zihinleri ve şefkatli kalpleri besliyor."
+    },
+    "programs": {
+      "explore": "Programı Keşfet",
+      "readMore": "Daha Fazla Oku"
+    },
+    "approach": {
+      "title": "Öğrenme Nasıl Hayata Geçer",
+      "items": [
+        {
+          "title": "Akademik Titizlik",
+          "desc": "Her konuda derin bir anlayış ve mükemmellik aşılayan zorlayıcı müfredat ve yüksek beklentiler."
+        },
+        {
+          "title": "İnanç ve Karakter",
+          "desc": "Bütünlük, şefkat ve amaç duygusunu beslemek için İslami değerler günlük öğrenime dokunmuştur."
+        },
+        {
+          "title": "Mentorluk",
+          "desc": "Şefkatli öğretmenler, ders kitabının ötesinde kişiselleştirilmiş destek ve anlamlı ilişkilerle her öğrenciye rehberlik eder."
+        },
+        {
+          "title": "Gerçek Dünya Keşfi",
+          "desc": "Deneysel projeler, saha çalışması ve teknoloji, sınıf içi öğrenimi çevremizdeki dünyaya bağlar."
+        }
+      ],
+      "alt": "Sınıf tartışması yöneten öğretmen",
+      "statValue": "98%",
+      "statDesc": "Mezunlarımız için üniversiteye yerleştirme oranı",
+      "tagline": "Yaklaşımımız"
+    },
+    "programsList": {
+      "quran-memorization": {
+        "title": "Qur'an Memorization",
+        "eyebrow": "Academic Excellence",
+        "desc": "Guided Hifz program with tajweed, understanding, and character building — rooted in love for the Qur’an.",
+        "lede": "Yahaya International's Qur'an Memorization & Hifz Program offers a scholarly environment where spiritual devotion meets academic rigor, nurturing tomorrow's leaders through the wisdom of the Holy Qur'an.",
+        "pathwayTitle": "The Hifz Pathway",
+        "pathwayLede": "Our Qur’an Memorization program is more than a curriculum; it is a transformative journey. We combine traditional Ottoman and African memorization techniques with modern pedagogical approaches to ensure deep retention and authentic Tajweed.",
+        "steps": [
+          {
+            "title": "Intensive Memorization",
+            "desc": "Daily structured sessions focused on new verses, previous revision, and long-term retention."
+          },
+          {
+            "title": "Tafsir & Understanding",
+            "desc": "Weekly sessions exploring the context and meaning of the memorized portions."
+          },
+          {
+            "title": "Tajweed Mastery",
+            "desc": "Close attention to articulation and rhythm, corrected one to one with a qualified teacher."
+          },
+          {
+            "title": "Ijazah Pathway",
+            "desc": "A route to certification for students who complete the programme with consistent excellence."
+          }
+        ]
+      },
+      "arabic-immersion": {
+        "title": "Arabic Immersion",
+        "eyebrow": "Language",
+        "desc": "Comprehensive language acquisition enabling students to engage deeply with classical texts and modern dialogue.",
+        "lede": "A full immersion in classical and modern Arabic, giving students the confidence to read primary sources and hold a conversation with equal ease.",
+        "pathwayTitle": "The Language Pathway",
+        "pathwayLede": "Students move from spoken confidence to classical fluency through daily immersion, structured grammar, and wide reading in original texts.",
+        "steps": [
+          {
+            "title": "Spoken Foundations",
+            "desc": "Daily conversation practice that builds fluency before formal grammar takes over."
+          },
+          {
+            "title": "Classical Grammar",
+            "desc": "Nahw and Sarf taught systematically so that original texts become approachable."
+          },
+          {
+            "title": "Reading Original Texts",
+            "desc": "Guided study of classical works, read in Arabic from the first term."
+          },
+          {
+            "title": "Composition",
+            "desc": "Written expression developed through regular assignments and close feedback."
+          }
+        ]
+      },
+      "stem-robotics": {
+        "title": "STEM & Robotics",
+        "eyebrow": "Innovation",
+        "desc": "Hands-on scientific inquiry and programming skills that prepare students for competitive technical fields.",
+        "lede": "Laboratory work, programming, and competitive robotics, taught as a single discipline so that theory and practice reinforce one another.",
+        "pathwayTitle": "The STEM Pathway",
+        "pathwayLede": "From first principles to regional competition, students build, test, and defend their own work throughout the programme.",
+        "steps": [
+          {
+            "title": "Scientific Method",
+            "desc": "Enquiry, measurement, and honest reporting established from the first year."
+          },
+          {
+            "title": "Programming",
+            "desc": "Practical coding taught through problems students actually want to solve."
+          },
+          {
+            "title": "Robotics Build",
+            "desc": "Design and fabrication in the workshop, culminating in a working machine."
+          },
+          {
+            "title": "Competition",
+            "desc": "Regional challenges where students present and defend their engineering choices."
+          }
+        ]
+      },
+      "islamic-studies": {
+        "title": "Islamic Studies",
+        "eyebrow": "Faith & Character",
+        "desc": "In-depth exploration of Fiqh, Aqeedah, and Seerah to build a strong foundational worldview.",
+        "lede": "A grounding in Fiqh, Aqeedah, and Seerah that gives students a coherent worldview and the tools to reason within it.",
+        "pathwayTitle": "The Studies Pathway",
+        "pathwayLede": "Sources are read closely and discussed openly, so that conviction rests on understanding rather than habit.",
+        "steps": [
+          {
+            "title": "Aqeedah",
+            "desc": "The foundations of belief, taught with room for genuine questions."
+          },
+          {
+            "title": "Fiqh",
+            "desc": "Practical jurisprudence applied to the situations students actually meet."
+          },
+          {
+            "title": "Seerah",
+            "desc": "The Prophetic biography studied as history and as a model of conduct."
+          },
+          {
+            "title": "Ethics in Practice",
+            "desc": "Character work carried into daily school life, not confined to the classroom."
+          }
+        ]
+      },
+      "humanities-arts": {
+        "title": "Humanities & Arts",
+        "eyebrow": "Culture",
+        "desc": "Critical thinking through history, literature, and social sciences from global and Islamic perspectives.",
+        "lede": "History, literature, and the social sciences read from both global and Islamic perspectives, with argument taken seriously.",
+        "pathwayTitle": "The Humanities Pathway",
+        "pathwayLede": "Students learn to read closely, weigh evidence, and write clearly — the habits that transfer to every other subject.",
+        "steps": [
+          {
+            "title": "Close Reading",
+            "desc": "Texts studied slowly and argued over, rather than summarised."
+          },
+          {
+            "title": "Historical Method",
+            "desc": "Sources weighed for reliability, bias, and context."
+          },
+          {
+            "title": "Written Argument",
+            "desc": "Essays built on evidence and revised through feedback."
+          },
+          {
+            "title": "Creative Practice",
+            "desc": "Studio and performance work alongside the written curriculum."
+          }
+        ]
+      },
+      "global-leadership": {
+        "title": "Global Leadership",
+        "eyebrow": "Leadership",
+        "desc": "Mentorship, public speaking, and community service projects designed to nurture confident future leaders.",
+        "lede": "Mentorship, public speaking, and service projects that ask students to lead in front of people who will hold them to it.",
+        "pathwayTitle": "The Leadership Pathway",
+        "pathwayLede": "Responsibility is given early and reviewed honestly, so that confidence is earned rather than assumed.",
+        "steps": [
+          {
+            "title": "Public Speaking",
+            "desc": "Regular speaking before real audiences, with structured critique."
+          },
+          {
+            "title": "Mentorship",
+            "desc": "Each student paired with a teacher who follows their progress across years."
+          },
+          {
+            "title": "Service Projects",
+            "desc": "Community work planned and run by students themselves."
+          },
+          {
+            "title": "Reflection",
+            "desc": "Written and spoken review of what worked, what did not, and why."
+          }
+        ]
+      }
+    }
+  },
+  "academicDetail": {
+    "hero": {
+      "home": "Ana Sayfa",
+      "academics": "Akademik",
+      "details": "Akademik Detayları",
+      "headline_1": "İnanca Dayalı Bilgi.",
+      "headline_2": "Yaşam Boyu Mükemmellik.",
+      "contactUs": "Bize Ulaşın",
+      "downloadPdf": "PDF İndir"
+    }
+  },
+  "onlineLearningPage": {
+    "breadcrumbHome": "Home",
+    "breadcrumbOnline": "Online Learning",
+    "tagline": "Learning with Purpose",
+    "headline_1": "Knowledge at Your",
+    "headline_2": "Fingertips",
+    "lede": "Access world-class Islamic and academic education from anywhere in the world. Begin your journey of lifelong learning today.",
+    "joinEnrollment": "Join Enrollment",
+    "coursesList": {
+      "0": {
+        "title": "Advanced Arabic Grammar",
+        "tag": "Languages • Advanced",
+        "badge": "New Release",
+        "desc": "An intensive study into classical Nahw and Sarf for profound textual understanding."
+      },
+      "1": {
+        "title": "Tajweed Foundations",
+        "tag": "Qur’an • Beginner",
+        "badge": "New Release",
+        "desc": "Articulation and rhythm taught from first principles, corrected one to one."
+      },
+      "2": {
+        "title": "Islamic History",
+        "tag": "Humanities • Intermediate",
+        "badge": "New Release",
+        "desc": "The major periods and figures, read through primary sources rather than summaries."
+      },
+      "3": {
+        "title": "English for Academic Study",
+        "tag": "Languages • Intermediate",
+        "badge": "New Release",
+        "desc": "Speaking, writing, and listening built around the demands of academic work."
+      },
+      "4": {
+        "title": "Qur’anic Arabic",
+        "tag": "Qur’an • Intermediate",
+        "badge": "New Release",
+        "desc": "Vocabulary and syntax drawn directly from the text, taught verse by verse."
+      },
+      "5": {
+        "title": "Fiqh Essentials",
+        "tag": "Islamic Studies • Beginner",
+        "badge": "New Release",
+        "desc": "Practical jurisprudence for daily life, with evidence given for every ruling."
+      }
+    },
+    "liveLesson": "Canlı Ders"
+  },
+  "enrollmentModal": {
+    "payOnline": "Online Öde",
+    "alreadyPaid": "Zaten Ödendi",
+    "firstName": "Ad",
+    "lastName": "Soyad",
+    "email": "E-posta",
+    "phone": "Telefon Numarası",
+    "country": "Ülke",
+    "uploadInvoice": "Fatura / Makbuz Yükle",
+    "selectAmount": "Miktar Seçin",
+    "selectCurrency": "Para Birimi Seçin",
+    "selectCourse": "Ders Seçin",
+    "checkout": "Ödeme Yap",
+    "submit": "Kaydı Gönder",
+    "successTitle": "Başarıyla Gönderildi",
+    "successDesc": "Kaydınız gönderildi ve inceleniyor. Kısa süre içinde onay e-postası alacaksınız.",
+    "enrollNow": "Şimdi Kaydolun",
+    "fullName": "Tam Adınız",
+    "inquiryTopic": "Başvuru Konusu",
+    "message": "Mesajınız",
+    "sendMessage": "Mesaj Gönder",
+    "uploadReceipt": "Ödeme Makbuzu",
+    "optional": "İsteğe Bağlı",
+    "uploadReceiptClick": "Makbuzu yüklemek için tıklayın",
+    "orDragDrop": "veya sürükleyip bırakın",
+    "uploadReceiptHint": "Havale dekontu, banka onayı veya ekran görüntüsü (PDF, PNG, JPG maks. 10MB)",
+    "removeFile": "Kaldır",
+    "readyToSend": "Gönderilmeye hazır",
+    "successThanks": "Teşekkürler — bilgilerinizi aldık ve kısa süre içinde sizinle iletişime geçeceğiz.",
+    "successThanksWithReceipt": "Teşekkürler! Kayıt bilgileriniz ve ödeme makbuzunuz alındı. Ekibimiz ödemenizi doğrulayıp kısa süre içinde sizinle iletişime geçecektir.",
+    "securePayment": "Ödemeniz güvenli bir şekilde işlenir.",
+    "currencies": {
+      "usd": "USD - Amerikan Doları",
+      "eur": "EUR - Euro",
+      "gbp": "GBP - İngiliz Sterlini",
+      "lrd": "LRD - Liberya Doları"
+    },
+    "amountDefault": "500",
+    "placeholders": {
+      "name": "Ahmet Yılmaz",
+      "email": "ahmet@ornek.com"
+    }
+  },
+  "policyModal": {
+    "titleTerms": "Şartlar ve Koşullar",
+    "titlePrivacy": "Gizlilik Politikası",
+    "contentTerms": "\n<h3>1. Giriş</h3>\n<p>YAHAYA SCHOOL'a hoş geldiniz. Bu Şartlar ve Koşullar, web sitemizi kullanımınızı ve eğitim programlarımıza kaydınızı yönetir. Web sitemize erişerek veya kayıt yaptırarak bu Şartlara bağlı kalmayı kabul etmiş olursunuz.</p>\n<hr/>\n<h3>2. Kabul ve Kayıt</h3>\n<p>Tüm kabuller YAHAYA SCHOOL yönetiminin incelemesine tabidir. Akademik kriterlerimize ve kapasitemize bağlı olarak herhangi bir başvuruyu kabul veya reddetme hakkımızı saklı tutarız.</p>\n<ul>\n  <li>Başvurular, gerekli tüm belgelerle birlikte eksiksiz olmalıdır.</li>\n  <li>Başvuru ücreti alınabilir ve iade edilmez.</li>\n</ul>\n<hr/>\n<h3>3. Öğrenim Ücreti ve Harçlar</h3>\n<p>Tüm öğrenim ücreti ve harçlar kayıt sırasında sağlanan programa göre ödenmelidir. Ücretler Liberya Doları (LRD) veya ABD Doları (USD) cinsinden belirtilmiştir.</p>\n<hr/>\n<h3>4. Davranış Kuralları</h3>\n<p>Öğrencilerin ve velilerin YAHAYA SCHOOL Davranış Kurallarına uymaları beklenir. Eğitim ortamını bozan herhangi bir davranış, okuldan uzaklaştırmaya kadar varabilecek disiplin cezalarına yol açabilir.</p>\n<hr/>\n<h3>5. Fikri Mülkiyet</h3>\n<p>YAHAYA SCHOOL tarafından sağlanan tüm ders materyalleri, web sitesi içeriği ve kaynakları bizim fikri mülkiyetimizdir ve yazılı izin alınmadan çoğaltılamaz veya dağıtılamaz.</p>\n<hr/>\n<h3>6. Geçerli Kanun</h3>\n<p>Bu Şartlar ve Koşullar, Liberya Cumhuriyeti kanunlarına göre yönetilecek ve yorumlanacaktır. Bu Şartlardan doğan her türlü anlaşmazlık Liberya mahkemelerinin münhasır yargı yetkisine tabi olacaktır.</p>\n",
+    "contentPrivacy": "Bu bir Gizlilik Politikası yer tutucusudur.",
+    "close": "Kapat"
+  },
+  "privacyPage": {
+    "title": "Gizlilik Politikası",
+    "lastUpdated": "Son Güncelleme: Ağustos 2026",
+    "content": "\n<h3>1. Topladığımız Bilgiler</h3>\n<p>Web sitesine kayıt olduğunuzda, bizimle veya programlarımızla ilgili bilgi almak istediğinizi belirttiğinizde veya bizimle başka bir şekilde iletişime geçtiğinizde gönüllü olarak sağladığınız kişisel bilgileri topluyoruz. Bunlar şunları içerir:</p>\n<ul>\n  <li>İsimler ve iletişim bilgileri (telefon numaraları, e-posta adresleri)</li>\n  <li>Eğitim geçmişi ve transkriptler</li>\n  <li>Fatura ve ödeme bilgileri</li>\n</ul>\n<hr/>\n<h3>2. Bilgilerinizi Nasıl Kullanıyoruz</h3>\n<p>Web sitemiz aracılığıyla toplanan kişisel bilgileri çeşitli iş amaçları için kullanıyoruz, bunlara şunlar dahildir:</p>\n<ol>\n  <li>Kayıt sürecini kolaylaştırmak.</li>\n  <li>Size idari bilgiler göndermek.</li>\n  <li>Sorularınıza ve destek taleplerinize yanıt vermek.</li>\n</ol>\n<hr/>\n<h3>3. Bilgi Paylaşımı</h3>\n<p>Bilgileri yalnızca onayınızla, yasalara uymak, size hizmet sunmak, haklarınızı korumak veya ticari yükümlülükleri yerine getirmek için paylaşıyoruz. Kişisel verilerinizi üçüncü şahıslara satmıyoruz.</p>\n<hr/>\n<h3>4. Veri Güvenliği</h3>\n<p>İşlediğimiz tüm kişisel bilgilerin güvenliğini korumak için tasarlanmış uygun teknik ve kurumsal güvenlik önlemlerini uyguladık.</p>\n<hr/>\n<h3>5. Gizlilik Haklarınız</h3>\n<p>Hesabınızı istediğiniz zaman inceleyebilir, değiştirebilir veya sonlandırabilirsiniz. Gizlilik haklarınızla ilgili soru veya yorumlarınız varsa bize <strong>info@yahayaschool.com</strong> adresinden e-posta gönderebilirsiniz.</p>\n"
+  },
+  "certificateSection": {
+    "title": "Sertifikalarımız",
+    "view": "Görüntüle",
+    "download": "İndir"
+  }
+}

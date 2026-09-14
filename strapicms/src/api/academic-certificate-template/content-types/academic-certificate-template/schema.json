@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "academic-certificate-templates",
+  "info": {
+    "singularName": "academic-certificate-template",
+    "pluralName": "academic-certificate-templates",
+    "displayName": "Academic Certificate Template",
+    "description": "Global configuration for certificate generation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Excellence",
+        "Graduation",
+        "Completion",
+        "Attendance",
+        "Behavior",
+        "Custom"
+      ]
+    },
+    "designConfig": {
+      "type": "json"
+    }
+  }
+}

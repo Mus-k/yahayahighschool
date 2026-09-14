@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_about_timeline_milestones",
+  "info": {
+    "displayName": "Timeline Milestone",
+    "icon": "clock",
+    "description": "Historical milestone entry with year, title, body, and image"
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "imageUrl": {
+      "type": "string"
+    }
+  }
+}

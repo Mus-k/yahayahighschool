@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exam_timetables",
+  "info": {
+    "singularName": "exam-timetable",
+    "pluralName": "exam-timetables",
+    "displayName": "Exam Timetable",
+    "description": "Detailed examination schedules, hall assignments, and invigilator bookings"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "examDate": {
+      "type": "date"
+    },
+    "startTime": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "building": {
+      "type": "string"
+    },
+    "seatCapacity": {
+      "type": "integer"
+    },
+    "instructions": {
+      "type": "text"
+    },
+    "course": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::subject.subject"
+    },
+    "exam_room": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::exam-room.exam-room"
+    },
+    "exam_session": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::exam-session.exam-session"
+    },
+    "invigilator": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::teacher.teacher"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "grade_approval_histories",
+  "info": {
+    "singularName": "grade-approval-history",
+    "pluralName": "grade-approval-histories",
+    "displayName": "Grade Approval History"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "stage": {
+      "type": "enumeration",
+      "enum": [
+        "Draft",
+        "Submitted",
+        "Verified",
+        "Approved",
+        "Released",
+        "Archived"
+      ],
+      "required": true
+    },
+    "versionNumber": {
+      "type": "integer",
+      "default": 1
+    },
+    "comments": {
+      "type": "text"
+    },
+    "changeHash": {
+      "type": "string"
+    },
+    "actionDateTime": {
+      "type": "datetime",
+      "required": true
+    },
+    "reviewerEmail": {
+      "type": "string"
+    },
+    "reviewerName": {
+      "type": "string"
+    },
+    "courseOffering": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course-offering.course-offering"
+    }
+  }
+}

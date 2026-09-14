@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hostel_invoices",
+  "info": {
+    "singularName": "hostel-invoice",
+    "pluralName": "hostel-invoices",
+    "displayName": "Hostel Invoice",
+    "description": "Schema for Hostel Invoice"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student"
+    },
+    "allocation": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hostel-allocation.hostel-allocation"
+    },
+    "invoiceNumber": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "amount": {
+      "type": "decimal",
+      "required": true
+    },
+    "paidAmount": {
+      "type": "decimal",
+      "default": 0
+    },
+    "remainingBalance": {
+      "type": "decimal",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "paid",
+        "partially_paid",
+        "cancelled"
+      ],
+      "default": "pending"
+    },
+    "issueDate": {
+      "type": "date",
+      "required": true
+    },
+    "dueDate": {
+      "type": "date",
+      "required": true
+    },
+    "financeInvoice": {
+      "type": "string"
+    }
+  }
+}

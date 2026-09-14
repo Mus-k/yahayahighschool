@@ -1,0 +1,67 @@
+{
+  "collectionName": "components_contact_contact_forms",
+  "info": {
+    "displayName": "Form Settings",
+    "icon": "envelop",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "formTitle": {
+      "type": "string",
+      "default": "Send us a message"
+    },
+    "formFirstNameLabel": {
+      "type": "string",
+      "default": "First Name"
+    },
+    "formFirstNamePlaceholder": {
+      "type": "string",
+      "default": "e.g. Musa"
+    },
+    "formLastNameLabel": {
+      "type": "string",
+      "default": "Last Name"
+    },
+    "formLastNamePlaceholder": {
+      "type": "string",
+      "default": "e.g. Kamara"
+    },
+    "formEmailLabel": {
+      "type": "string",
+      "default": "Email Address"
+    },
+    "formEmailPlaceholder": {
+      "type": "string",
+      "default": "musakamara@gmail.com"
+    },
+    "formPhoneLabel": {
+      "type": "string",
+      "default": "Phone Number"
+    },
+    "formSubjectLabel": {
+      "type": "string",
+      "default": "Subject Area"
+    },
+    "formMessageLabel": {
+      "type": "string",
+      "default": "Your Message"
+    },
+    "formMessagePlaceholder": {
+      "type": "string",
+      "default": "How can we assist you today?"
+    },
+    "formTermsLinkText": {
+      "type": "string",
+      "default": "Read the legal terms and service,"
+    },
+    "formTermsSuffix": {
+      "type": "string",
+      "default": "I have accept it"
+    },
+    "formSubmitButtonText": {
+      "type": "string",
+      "default": "Send Message"
+    }
+  }
+}

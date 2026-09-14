@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_about_certificates",
+  "info": {
+    "displayName": "About Certificates & Accreditations",
+    "icon": "medal",
+    "description": "Certificates and accreditations slider with preview images and download links"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Accreditations & Certificates"
+    },
+    "certificates": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about.certificate-item"
+    }
+  }
+}
