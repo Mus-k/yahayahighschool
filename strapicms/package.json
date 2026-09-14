@@ -9,7 +9,7 @@
     "deploy": "strapi deploy",
     "dev": "strapi develop",
     "develop": "strapi develop",
-    "start": "node -e \"if (!require('fs').existsSync('dist')) require('child_process').execSync('npm run build', {stdio: 'inherit'})\" && strapi start",
+    "start": "strapi start",
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
