@@ -25,7 +25,6 @@ frontend/build/
 # Strapi build & SQLite database
 strapicms/.tmp/
 strapicms/.strapi/
-strapicms/dist/
 strapicms/build/
 *.sqlite
 *.sqlite3

@@ -1,0 +1,49 @@
+{
+    "kind": "collectionType",
+    "collectionName": "finance_expenses",
+    "info": {
+        "singularName": "finance-expense",
+        "pluralName": "finance-expenses",
+        "displayName": "Finance Expense",
+        "description": "Operating expense vouchers and vendor claims"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "voucherNumber": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "category": {
+            "type": "string"
+        },
+        "department": {
+            "type": "string"
+        },
+        "amount": {
+            "type": "decimal",
+            "required": true
+        },
+        "vendorName": {
+            "type": "string"
+        },
+        "invoiceReference": {
+            "type": "string"
+        },
+        "requestedBy": {
+            "type": "string"
+        },
+        "receiptUrl": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string",
+            "default": "submitted"
+        }
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "kind": "collectionType",
+    "collectionName": "academic-transcripts",
+    "info": {
+        "singularName": "academic-transcript",
+        "pluralName": "academic-transcripts",
+        "displayName": "Academic Transcript",
+        "description": "Updated transcript ledger records"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": true
+        }
+    },
+    "attributes": {
+        "transcriptNumber": {
+            "type": "string",
+            "unique": true
+        },
+        "verificationID": {
+            "type": "string",
+            "unique": true
+        },
+        "dataSnapshot": {
+            "type": "json"
+        },
+        "issueDate": {
+            "type": "date"
+        },
+        "status": {
+            "type": "enumeration",
+            "enum": [
+                "Draft",
+                "Published",
+                "Revoked"
+            ],
+            "default": "Draft"
+        },
+        "version": {
+            "type": "integer",
+            "default": 1
+        },
+        "hash": {
+            "type": "string"
+        },
+        "qrCode": {
+            "type": "string"
+        },
+        "digitalSignature": {
+            "type": "string"
+        },
+        "registrar": {
+            "type": "string"
+        },
+        "principal": {
+            "type": "string"
+        },
+        "verificationUrl": {
+            "type": "string"
+        },
+        "student": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::student.student"
+        }
+    }
+}

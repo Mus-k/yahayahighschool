@@ -1,0 +1,61 @@
+{
+    "kind": "collectionType",
+    "collectionName": "finance_exchange_rates",
+    "info": {
+        "singularName": "finance-exchange-rate",
+        "pluralName": "finance-exchange-rates",
+        "displayName": "Finance Exchange Rate",
+        "description": "Multi-currency exchange rate parities and base ledger currency mappings"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "currencyCode": {
+            "type": "string",
+            "required": true
+        },
+        "currencyName": {
+            "type": "string",
+            "required": true
+        },
+        "symbol": {
+            "type": "string"
+        },
+        "exchangeRateToUSD": {
+            "type": "decimal",
+            "default": 1
+        },
+        "rate": {
+            "type": "decimal",
+            "default": 1
+        },
+        "isBase": {
+            "type": "boolean",
+            "default": false
+        },
+        "isBaseCurrency": {
+            "type": "boolean",
+            "default": false
+        },
+        "isActive": {
+            "type": "boolean",
+            "default": true
+        },
+        "lastUpdated": {
+            "type": "string"
+        },
+        "effectiveDate": {
+            "type": "date"
+        },
+        "status": {
+            "type": "enumeration",
+            "enum": [
+                "active",
+                "archived"
+            ],
+            "default": "active"
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "kind": "collectionType",
+    "collectionName": "assessment_categories",
+    "info": {
+        "singularName": "assessment-category",
+        "pluralName": "assessment-categories",
+        "displayName": "Assessment Category",
+        "description": "Updated assessments weights configuration"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": true
+        }
+    },
+    "attributes": {
+        "name": {
+            "type": "string",
+            "unique": true,
+            "required": true
+        },
+        "description": {
+            "type": "text"
+        },
+        "weightPercent": {
+            "type": "decimal"
+        },
+        "maxMarks": {
+            "type": "decimal"
+        },
+        "passingMarks": {
+            "type": "decimal"
+        },
+        "latePenalty": {
+            "type": "decimal"
+        }
+    }
+}

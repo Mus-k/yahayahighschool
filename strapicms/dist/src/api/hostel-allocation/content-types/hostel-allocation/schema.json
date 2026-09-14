@@ -1,0 +1,82 @@
+{
+    "kind": "collectionType",
+    "collectionName": "hostel_allocations",
+    "info": {
+        "singularName": "hostel-allocation",
+        "pluralName": "hostel-allocations",
+        "displayName": "Hostel Allocation",
+        "description": "Schema for Hostel Allocation"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "allocationNumber": {
+            "type": "string",
+            "required": true,
+            "unique": true
+        },
+        "student": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::student.student"
+        },
+        "bed": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::hostel-bed.hostel-bed"
+        },
+        "room": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::hostel-room.hostel-room"
+        },
+        "building": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::hostel-building.hostel-building"
+        },
+        "checkInDate": {
+            "type": "date",
+            "required": true
+        },
+        "checkOutDate": {
+            "type": "date"
+        },
+        "status": {
+            "type": "enumeration",
+            "enum": [
+                "active",
+                "vacated",
+                "suspended",
+                "checked_out"
+            ],
+            "default": "active"
+        },
+        "academicYear": {
+            "type": "string",
+            "required": true
+        },
+        "termFee": {
+            "type": "decimal",
+            "required": true
+        },
+        "securityDeposit": {
+            "type": "decimal",
+            "required": true
+        },
+        "medicalInfo": {
+            "type": "json"
+        },
+        "disciplineRecords": {
+            "type": "json"
+        },
+        "attendanceHistory": {
+            "type": "json"
+        },
+        "financialLedger": {
+            "type": "json"
+        }
+    }
+}

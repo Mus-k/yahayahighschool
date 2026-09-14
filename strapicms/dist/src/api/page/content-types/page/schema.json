@@ -1,0 +1,80 @@
+{
+    "kind": "collectionType",
+    "collectionName": "pages",
+    "info": {
+        "singularName": "page",
+        "pluralName": "pages",
+        "displayName": "[F] Page",
+        "description": "Custom public pages (e.g. About, Admissions, FAQ)"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": true
+        }
+    },
+    "attributes": {
+        "title": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "required": true
+        },
+        "slug": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "uid",
+            "targetField": "title",
+            "required": true
+        },
+        "seo": {
+            "type": "component",
+            "repeatable": false,
+            "component": "seo.meta"
+        },
+        "sections": {
+            "type": "dynamiczone",
+            "components": [
+                "sections.hero",
+                "sections.stats",
+                "sections.feature-cards",
+                "sections.principal-welcome",
+                "sections.programs-grid",
+                "sections.departments-grid",
+                "sections.news-grid",
+                "sections.events-grid",
+                "sections.testimonials-slider",
+                "sections.gallery-preview",
+                "sections.donation-banner",
+                "sections.sponsors-grid",
+                "sections.newsletter-signup",
+                "sections.cta-banner"
+            ]
+        },
+        "bulletPoints": {
+            "type": "component",
+            "repeatable": true,
+            "component": "shared.bullet-point"
+        },
+        "coverImage": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": ["images"]
+        },
+        "breadcrumbTitle": {
+            "type": "string"
+        },
+        "actionButtonText": {
+            "type": "string"
+        }
+    }
+}

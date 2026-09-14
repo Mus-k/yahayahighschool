@@ -1,0 +1,365 @@
+{
+    "kind": "singleType",
+    "collectionName": "homepages",
+    "info": {
+        "singularName": "homepage",
+        "pluralName": "homepages",
+        "displayName": "[F] Homepage",
+        "description": "Unified homepage content covering all 7 sections"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": true
+        }
+    },
+    "attributes": {
+        "title": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "Welcome to YAHAYASCOOL"
+        },
+        "seo": {
+            "type": "component",
+            "repeatable": false,
+            "component": "seo.meta"
+        },
+        "heroSlides": {
+            "type": "component",
+            "repeatable": true,
+            "component": "home.hero-slide"
+        },
+        "heroEstablishedText": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "EST. 2020"
+        },
+        "heroPrimaryCtaText": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "Start Application"
+        },
+        "heroPrimaryCtaUrl": {
+            "type": "string",
+            "default": "/contact"
+        },
+        "heroPhone": {
+            "type": "string",
+            "default": "+23188368801"
+        },
+        "heroEmail": {
+            "type": "string",
+            "default": "info@yahayaschool.com"
+        },
+        "heroWhatsapp": {
+            "type": "string",
+            "default": "23188368801"
+        },
+        "aboutEyebrow": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "About Our Legacy"
+        },
+        "aboutHeadingLine1": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "Fostering Excellence"
+        },
+        "aboutHeadingLine2": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "Through"
+        },
+        "aboutHeadingHighlight": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "Faith and Science"
+        },
+        "aboutBody": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "text"
+        },
+        "aboutImage": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": ["images"]
+        },
+        "aboutCaption": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string"
+        },
+        "aboutStat1Number": {
+            "type": "integer",
+            "default": 250
+        },
+        "aboutStat1Suffix": {
+            "type": "string",
+            "default": "+"
+        },
+        "aboutStat1Label": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "Students"
+        },
+        "aboutStat2Number": {
+            "type": "integer",
+            "default": 25
+        },
+        "aboutStat2Suffix": {
+            "type": "string",
+            "default": "+"
+        },
+        "aboutStat2Label": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "Employees"
+        },
+        "aboutStat3Number": {
+            "type": "integer",
+            "default": 6
+        },
+        "aboutStat3Suffix": {
+            "type": "string",
+            "default": "+"
+        },
+        "aboutStat3Label": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "Years"
+        },
+        "programsEyebrow": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "Our Programs"
+        },
+        "programsTitle": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "Explore Our Programs"
+        },
+        "programsDescription": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "text"
+        },
+        "programsLearnMoreText": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "Learn More"
+        },
+        "quoteAttribution": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "— Sahih al-Bukhari and Sahih Muslim"
+        },
+        "quoteText": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "text",
+            "default": "Actions are judged by intentions, and every person will have only what they intended."
+        },
+        "quoteBookArabic": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ"
+        },
+        "quoteBookTranslation": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "and every man shall have only that which he intended"
+        },
+        "activitiesHeading": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "Seeking knowledge is a path to goodness."
+        },
+        "activitiesSubtitle": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "text",
+            "default": "Every action tells a story—see what's been happening."
+        },
+        "activitiesCenterImage": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": ["images"]
+        },
+        "activitiesCtaText": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "Join us"
+        },
+        "activitiesCtaUrl": {
+            "type": "string",
+            "default": "/gallery"
+        },
+        "activitiesCards": {
+            "type": "component",
+            "repeatable": true,
+            "component": "home.activity-card"
+        },
+        "testimonialsHeading": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "Kind Words From Our Community"
+        },
+        "testimonialsSubtitle": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "text"
+        },
+        "testimonials": {
+            "type": "component",
+            "repeatable": true,
+            "component": "home.testimonial-item"
+        },
+        "newsEyebrow": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "News & Events"
+        },
+        "newsHeading": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "Latest News & Updates"
+        },
+        "newsDescription": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "text"
+        },
+        "newsReadMoreText": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "Read More"
+        },
+        "newsViewAllText": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "View All News"
+        },
+        "newsViewAllUrl": {
+            "type": "string",
+            "default": "/news"
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "kind": "collectionType",
+    "collectionName": "exam_schedules",
+    "info": {
+        "singularName": "exam-schedule",
+        "pluralName": "exam-schedules",
+        "displayName": "Exam Schedule",
+        "description": "Schema for Exam Schedule"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "startTime": {
+            "type": "datetime",
+            "required": true
+        },
+        "endTime": {
+            "type": "datetime",
+            "required": true
+        },
+        "recordStatus": {
+            "type": "enumeration",
+            "enum": [
+                "Scheduled",
+                "InProgress",
+                "Completed",
+                "Cancelled"
+            ],
+            "default": "Scheduled"
+        },
+        "examination": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::examination.examination"
+        },
+        "exam_room": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::exam-room.exam-room"
+        },
+        "invigilators": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::teacher.teacher"
+        }
+    }
+}

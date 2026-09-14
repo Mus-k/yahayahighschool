@@ -1,0 +1,137 @@
+{
+    "kind": "collectionType",
+    "collectionName": "admission_applications",
+    "info": {
+        "singularName": "admission-application",
+        "pluralName": "admission-applications",
+        "displayName": "Admission Application",
+        "description": "Student online admission applications submitted via website registration portal"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "attributes": {
+        "applicationNumber": {
+            "type": "string",
+            "unique": true,
+            "required": true
+        },
+        "firstName": {
+            "type": "string",
+            "required": true
+        },
+        "lastName": {
+            "type": "string",
+            "required": true
+        },
+        "middleName": {
+            "type": "string"
+        },
+        "dateOfBirth": {
+            "type": "date",
+            "required": true
+        },
+        "gender": {
+            "type": "enumeration",
+            "enum": [
+                "male",
+                "female"
+            ],
+            "required": true
+        },
+        "nationality": {
+            "type": "string",
+            "required": true
+        },
+        "religion": {
+            "type": "string",
+            "default": "Islam"
+        },
+        "address": {
+            "type": "text",
+            "required": true
+        },
+        "previousSchool": {
+            "type": "string"
+        },
+        "parentName": {
+            "type": "string",
+            "required": true
+        },
+        "parentPhone": {
+            "type": "string",
+            "required": true
+        },
+        "parentEmail": {
+            "type": "email",
+            "required": true
+        },
+        "parentOccupation": {
+            "type": "string"
+        },
+        "guardianInfo": {
+            "type": "json"
+        },
+        "emergencyContact": {
+            "type": "json"
+        },
+        "desiredProgram": {
+            "type": "string",
+            "required": true
+        },
+        "desiredDepartment": {
+            "type": "string",
+            "required": true
+        },
+        "desiredSection": {
+            "type": "string"
+        },
+        "hostelRequired": {
+            "type": "boolean",
+            "default": false
+        },
+        "medicalInfo": {
+            "type": "text"
+        },
+        "passportPhoto": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images"
+            ]
+        },
+        "birthCertificate": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files"
+            ]
+        },
+        "supportingDocuments": {
+            "type": "media",
+            "multiple": true,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files"
+            ]
+        },
+        "recordStatus": {
+            "type": "enumeration",
+            "enum": [
+                "Pending",
+                "Approved",
+                "Rejected",
+                "Waiting List",
+                "Need More Information"
+            ],
+            "default": "Pending"
+        },
+        "reviewNotes": {
+            "type": "text"
+        }
+    }
+}

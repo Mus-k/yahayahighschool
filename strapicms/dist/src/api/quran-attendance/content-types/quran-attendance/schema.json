@@ -1,0 +1,73 @@
+{
+    "kind": "collectionType",
+    "collectionName": "quran_attendances",
+    "info": {
+        "singularName": "quran-attendance",
+        "pluralName": "quran-attendances",
+        "displayName": "Quran Attendance",
+        "description": "Schema for Quran Attendance"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "date": {
+            "type": "date",
+            "required": true
+        },
+        "recordStatus": {
+            "type": "enumeration",
+            "enum": [
+                "Present",
+                "Absent",
+                "Late",
+                "Excused"
+            ],
+            "required": true
+        },
+        "arrivalTime": {
+            "type": "time"
+        },
+        "departureTime": {
+            "type": "time"
+        },
+        "lateReason": {
+            "type": "string"
+        },
+        "recitationStatus": {
+            "type": "string"
+        },
+        "participationScore": {
+            "type": "integer"
+        },
+        "remarks": {
+            "type": "text"
+        },
+        "student": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::student.student"
+        },
+        "teacher": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::teacher.teacher"
+        },
+        "quran_group": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::quran-group.quran-group"
+        },
+        "academic_term": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::academic-term.academic-term"
+        },
+        "courseOffering": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::course-offering.course-offering"
+        }
+    }
+}

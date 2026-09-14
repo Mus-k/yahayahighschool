@@ -1,0 +1,65 @@
+{
+    "kind": "collectionType",
+    "collectionName": "campuses",
+    "info": {
+        "singularName": "campus",
+        "pluralName": "campuses",
+        "displayName": "Campus",
+        "description": "School campuses and facilities management"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": true
+        }
+    },
+    "attributes": {
+        "name": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "required": true
+        },
+        "code": {
+            "type": "string",
+            "required": true,
+            "unique": true
+        },
+        "address": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "text"
+        },
+        "phone": {
+            "type": "string"
+        },
+        "email": {
+            "type": "email"
+        },
+        "principalName": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string"
+        },
+        "recordStatus": {
+            "type": "enumeration",
+            "enum": [
+                "active",
+                "inactive",
+                "under_construction"
+            ],
+            "default": "active"
+        }
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "kind": "collectionType",
+    "collectionName": "language_portfolios",
+    "info": {
+        "singularName": "language-portfolio",
+        "pluralName": "language-portfolios",
+        "displayName": "Language Portfolio",
+        "description": "Schema for Language Portfolio"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "itemType": {
+            "type": "enumeration",
+            "enum": [
+                "Writing Sample",
+                "Reading Record",
+                "Audio Recording",
+                "Video Presentation",
+                "Project",
+                "Grammar Exercise"
+            ]
+        },
+        "content": {
+            "type": "richtext"
+        },
+        "attachments": {
+            "type": "media",
+            "multiple": true,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "teacherFeedback": {
+            "type": "text"
+        },
+        "dateAdded": {
+            "type": "date",
+            "required": true
+        },
+        "student": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::student.student"
+        },
+        "teacher": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::teacher.teacher"
+        },
+        "courseOffering": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::course-offering.course-offering"
+        },
+        "academicTerm": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::academic-term.academic-term"
+        }
+    }
+}

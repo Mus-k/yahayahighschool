@@ -1,0 +1,76 @@
+{
+    "kind": "collectionType",
+    "collectionName": "academic_resources",
+    "info": {
+        "singularName": "academic-resource",
+        "pluralName": "academic-resources",
+        "displayName": "Academic Resource"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "category": {
+            "type": "enumeration",
+            "enum": [
+                "Document",
+                "Video",
+                "Audio",
+                "Image",
+                "Archive",
+                "Link",
+                "Other"
+            ]
+        },
+        "description": {
+            "type": "text"
+        },
+        "version": {
+            "type": "string"
+        },
+        "isShared": {
+            "type": "boolean",
+            "default": false
+        },
+        "file": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "files",
+                "images",
+                "videos",
+                "audios"
+            ]
+        },
+        "url": {
+            "type": "string"
+        },
+        "subject": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::subject.subject"
+        },
+        "department": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::department.department"
+        },
+        "section": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::section.section"
+        },
+        "tags": {
+            "type": "json"
+        },
+        "author": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::teacher.teacher"
+        }
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "kind": "collectionType",
+    "collectionName": "examinations",
+    "info": {
+        "singularName": "examination",
+        "pluralName": "examinations",
+        "displayName": "Examination",
+        "description": "Schema for Examination"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "durationMinutes": {
+            "type": "integer"
+        },
+        "totalMarks": {
+            "type": "decimal",
+            "required": true
+        },
+        "passingScore": {
+            "type": "decimal"
+        },
+        "examDate": {
+            "type": "date"
+        },
+        "instructions": {
+            "type": "text"
+        },
+        "recordStatus": {
+            "type": "enumeration",
+            "enum": [
+                "Draft",
+                "Published",
+                "Completed"
+            ],
+            "default": "Draft"
+        },
+        "subject": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::subject.subject"
+        },
+        "teacher": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::teacher.teacher"
+        },
+        "section": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::section.section"
+        },
+        "assessment_type": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::assessment-type.assessment-type"
+        },
+        "exam_session": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::exam-session.exam-session"
+        }
+    }
+}

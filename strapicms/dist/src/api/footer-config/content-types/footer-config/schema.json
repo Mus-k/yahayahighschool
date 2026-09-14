@@ -1,0 +1,143 @@
+{
+    "kind": "singleType",
+    "collectionName": "footer_configs",
+    "info": {
+        "singularName": "footer-config",
+        "pluralName": "footer-configs",
+        "displayName": "[F] Footer Configuration",
+        "description": "Dynamic website footer columns, copyright, and newsletter links"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": true
+        }
+    },
+    "attributes": {
+        "quickLinks": {
+            "type": "component",
+            "repeatable": true,
+            "component": "navigation.menu-item"
+        },
+        "academicsLinks": {
+            "type": "component",
+            "repeatable": true,
+            "component": "navigation.menu-item"
+        },
+        "supportLinks": {
+            "type": "component",
+            "repeatable": true,
+            "component": "navigation.menu-item"
+        },
+        "logo": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": ["images", "files", "videos", "audios"]
+        },
+        "email": {
+            "type": "string"
+        },
+        "phone": {
+            "type": "string"
+        },
+        "socialLinks": {
+            "type": "component",
+            "repeatable": true,
+            "component": "contact.social-media"
+        },
+        "brandName": {
+            "type": "string",
+            "pluginOptions": { "i18n": { "localized": true } }
+        },
+        "brandTagline1": {
+            "type": "string",
+            "pluginOptions": { "i18n": { "localized": true } }
+        },
+        "brandTagline2": {
+            "type": "string",
+            "pluginOptions": { "i18n": { "localized": true } }
+        },
+        "brandDescription": {
+            "type": "text",
+            "pluginOptions": { "i18n": { "localized": true } }
+        },
+        "pills": {
+            "type": "component",
+            "repeatable": true,
+            "component": "navigation.menu-item"
+        },
+        "termsLabel": {
+            "type": "string",
+            "pluginOptions": { "i18n": { "localized": true } }
+        },
+        "privacyUrl": {
+            "type": "string"
+        },
+        "privacyLabel": {
+            "type": "string",
+            "pluginOptions": { "i18n": { "localized": true } }
+        },
+        "socialsLabel": {
+            "type": "string",
+            "pluginOptions": { "i18n": { "localized": true } }
+        },
+        "emailLabel": {
+            "type": "string",
+            "pluginOptions": { "i18n": { "localized": true } }
+        },
+        "phoneLabel": {
+            "type": "string",
+            "pluginOptions": { "i18n": { "localized": true } }
+        },
+        "quickLinksTitle": {
+            "type": "string",
+            "pluginOptions": { "i18n": { "localized": true } }
+        },
+        "academicsTitle": {
+            "type": "string",
+            "pluginOptions": { "i18n": { "localized": true } }
+        },
+        "supportTitle": {
+            "type": "string",
+            "pluginOptions": { "i18n": { "localized": true } }
+        },
+        "contactText": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "text"
+        },
+        "copyrightText": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "© 2026 YAHAYASCOOL — Yahaya International Islamic and English High School. All rights reserved."
+        },
+        "newsletterHeading": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "Stay Connected"
+        },
+        "newsletterSubheading": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "default": "Subscribe for weekly updates and reminders."
+        }
+    }
+}

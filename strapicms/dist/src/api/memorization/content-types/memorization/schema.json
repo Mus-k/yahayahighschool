@@ -1,0 +1,94 @@
+{
+    "kind": "collectionType",
+    "collectionName": "memorizations",
+    "info": {
+        "singularName": "memorization",
+        "pluralName": "memorizations",
+        "displayName": "Memorization",
+        "description": "Schema for Memorization"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "juzNumber": {
+            "type": "integer",
+            "required": true
+        },
+        "surah": {
+            "type": "string",
+            "required": true
+        },
+        "startingAyah": {
+            "type": "integer"
+        },
+        "endingAyah": {
+            "type": "integer"
+        },
+        "pagesCovered": {
+            "type": "decimal"
+        },
+        "linesCovered": {
+            "type": "integer"
+        },
+        "recordType": {
+            "type": "enumeration",
+            "enum": [
+                "New",
+                "Revision",
+                "Correction",
+                "Assessment"
+            ]
+        },
+        "recordStatus": {
+            "type": "enumeration",
+            "enum": [
+                "Completed",
+                "Needs Revision",
+                "Partially Memorized"
+            ]
+        },
+        "teacherNotes": {
+            "type": "text"
+        },
+        "studentReflection": {
+            "type": "text"
+        },
+        "date": {
+            "type": "date",
+            "required": true
+        },
+        "student": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::student.student"
+        },
+        "teacher": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::teacher.teacher"
+        },
+        "quran_program": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::quran-program.quran-program"
+        },
+        "quran_group": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::quran-group.quran-group",
+            "inversedBy": "memorizations"
+        },
+        "academic_term": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::academic-term.academic-term"
+        },
+        "courseOffering": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::course-offering.course-offering"
+        }
+    }
+}

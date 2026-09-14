@@ -1,0 +1,31 @@
+{
+    "collectionName": "components_sections_newsletter_signups",
+    "info": {
+        "displayName": "Newsletter Signup Block",
+        "icon": "envelop",
+        "description": "Email newsletter subscription prompt section"
+    },
+    "options": {},
+    "attributes": {
+        "title": {
+            "type": "string",
+            "default": "Stay Updated",
+            "pluginOptions": { "i18n": { "localized": true } }
+        },
+        "subtitle": {
+            "type": "text",
+            "default": "Get the latest school news and event reminders straight to your inbox.",
+            "pluginOptions": { "i18n": { "localized": true } }
+        },
+        "placeholderText": {
+            "type": "string",
+            "default": "Email Address",
+            "pluginOptions": { "i18n": { "localized": true } }
+        },
+        "buttonText": {
+            "type": "string",
+            "default": "Subscribe",
+            "pluginOptions": { "i18n": { "localized": true } }
+        }
+    }
+}

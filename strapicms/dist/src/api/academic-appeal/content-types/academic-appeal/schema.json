@@ -1,0 +1,48 @@
+{
+    "kind": "collectionType",
+    "collectionName": "academic_appeals",
+    "info": {
+        "singularName": "academic-appeal",
+        "pluralName": "academic-appeals",
+        "displayName": "Academic Appeal"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "attributes": {
+        "originalGrade": {
+            "type": "decimal",
+            "required": true
+        },
+        "requestedGrade": {
+            "type": "decimal"
+        },
+        "reason": {
+            "type": "text",
+            "required": true
+        },
+        "status": {
+            "type": "enumeration",
+            "enum": [
+                "Pending",
+                "UnderReview",
+                "Approved",
+                "Rejected"
+            ],
+            "default": "Pending"
+        },
+        "resolutionNotes": {
+            "type": "text"
+        },
+        "student": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::student.student"
+        },
+        "courseOffering": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::course-offering.course-offering"
+        }
+    }
+}

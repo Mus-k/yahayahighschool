@@ -1,0 +1,117 @@
+{
+    "kind": "collectionType",
+    "collectionName": "sections",
+    "info": {
+        "singularName": "section",
+        "pluralName": "sections",
+        "displayName": "Academic Section",
+        "description": "Multi-purpose academic sections, groups, levels, or boarding tracks"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": true
+        }
+    },
+    "attributes": {
+        "name": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "required": true
+        },
+        "code": {
+            "type": "string",
+            "required": true
+        },
+        "capacity": {
+            "type": "integer",
+            "default": 35
+        },
+        "description": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "text"
+        },
+        "active": {
+            "type": "boolean",
+            "default": true
+        },
+        "department": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::department.department",
+            "inversedBy": "sectionsList"
+        },
+        "program": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::program.program",
+            "inversedBy": "sectionsList"
+        },
+        "academicYear": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::academic-year.academic-year",
+            "inversedBy": "sections"
+        },
+        "students": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::student.student",
+            "inversedBy": "sections"
+        },
+        "teachers": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::teacher.teacher",
+            "inversedBy": "sections"
+        },
+        "courseOfferings": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::course-offering.course-offering",
+            "mappedBy": "academicSection"
+        },
+        "academicHead": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::teacher.teacher"
+        },
+        "gradeLevels": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::grade-level.grade-level",
+            "inversedBy": "sections"
+        },
+        "sectionType": {
+            "type": "enumeration",
+            "enum": [
+                "general",
+                "quran",
+                "language",
+                "stem",
+                "islamic",
+                "sports",
+                "arts",
+                "vocational",
+                "other"
+            ],
+            "default": "general"
+        },
+        "color": {
+            "type": "string"
+        },
+        "icon": {
+            "type": "string"
+        }
+    }
+}

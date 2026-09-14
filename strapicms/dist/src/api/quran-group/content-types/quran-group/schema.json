@@ -1,0 +1,64 @@
+{
+    "kind": "collectionType",
+    "collectionName": "quran_groups",
+    "info": {
+        "singularName": "quran-group",
+        "pluralName": "quran-groups",
+        "displayName": "Quran Group",
+        "description": "Schema for Quran Group"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true
+        },
+        "code": {
+            "type": "string",
+            "unique": true
+        },
+        "capacity": {
+            "type": "integer"
+        },
+        "meetingSchedule": {
+            "type": "string"
+        },
+        "location": {
+            "type": "string"
+        },
+        "isActive": {
+            "type": "boolean",
+            "default": true
+        },
+        "teacher": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::teacher.teacher"
+        },
+        "quran_program": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::quran-program.quran-program",
+            "inversedBy": "quran_groups"
+        },
+        "students": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::student.student"
+        },
+        "memorizations": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::memorization.memorization",
+            "mappedBy": "quran_group"
+        },
+        "courseOffering": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::course-offering.course-offering"
+        }
+    }
+}

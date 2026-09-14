@@ -1,0 +1,35 @@
+{
+    "kind": "singleType",
+    "collectionName": "contact_infos",
+    "info": {
+        "singularName": "contact-info",
+        "pluralName": "contact-infos",
+        "displayName": "[F] Contact Information",
+        "description": "School contact details, office hours, and maps"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": true
+        }
+    },
+    "attributes": {
+        "campusInfo": {
+            "type": "component",
+            "repeatable": false,
+            "component": "contact.campus-info"
+        },
+        "contactForm": {
+            "type": "component",
+            "repeatable": false,
+            "component": "contact.contact-form"
+        },
+        "socialMedia": {
+            "type": "component",
+            "repeatable": true,
+            "component": "contact.social-media"
+        }
+    }
+}

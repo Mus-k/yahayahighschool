@@ -1,0 +1,72 @@
+{
+    "kind": "collectionType",
+    "collectionName": "quran_assessments",
+    "info": {
+        "singularName": "quran-assessment",
+        "pluralName": "quran-assessments",
+        "displayName": "Quran Assessment",
+        "description": "Schema for Quran Assessment"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "type": {
+            "type": "enumeration",
+            "enum": [
+                "Daily Recitation",
+                "Weekly Test",
+                "Monthly Test",
+                "Quarterly Test",
+                "Half Juz",
+                "Full Juz",
+                "Half Hifz",
+                "Complete Hifz"
+            ]
+        },
+        "portion": {
+            "type": "string"
+        },
+        "score": {
+            "type": "decimal"
+        },
+        "maxScore": {
+            "type": "decimal"
+        },
+        "mistakes": {
+            "type": "integer"
+        },
+        "comments": {
+            "type": "text"
+        },
+        "date": {
+            "type": "date",
+            "required": true
+        },
+        "student": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::student.student"
+        },
+        "teacher": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::teacher.teacher"
+        },
+        "quran_group": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::quran-group.quran-group"
+        },
+        "courseOffering": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::course-offering.course-offering"
+        }
+    }
+}

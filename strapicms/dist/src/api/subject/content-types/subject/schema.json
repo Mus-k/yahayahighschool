@@ -1,0 +1,99 @@
+{
+    "kind": "collectionType",
+    "collectionName": "subjects",
+    "info": {
+        "singularName": "subject",
+        "pluralName": "subjects",
+        "displayName": "Subject",
+        "description": "Academic Subjects"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true
+        },
+        "code": {
+            "type": "string",
+            "required": true,
+            "unique": true
+        },
+        "description": {
+            "type": "text"
+        },
+        "subjectType": {
+            "type": "enumeration",
+            "enum": [
+                "Core",
+                "Elective",
+                "Extracurricular"
+            ],
+            "default": "Core"
+        },
+        "activeStatus": {
+            "type": "boolean",
+            "default": true
+        },
+        "color": {
+            "type": "string"
+        },
+        "icon": {
+            "type": "string"
+        },
+        "defaultWeeklyHours": {
+            "type": "integer"
+        },
+        "passingScore": {
+            "type": "integer"
+        },
+        "creditValue": {
+            "type": "decimal"
+        },
+        "displayOrder": {
+            "type": "integer"
+        },
+        "department": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::department.department"
+        },
+        "programs": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::program.program"
+        },
+        "sections": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::section.section"
+        },
+        "teachers": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::teacher.teacher"
+        },
+        "students": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::student.student"
+        },
+        "academicSection": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::section.section"
+        },
+        "gradeLevels": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::grade-level.grade-level"
+        },
+        "courseOfferings": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::course-offering.course-offering",
+            "mappedBy": "subject"
+        }
+    }
+}

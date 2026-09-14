@@ -1,0 +1,57 @@
+{
+    "kind": "collectionType",
+    "collectionName": "marks_entries",
+    "info": {
+        "singularName": "marks-entry",
+        "pluralName": "marks-entries",
+        "displayName": "Marks Entry",
+        "description": "Schema for Marks Entry"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "rawScore": {
+            "type": "decimal"
+        },
+        "percentage": {
+            "type": "decimal"
+        },
+        "gradePoint": {
+            "type": "decimal"
+        },
+        "teacherNotes": {
+            "type": "text"
+        },
+        "recordStatus": {
+            "type": "enumeration",
+            "enum": [
+                "Draft",
+                "Submitted",
+                "Approved"
+            ],
+            "default": "Draft"
+        },
+        "student": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::student.student"
+        },
+        "examination": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::examination.examination"
+        },
+        "teacher": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::teacher.teacher"
+        },
+        "grading_scheme": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::grading-scheme.grading-scheme"
+        }
+    }
+}
