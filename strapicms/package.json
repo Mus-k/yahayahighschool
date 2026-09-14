@@ -8,8 +8,7 @@
     "console": "strapi console",
     "deploy": "strapi deploy",
     "dev": "strapi develop",
-    "develop": "strapi develop",
-    "start": "strapi start",
+    "start": "node --max-old-space-size=450 ./node_modules/@strapi/strapi/bin/strapi.js start",
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
