@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale?: 
   };
 }
 
-import { slugifyEvent } from '@/utils/news';
+import { FALLBACK_FEATURED_EVENTS } from '@/utils/news';
 
 export default async function NewsListingPage({ params }: { params: Promise<{ locale?: string }> }) {
   const { locale = 'en' } = await params;
@@ -32,7 +32,11 @@ export default async function NewsListingPage({ params }: { params: Promise<{ lo
     pageData = await cmsService.getNewsPage('en');
   }
 
-  const featuredEvents: NewsFeaturedEventComponent[] = pageData?.featuredEvents || [];
+  // No CMS entry (or Strapi unreachable) → show the built-in stories instead of an empty grid
+  const featuredEvents: NewsFeaturedEventComponent[] =
+    pageData?.featuredEvents && pageData.featuredEvents.length > 0
+      ? pageData.featuredEvents
+      : FALLBACK_FEATURED_EVENTS;
   const pageDate = pageData?.updatedAt || pageData?.publishedAt || pageData?.createdAt;
 
   return (

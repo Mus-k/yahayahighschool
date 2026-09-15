@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 import { cmsService } from '@/services/cms.service';
 import { NewsArticleHero, NewsArticleBody } from '@/components/public/news/NewsDetail';
 import type { NewsFeaturedEventComponent } from '@/types/cms.types';
-import { slugifyEvent } from '@/utils/news';
+import { slugifyEvent, FALLBACK_FEATURED_EVENTS } from '@/utils/news';
 
 import { resolveEventDate } from '@/lib/format';
 
@@ -15,7 +15,7 @@ interface NewsDetailProps {
 /** All slugs come from the news page's featuredEvents */
 export async function generateStaticParams() {
   const pageData = await cmsService.getNewsPage('en');
-  const events = pageData?.featuredEvents || [];
+  const events = pageData?.featuredEvents?.length ? pageData.featuredEvents : FALLBACK_FEATURED_EVENTS;
   return events.map((fe, idx) => ({ slug: slugifyEvent(fe, idx) }));
 }
 
@@ -51,6 +51,10 @@ async function findEventBySlug(
     const match = events.find((fe, idx) => slugifyEvent(fe, idx) === slug);
     if (match) return { event: match, pageDate, newsletterCard: pageData?.newsletterCard };
   }
+
+  // Built-in stories shown when the CMS has no News Page content
+  const fallback = FALLBACK_FEATURED_EVENTS.find((fe, idx) => slugifyEvent(fe, idx) === slug);
+  if (fallback) return { event: fallback };
   return null;
 }
 

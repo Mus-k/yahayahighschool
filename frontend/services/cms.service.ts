@@ -616,7 +616,8 @@ export function getStrapiMediaUrl(media: any): string | null {
     : (media.url || media.photoUrl || media.avatarUrl || media.data?.attributes?.url || media.data?.url);
   if (!rawUrl || typeof rawUrl !== 'string') return null;
   
-  if (rawUrl.startsWith('/')) {
+  // Paths under /images belong to the frontend's own public folder (fallback content)
+  if (rawUrl.startsWith('/') && !rawUrl.startsWith('/images/')) {
     const strapiUrl = process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1339';
     return `${strapiUrl}${rawUrl}`;
   }

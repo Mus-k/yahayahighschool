@@ -13,6 +13,7 @@ import 'swiper/css/effect-fade';
 
 import type { NewsFeaturedEventComponent } from '@/types/cms.types';
 import { formatCardDate, resolveEventDate, formatMonthAndDay } from '@/lib/format';
+import { FALLBACK_FEATURED_EVENTS } from '@/utils/news';
 
 
 /**
@@ -35,77 +36,6 @@ import { formatCardDate, resolveEventDate, formatMonthAndDay } from '@/lib/forma
  */
 
 const MASK_PATH = 'M 351.0 0.0 C 346.7 1.7, 332.8 6.7, 325.0 10.0 C 317.2 13.3, 312.0 15.8, 304.0 20.0 C 296.0 24.2, 285.2 30.0, 277.0 35.0 C 268.8 40.0, 262.7 44.2, 255.0 50.0 C 247.3 55.8, 239.5 61.7, 231.0 70.0 C 222.5 78.3, 213.3 86.7, 204.0 100.0 C 194.7 113.3, 184.5 129.2, 175.0 150.0 C 165.5 170.8, 154.3 200.0, 147.0 225.0 C 139.7 250.0, 135.5 262.5, 131.0 300.0 C 126.5 337.5, 122.3 400.0, 120.0 450.0 C 117.7 500.0, 118.3 558.3, 117.0 600.0 C 115.7 641.7, 114.3 673.3, 112.0 700.0 C 109.7 726.7, 105.8 745.0, 103.0 760.0 C 100.2 775.0, 97.7 780.8, 95.0 790.0 C 92.3 799.2, 89.8 807.5, 87.0 815.0 C 84.2 822.5, 83.7 828.3, 78.0 835.0 C 72.3 841.7, 63.2 849.2, 53.0 855.0 C 42.8 860.8, 25.8 866.7, 17.0 870.0 C 8.2 873.3, 2.8 874.2, 0.0 875.0 L 1144 879 L 1144 0 Z';
-
-export type FeaturedEvent = {
-  /** Left slider */
-  eyebrow: string; headline: [string, string]; lede: string;
-  /** Right slider */
-  image: string; alt: string;
-  /** Overlapping card */
-  month: string; day: string; category: string;
-  title: string; time: string; place: string; blurb: string;
-  href: string;
-  buttonText?: string;
-};
-
-// Slide one carries the design's exact copy; the rest are the same shape.
-const FEATURED: FeaturedEvent[] = [
-  {
-    eyebrow: 'School Stories',
-    headline: ['News, Events &', 'Community'],
-    lede: 'Discover the latest happenings at Yahaya International. From academic achievements to spiritual milestones, our stories reflect our commitment to faith, learning and character.',
-    image: '/images/figma-home/09.png', alt: 'A lesson in progress',
-    month: 'JUL', day: '15', category: 'CEREMONY', title: 'Graduation Ceremony',
-    time: '10:00 AM - 1:00 PM', place: 'Main Auditorium',
-    blurb: 'Join us as we celebrate the achievements of our graduating class.',
-    href: '/news/science-tech-fair-2024',
-    buttonText: 'Read More',
-  },
-  {
-    eyebrow: 'Campus Life',
-    headline: ['A New Home', 'for Hifz'],
-    lede: 'Our dedicated memorization centre opens its doors, giving students a purpose-built space for recitation, review and quiet study.',
-    image: '/images/figma-home/17.png', alt: 'Group study in the library',
-    month: 'SEP', day: '12', category: 'OPENING', title: 'Memorization Hub',
-    time: '9:00 AM - 11:00 AM', place: 'Hifz Centre',
-    blurb: 'The doors open on our dedicated Hifz learning centre.',
-    href: '/news/new-memorization-hub',
-    buttonText: 'Read More',
-  },
-  {
-    eyebrow: "D'awah",
-    headline: ['Service Beyond', 'the Gates'],
-    lede: 'Senior students carried our values into three neighbourhoods this month, leading an outreach programme built on listening as much as teaching.',
-    image: '/images/figma-home/19.png', alt: 'Students walking on campus',
-    month: 'JUN', day: '18', category: "D'AWAH", title: 'Community Outreach',
-    time: '2:00 PM - 5:00 PM', place: 'City Centre',
-    blurb: 'Senior students lead an outreach programme across three neighbourhoods.',
-    href: '/news/community-dawah',
-    buttonText: 'Read More',
-  },
-  {
-    eyebrow: 'Achievement',
-    headline: ['Character, and', 'Scholarship'],
-    lede: 'The Excellence Awards recognise the students whose work and conduct set the tone for everyone around them.',
-    image: '/images/figma-home/07-activity.png', alt: 'Students outside the school building',
-    month: 'MAY', day: '10', category: 'AWARDS', title: 'Excellence Awards',
-    time: '11:00 AM - 1:00 PM', place: 'Main Hall',
-    blurb: 'Recognising outstanding academic and character achievement.',
-    href: '/news/excellence-awards',
-    buttonText: 'Read More',
-  },
-  {
-    eyebrow: 'Events',
-    headline: ['Ideas Worth', 'Gathering For'],
-    lede: 'A full day of talks and demonstrations, bringing together some of the brightest minds working in the field today.',
-    image: '/images/figma-home/13.png', alt: 'Students reading in the library',
-    month: 'AUG', day: '05', category: 'EVENTS', title: 'Innovation Summit',
-    time: '10:00 AM - 4:00 PM', place: 'Library Annex',
-    blurb: 'A day of talks bringing together the brightest minds in the field.',
-    href: '/news/innovation-summit',
-    buttonText: 'Read More',
-  },
-];
 
 import { getStrapiMediaUrl } from '@/services/cms.service';
 
@@ -152,7 +82,8 @@ export function NewsHero({
   const hookLocale = useLocale();
   const locale = propLocale || hookLocale || 'en';
 
-  const featured = data && data.length > 0 ? data.map(d => ({
+  const source = data && data.length > 0 ? data : FALLBACK_FEATURED_EVENTS;
+  const featured = source.map(d => ({
     eyebrow: d.eyebrow,
     headline: [d.headlineLine1, d.headlineLine2 || ''] as [string, string],
     lede: d.lede,
@@ -168,7 +99,7 @@ export function NewsHero({
     blurb: d.blurb,
     href: resolveEventHref(d),
     buttonText: d.buttonText,
-  })) : FEATURED;
+  }));
 
   // The media slider is the single source of truth — the arrows drive it and
   // the text follows. Two sliders steering each other invites a feedback loop.
