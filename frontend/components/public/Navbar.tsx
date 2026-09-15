@@ -379,7 +379,7 @@ export function Navbar({
           </div>
 
           <div className="w-full h-full relative">
-            <nav className="w-full h-[96px] bg-white flex justify-between items-center lg:grid lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)]">
+            <nav className="w-full h-[96px] bg-white flex max-lg:rtl:flex-row-reverse justify-between items-center lg:grid lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)]">
               {/* Left nav links */}
               <div className="hidden lg:flex items-center gap-4 xl:gap-8 text-[15px] xl:text-[17px]">
                 {leftNavItems.map((item: any, idx: number) => (
@@ -399,7 +399,7 @@ export function Navbar({
                   alt="YAHAYASCHOOL Logo"
                   width={80}
                   height={95}
-                  className="object-contain hover:scale-105 lg:max-w-[76px] max-w-[65px] transition-transform"
+                  className="object-contain hover:scale-105 lg:max-w-[76px] max-w-[48px] transition-transform"
                   priority
                 />
               </Link>
@@ -534,7 +534,7 @@ export function Navbar({
               </div>
 
               {/* Mobile: language + hamburger */}
-              <div className="lg:hidden h-full flex items-center gap-4 z-50 relative">
+              <div className="lg:hidden h-full flex rtl:flex-row-reverse items-center gap-4 z-50 relative">
                 <LanguageSwitcher
                   currentLocale={locale}
                   forceClose={mobileMenuOpen}
