@@ -128,3 +128,5 @@ exports
 build
 .strapi-updater.json
 .strapi-cloud.json
+# Admin panel is pre-built and committed: Render (512MB-2GB) cannot build it
+!dist/build
